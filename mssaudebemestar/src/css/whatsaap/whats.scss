@@ -1,0 +1,10 @@
+@import "../reset";
+@import "../variables";
+
+.whats-icon{
+    position: fixed;
+    z-index: 999999;
+    right: 15px;
+    bottom: 10%;
+    width: 35px;
+}

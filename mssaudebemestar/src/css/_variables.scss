@@ -1,0 +1,52 @@
+/*
+:root {
+	--primary-color: #546254;
+	--secondary-color: #bbbdb2;
+	--text-light: #f4f3f1;
+	--text-dark: #000000;
+}
+*/
+// Import Fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Aguila';
+    src: url('../assets/fonts/Aguila.woff2') format('woff2'),
+         url('../assets/fonts/Aguila.woff') format('woff'),
+         url('../assets/fonts/Aguila.ttf') format('truetype');
+  }
+
+
+//Screen sizes
+$desktop-screen: 1366px;
+$tablet-screen: 800px;
+$mobile-screen:480px;
+
+
+//!Colors
+
+//rgb(56, 196, 207)
+//rgb(52, 163, 163)
+
+//background
+$miguel-logo-color:rgb(56, 196, 207);
+$secondary-color: #B0C4DE;
+$nav-menu-color: $miguel-logo-color;
+$nav-color: rgb(54, 69, 79);
+
+
+//font
+$primary-font-color: black;
+$primary-font-select: #413939;
+
+
+$secondry-font-color: #333333;
+
+
+
+
+
+// Define font variables
+$primary-font: 'Nunito', sans-serif;
+$title-font:'Aguila'
