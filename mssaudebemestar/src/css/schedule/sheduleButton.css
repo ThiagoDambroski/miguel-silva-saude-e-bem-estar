@@ -14,6 +14,18 @@
   font-family: "Aguila";
   src: url("../assets/fonts/Aguila.woff2") format("woff2"), url("../assets/fonts/Aguila.woff") format("woff"), url("../assets/fonts/Aguila.ttf") format("truetype");
 }
+/*
+:root {
+	--primary-color: #546254;
+	--secondary-color: #bbbdb2;
+	--text-light: #f4f3f1;
+	--text-dark: #000000;
+}
+*/
+@font-face {
+  font-family: "Aguila";
+  src: url("../assets/fonts/Aguila.woff2") format("woff2"), url("../assets/fonts/Aguila.woff") format("woff"), url("../assets/fonts/Aguila.ttf") format("truetype");
+}
 * {
   padding: 0;
   margin: 0;
@@ -99,22 +111,19 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-/*
-:root {
-	--primary-color: #546254;
-	--secondary-color: #bbbdb2;
-	--text-light: #f4f3f1;
-	--text-dark: #000000;
+.shedule-button {
+  color: whiteSmoke;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  background: #2F4156;
+  border: 1px solid rgb(56, 196, 207);
+  padding: 1rem;
+  border-radius: 30px;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
-*/
-@font-face {
-  font-family: "Aguila";
-  src: url("../assets/fonts/Aguila.woff2") format("woff2"), url("../assets/fonts/Aguila.woff") format("woff"), url("../assets/fonts/Aguila.ttf") format("truetype");
-}
-.whats-icon {
-  position: fixed;
-  z-index: 99999;
-  right: 15px;
-  bottom: 10%;
-  width: 35px;
-}/*# sourceMappingURL=whats.css.map */
+.shedule-button.visible {
+  opacity: 1;
+  transform: translateX(0); /* Slide into view */
+}/*# sourceMappingURL=sheduleButton.css.map */

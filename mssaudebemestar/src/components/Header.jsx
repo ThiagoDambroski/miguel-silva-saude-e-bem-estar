@@ -42,6 +42,7 @@ function Header() {
         <nav className={`${hamburugerActive ? "ham-active" : ""}`}>
             <ul >
                 <li>Inicio</li>
+                <li>Serviços</li>
                 <li>Sobre Nós</li>
                 <li>Blog</li>
                 <li>Contatos</li>

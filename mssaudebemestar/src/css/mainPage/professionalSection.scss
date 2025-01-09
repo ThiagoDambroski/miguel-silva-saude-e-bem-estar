@@ -1,0 +1,105 @@
+@import "../variables";
+@import "../reset";
+@import "../mixin";
+
+
+.profissional-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    overflow: hidden;
+    h2{
+        @include title();
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .profissional-section-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        .profissional-square{
+        
+            display: flex;
+            
+            transition: all 0.6s ease-in;
+            background-color: $nav-menu-color;
+            img{
+                width: 150px;
+                height: 320px;
+                object-fit: cover;
+            }
+    
+    
+           
+        }
+        .profissional-square-information{
+            padding: 0.5rem;
+            position: relative;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            color: $buttonColor;
+            flex-direction: column;
+            p{
+                text-align: center;
+                
+                
+                
+            }
+            ul{
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: start;
+                font-family: $primary-font;
+                font-size: 0.8rem;
+                
+                
+                li{
+                    position: relative;
+                    
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    line-height: 1.5;
+                    
+                    &::before{
+                        align-self: flex-start;
+                        justify-self: unset;
+                        content: "•"; 
+                        font-size: 1.5em;
+                        color: $primary-font; 
+                        margin-right: 5px;
+                         
+                    }
+                }
+            }
+            button{
+                position: absolute;
+                @include button();
+                bottom: 10px;
+                padding: 0.7rem;
+                font-size: 0.8rem;
+                border-radius: 15px;
+            }
+        }
+    }
+    .profissional-section-button-container{
+        width: 60%;
+        .shedule-button{
+            transform: translateX(200%);
+            width: 100%; 
+            transition: transform 1s ease, opacity 0.5s ease;
+            &.visible{
+                transform: translateX(00%); 
+                
+            }
+        }
+    }
+    
+
+    
+}

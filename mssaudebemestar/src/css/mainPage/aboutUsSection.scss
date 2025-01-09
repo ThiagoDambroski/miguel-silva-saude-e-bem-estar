@@ -1,0 +1,30 @@
+@import "../variables";
+@import "../reset";
+@import "../mixin";
+
+.about-us-section{
+    
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    h2{
+        @include title();
+    }
+    p{
+        font-family: $primary-font;
+        padding: 1rem;
+        color: $title-color;
+        font-weight: 600;
+        border-radius: 10px;
+        background-color: azure;
+    }
+    button{
+        @include button();
+        width: 50%;
+        padding: 1rem;
+        
+        border-radius: 30px;
+    }
+}

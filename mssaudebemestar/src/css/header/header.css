@@ -6,8 +6,10 @@
 	--text-dark: #000000;
 }
 */
-@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
   font-family: "Aguila";
   src: url("../assets/fonts/Aguila.woff2") format("woff2"), url("../assets/fonts/Aguila.woff") format("woff"), url("../assets/fonts/Aguila.ttf") format("truetype");
@@ -20,9 +22,39 @@
 }
 
 body {
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  min-height: 200vh;
+}
+body.light-box-block {
+  overflow: hidden;
+}
+
+.ligth-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ligth-box .ligth-box-content {
+  position: relative;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 85%;
+  height: 85%;
+  background-color: whitesmoke;
+}
+.ligth-box .ligth-box-content .close-button {
+  width: 15px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 /*Professor*/
@@ -50,7 +82,7 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Aguila";
+  font-family: "Montserrat";
 }
 
 ::-webkit-scrollbar-track {
@@ -80,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
   src: url("../assets/fonts/Aguila.woff2") format("woff2"), url("../assets/fonts/Aguila.woff") format("woff"), url("../assets/fonts/Aguila.ttf") format("truetype");
 }
 header {
-  font-family: "Nunito", sans-serif;
+  font-family: "Raleway", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,7 +138,7 @@ header .logo {
     right: -100%;
     width: 100%;
     height: 100vh;
-    background-color: rgb(56, 196, 207);
+    background-color: #C8D9E6;
     display: flex;
     flex-direction: column;
     transition: transform 600ms cubic-bezier(0.62, 0.04, 0.3, 1.56);
@@ -134,8 +166,8 @@ header nav ul li {
 @media (max-width: 480px) {
   header nav ul li {
     font-size: 1.6rem;
-    color: white;
-    font-weight: lighter;
+    color: #2F4156;
+    font-weight: 300;
     text-transform: uppercase;
   }
 }

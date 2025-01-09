@@ -1,0 +1,108 @@
+@import "../variables";
+@import "../reset";
+@import "../mixin";
+
+
+.service-section{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+    font-family: $primary-font;
+    padding: 1rem;
+
+    h2{
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        text-align: center;
+        @include title();
+    }
+    
+    .service-section-container{
+        font-family: $primary-font;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 15px;
+        overflow: hidden;
+
+        .service-square{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            position: relative;
+            width: 100px;
+            height: 100px;
+        
+            
+    
+            opacity: 0; 
+            transform: translateY(30px); 
+            transition: opacity 1s ease, transform 0.5s ease;
+            &.visible {
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+    
+            p{
+                text-transform: uppercase;
+                font-size: 0.7rem;
+                color: $terc-font-color;
+                z-index: 1;
+            }
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                object-fit: cover;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 50%; /* Adjust the height as needed */
+                background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+                z-index: 0; /* Places it between the text and the image */
+            }
+        }
+        .ligth-box-service{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h2{
+                @include title();
+                
+            }
+            .ligth-box-service-img{
+                width: 100%;
+            }
+            p{
+                margin-top: 5px;
+                text-align: center;
+                font-size: 0.8rem;
+                font-family: $primary-font;
+            }
+            .meat-team{
+                margin-top: 15px;
+                color: $title-color;
+                font-weight: bold;
+            }
+            span{
+                color: $title-color;
+            }
+            button{
+                position: absolute;
+                bottom: 20px;
+                width: 80%;
+
+            }
+        }
+    }
+    
+
+}
