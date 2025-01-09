@@ -18,15 +18,15 @@ function ProfissionalSquare({ profi, style }) {
         setIsSectionVisible(entry.isIntersecting);
       },
       {
-        threshold: 0, // Trigger when 50% of the element is visible
-        rootMargin: '-150px 300px', // Adjust as needed
+        threshold: 0, 
+        rootMargin: '-150px 300px', 
       }
     );
 
     sectionObserver.observe(containerRef2.current);
 
     return () => sectionObserver.disconnect();
-  }, []); // `[]` ensures this runs once when the component mounts
+  }, []); 
 
   return (
     <div

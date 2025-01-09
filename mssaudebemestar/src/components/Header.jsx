@@ -35,7 +35,7 @@ function Header() {
 
 
   return (
-    <header className={`${scrollP >= 30 ? 'add-bckg' : ''}`}>
+    <header className={`${scrollP >= 15 ? 'add-bckg' : ''}`}>
         <div>
             <img className='logo' src={logo} alt="Logótipo de Miguel Silva Saúde e Bem-Estar" />
         </div>

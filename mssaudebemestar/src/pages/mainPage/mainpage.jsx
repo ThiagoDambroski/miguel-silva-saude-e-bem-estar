@@ -3,6 +3,7 @@ import IntroSection from './introSection'
 import ServiceSection from './ServiceSection'
 import ProfissionalsSection from './profissionalsSection'
 import AboutUsSection from './aboutUsSection'
+import ContactUsSection from '../../components/ContactUsSection'
 import "../../css/mainPage/main.css"
 function mainpage() {
   return (
@@ -11,6 +12,7 @@ function mainpage() {
         <ServiceSection/>
         <ProfissionalsSection/>
         <AboutUsSection/>
+        <ContactUsSection/>
     </main>
   )
 }

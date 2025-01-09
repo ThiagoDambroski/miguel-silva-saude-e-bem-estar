@@ -23,7 +23,7 @@ function ServiceSection() {
       },
       {
         threshold: 0.5, // Trigger when 50% of the element is visible
-        rootMargin: '0px 0px -100px 0px', // Expand the observation area slightly
+        rootMargin: '0px 0px 0px 0px', // Expand the observation area slightly
       }
     );
 

@@ -1,0 +1,60 @@
+@import "../variables";
+@import "../reset";
+@import "../mixin";
+
+.contact-us-section{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 1rem;
+    
+    h2{
+        text-align: center;
+        @include title();
+    }
+
+    .contact-us-media-container{
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        div{
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            img{
+                width: 60px;
+                transform: translateX(-200%);
+                &.active{
+                    transform: translateX(0%);
+                }
+            }
+            p{
+                font-family: $primary-font;
+                font-size: 1rem;
+                font-weight: 600;
+
+                transform: translateX(200%);
+                transition: all 0.5s ease-in ;
+                &.active{
+                    transform: translateX(0%);
+                }
+                
+            }  
+        }
+    }
+    h3{
+        align-self: center;
+        @include title();
+        font-weight: 600;
+    }
+    .contact-us-section-adress{
+        text-align: center;
+        font-family: $primary-font;
+        font-weight: bold;
+    }
+    .map{
+        display: flex;
+        justify-content: center;
+    }
+}

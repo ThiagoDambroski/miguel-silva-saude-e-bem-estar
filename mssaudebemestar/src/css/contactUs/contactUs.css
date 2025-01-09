@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 :root {
 	--primary-color: #546254;
@@ -112,92 +111,59 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-.profissional-section {
+.contact-us-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 15px;
-  overflow: hidden;
+  padding: 1rem;
 }
-.profissional-section h2 {
+.contact-us-section h2 {
+  text-align: center;
   color: #567C8D;
   font-weight: 400;
   text-transform: uppercase;
-  text-align: center;
-  text-transform: uppercase;
 }
-.profissional-section .profissional-section-container {
+.contact-us-section .contact-us-media-container {
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 15px;
 }
-.profissional-section .profissional-section-container .profissional-square {
+.contact-us-section .contact-us-media-container div {
   display: flex;
-  transition: all 0.5s ease-in;
-  background-color: #C8D9E6;
-}
-.profissional-section .profissional-section-container .profissional-square img {
-  width: 150px;
-  height: 320px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.profissional-section .profissional-section-container .profissional-square-information {
-  padding: 0.5rem;
-  position: relative;
-  display: flex;
-  gap: 10px;
   align-items: center;
-  color: #2F4156;
-  flex-direction: column;
+  gap: 25px;
 }
-.profissional-section .profissional-section-container .profissional-square-information p {
-  text-align: center;
+.contact-us-section .contact-us-media-container div img {
+  width: 60px;
+  transform: translateX(-200%);
 }
-.profissional-section .profissional-section-container .profissional-square-information ul {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: start;
-  font-family: "Raleway", sans-serif;
-  font-size: 0.8rem;
-}
-.profissional-section .profissional-section-container .profissional-square-information ul li {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  line-height: 1.5;
-}
-.profissional-section .profissional-section-container .profissional-square-information ul li::before {
-  align-self: flex-start;
-  justify-self: unset;
-  content: "•";
-  font-size: 1.5em;
-  color: "Raleway", sans-serif;
-  margin-right: 5px;
-}
-.profissional-section .profissional-section-container .profissional-square-information button {
-  position: absolute;
-  color: whiteSmoke;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  background: #2F4156;
-  border: 1px solid rgb(56, 196, 207);
-  bottom: 10px;
-  padding: 0.7rem;
-  font-size: 0.8rem;
-  border-radius: 15px;
-}
-.profissional-section .profissional-section-button-container {
-  width: 60%;
-}
-.profissional-section .profissional-section-button-container .shedule-button {
-  transform: translateX(200%);
-  width: 100%;
-  transition: transform 1s ease, opacity 0.5s ease;
-}
-.profissional-section .profissional-section-button-container .shedule-button.visible {
+.contact-us-section .contact-us-media-container div img.active {
   transform: translateX(0%);
-}/*# sourceMappingURL=professionalSection.css.map */
+}
+.contact-us-section .contact-us-media-container div p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  transform: translateX(200%);
+  transition: all 0.5s ease-in;
+}
+.contact-us-section .contact-us-media-container div p.active {
+  transform: translateX(0%);
+}
+.contact-us-section h3 {
+  align-self: center;
+  color: #567C8D;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.contact-us-section .contact-us-section-adress {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.contact-us-section .map {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=contactUs.css.map */
