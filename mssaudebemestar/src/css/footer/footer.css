@@ -116,4 +116,24 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}/*# sourceMappingURL=main.css.map */
+}
+
+footer {
+  border-top: 1px solid #2F4156;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer div {
+  display: flex;
+  gap: 5px;
+}
+footer div img {
+  width: 15px;
+}
+footer p {
+  font-size: 0.8rem;
+  font-family: "Raleway", sans-serif;
+  color: #567C8D;
+  font-weight: bolder;
+}/*# sourceMappingURL=footer.css.map */

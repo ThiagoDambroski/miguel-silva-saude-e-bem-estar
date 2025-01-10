@@ -41,6 +41,13 @@ body {
 	width: 85%;
 	height: 85%;
 	background-color: whitesmoke;
+	
+	.arrow-button{
+		width: 15px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+	}
 
 	.close-button{
 		width: 15px;
@@ -67,6 +74,7 @@ html {
 
 a {
 	text-decoration: none;
+	color: $primary-font-color;
 }
 
 ul {

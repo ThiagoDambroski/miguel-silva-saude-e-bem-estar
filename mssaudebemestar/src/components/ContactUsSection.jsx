@@ -3,7 +3,7 @@ import whatsapp from "../assets/icons/whatsapp2.png";
 import "../css/contactUs/contactUs.css";
 import contacts from '../db/contacts';
 import ContactUsSocialMedia from './ContactUsSocialMedia';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, MarkerF } from '@react-google-maps/api';
 function ContactUsSection() {
   const [currentIndex, setCurrentIndex] = useState(-1);
   const [isVisible, setIsVisible] = useState(false);
@@ -64,6 +64,8 @@ function ContactUsSection() {
       setMapLoaded(true);
     }, []);
 
+    
+
 
   return (
     <section className='contact-us-section' ref={mediaContainerRef}>
@@ -81,17 +83,12 @@ function ContactUsSection() {
       <p className='contact-us-section-adress'>R. do Fontanário 45, 2640-410 Mafra</p>
       {mapLoaded ? (
         <div className="map">
-          <LoadScript
-              googleMapsApiKey="AIzaSyC9_24fEaoug-DK7nXMZw_XxQ4hRRqL3g0"
-              onLoad={() => setMapLoaded(true)}
-              onError={(error) => console.error("Map loading error: ", error)}
-            >
-            <GoogleMap
-              mapContainerStyle={containerStyle}
-              center={center}
-              zoom={20}
-            >
-              <Marker position={center} />
+          <LoadScript googleMapsApiKey="AIzaSyC9_24fEaoug-DK7nXMZw_XxQ4hRRqL3g0">
+            <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
+              <MarkerF 
+                position={center} 
+               
+              />
             </GoogleMap>
           </LoadScript>
         </div>

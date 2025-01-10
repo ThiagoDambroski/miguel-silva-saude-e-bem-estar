@@ -62,6 +62,12 @@ body.light-box-block {
   height: 85%;
   background-color: whitesmoke;
 }
+.ligth-box .ligth-box-content .arrow-button {
+  width: 15px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
 .ligth-box .ligth-box-content .close-button {
   width: 15px;
   position: absolute;
@@ -79,6 +85,7 @@ html {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul {
@@ -180,6 +187,37 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
+}
+.service-section .service-section-container .ligth-box-service .submenu {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #567C8D;
+  display: flex;
+  align-items: center;
+}
+.service-section .service-section-container .ligth-box-service .submenu img {
+  border-radius: 15px 0px 0px 15px;
+  width: 45%;
+  height: 100px;
+}
+.service-section .service-section-container .ligth-box-service .submenu .submenu-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service-section .service-section-container .ligth-box-service .submenu .submenu-div h3 {
+  color: #567C8D;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.service-section .service-section-container .ligth-box-service .submenu .submenu-div p {
+  padding-left: 0.3rem;
+  text-align: start;
+  font-family: "Raleway", sans-serif;
 }
 .service-section .service-section-container .ligth-box-service h2 {
   color: #567C8D;

@@ -55,14 +55,18 @@ header{
             display: flex;
             gap: 15px;
             li{
+                color: $buttonColor;
+                a{
+                    color: $buttonColor; 
+                }
                 @media (max-width: $mobile-screen) {
                     font-size: 1.6rem;
-                    color: $buttonColor;
+                    
                     font-weight: 300;
                     text-transform: uppercase;
         
                 }
-                color: $primary-font-color;
+                
                 transition: all 200ms ease-in ;
                 &:hover{
                     color: $primary-font-select;

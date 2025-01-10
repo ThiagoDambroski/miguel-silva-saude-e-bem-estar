@@ -50,6 +50,12 @@ body.light-box-block {
   height: 85%;
   background-color: whitesmoke;
 }
+.ligth-box .ligth-box-content .arrow-button {
+  width: 15px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
 .ligth-box .ligth-box-content .close-button {
   width: 15px;
   position: absolute;
@@ -67,6 +73,7 @@ html {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul {
@@ -160,13 +167,15 @@ header nav ul {
   }
 }
 header nav ul li {
-  color: black;
+  color: #2F4156;
   transition: all 200ms ease-in;
+}
+header nav ul li a {
+  color: #2F4156;
 }
 @media (max-width: 480px) {
   header nav ul li {
     font-size: 1.6rem;
-    color: #2F4156;
     font-weight: 300;
     text-transform: uppercase;
   }

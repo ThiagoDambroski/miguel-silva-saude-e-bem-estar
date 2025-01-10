@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "../css/header/header.css"
 import logo from "../assets/logo.png"
+import { NavLink } from 'react-router-dom'
 
 function Header() {
 
@@ -41,11 +42,15 @@ function Header() {
         </div>
         <nav className={`${hamburugerActive ? "ham-active" : ""}`}>
             <ul >
-                <li>Inicio</li>
-                <li>Serviços</li>
+                <li>
+                  <NavLink to='/'>Inicio</NavLink>
+                </li>
+                <li>
+                  <NavLink to='/services'>Serviços</NavLink>
+                </li>
                 <li>Sobre Nós</li>
                 <li>Blog</li>
-                <li>Contatos</li>
+                
             </ul>
            
         </nav>

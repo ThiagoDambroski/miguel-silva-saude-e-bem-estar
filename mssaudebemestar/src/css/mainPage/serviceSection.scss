@@ -18,7 +18,7 @@
         text-align: center;
         @include title();
     }
-    
+     
     .service-section-container{
         font-family: $primary-font;
         display: grid;
@@ -74,6 +74,39 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            overflow-y: auto;
+            .submenu{
+                width: 100%;
+                
+                border-radius: 15px;
+                border: 1px solid $title-color;
+                display: flex;
+                align-items: center;
+                img{
+                    border-radius: 15px 0px 0px 15px;
+                    width: 45%;
+                    height: 100px;
+                }
+                .submenu-div{
+                    display: flex;
+                    
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h3{
+                        @include title();
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                    p{
+                        padding-left: 0.3rem;
+                        text-align: start;
+                        font-family: $primary-font;
+                    }
+                }
+               
+            }
+
             h2{
                 @include title();
                 

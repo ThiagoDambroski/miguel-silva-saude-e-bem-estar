@@ -62,6 +62,12 @@ body.light-box-block {
   height: 85%;
   background-color: whitesmoke;
 }
+.ligth-box .ligth-box-content .arrow-button {
+  width: 15px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
 .ligth-box .ligth-box-content .close-button {
   width: 15px;
   position: absolute;
@@ -79,6 +85,7 @@ html {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul {
