@@ -14,7 +14,7 @@ const services = [
                 subServiceId:1,
                 image: message,
                 alt:"Imagem de massagem",
-                name:"Massagem",
+                name:"Massagem ",
                 description:`Descubra o equilíbrio entre corpo e mente com os nossos serviços de massagem. Oferecemos um ambiente acolhedor e relaxante, ideal para aliviar o stress, melhorar a circulação e promover o bem-estar geral.\n As nossas massagens são realizadas por profissionais qualificados, adaptando técnicas às suas necessidades individuais. Seja para relaxamento, alívio de tensões ou revitalização, temos a solução perfeita para si.`,
                 professionals:[1,2,3],
 

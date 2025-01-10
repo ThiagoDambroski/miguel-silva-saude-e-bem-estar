@@ -42,12 +42,12 @@ function Header() {
         </div>
         <nav className={`${hamburugerActive ? "ham-active" : ""}`}>
             <ul >
-                <li>
-                  <NavLink to='/'>Inicio</NavLink>
+                <li onClick={toggleHamburger}>
+                  <NavLink to='/' onClick={() => window.scrollTo(0, 0)}>Inicio</NavLink>
                 </li>
-                <li>
-                  <NavLink to='/services'>Serviços</NavLink>
-                </li>
+                <li onClick={toggleHamburger } >
+                  <NavLink to='/services'  onClick={() => window.scrollTo(0, 0)}>Serviços</NavLink>
+                </li >
                 <li>Sobre Nós</li>
                 <li>Blog</li>
                 

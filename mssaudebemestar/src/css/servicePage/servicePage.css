@@ -1,0 +1,180 @@
+/*
+:root {
+	--primary-color: #546254;
+	--secondary-color: #bbbdb2;
+	--text-light: #f4f3f1;
+	--text-dark: #000000;
+}
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Aguila";
+  src: url("../assets/fonts/Aguila.woff2") format("woff2"), url("../assets/fonts/Aguila.woff") format("woff"), url("../assets/fonts/Aguila.ttf") format("truetype");
+}
+/*
+:root {
+	--primary-color: #546254;
+	--secondary-color: #bbbdb2;
+	--text-light: #f4f3f1;
+	--text-dark: #000000;
+}
+*/
+@font-face {
+  font-family: "Aguila";
+  src: url("../assets/fonts/Aguila.woff2") format("woff2"), url("../assets/fonts/Aguila.woff") format("woff"), url("../assets/fonts/Aguila.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+
+body {
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+body.light-box-block {
+  overflow: hidden;
+}
+
+.ligth-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ligth-box .ligth-box-content {
+  position: relative;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 85%;
+  height: 85%;
+  background-color: whitesmoke;
+}
+.ligth-box .ligth-box-content .arrow-button {
+  width: 15px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.ligth-box .ligth-box-content .close-button {
+  width: 15px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/*Professor*/
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+main {
+  display: block !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat";
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.main-all-services {
+  padding: 3rem 0rem 0.5rem 0rem;
+}
+.main-all-services .all-service-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.main-all-services .all-service-section h1 {
+  color: #567C8D;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.main-all-services .all-service-section .shedule-button {
+  transform: translateX(200%);
+}
+.main-all-services .all-service-section .shedule-button.visible {
+  transform: translateX(0);
+}
+.main-all-services .all-service-section .individual-services {
+  border-top: 1px solid #2F4156;
+  transform: translateX(200%);
+  display: flex;
+  transition: all ease-in 0.5s;
+}
+.main-all-services .all-service-section .individual-services.active {
+  transform: translateX(0%);
+}
+.main-all-services .all-service-section .individual-services:last-child {
+  border-bottom: 1px solid #2F4156;
+}
+.main-all-services .all-service-section .individual-services img {
+  width: 30%;
+}
+.main-all-services .all-service-section .individual-services div {
+  padding: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-all-services .all-service-section .individual-services div h2 {
+  text-align: center;
+  justify-self: center;
+  color: #567C8D;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+.main-all-services .all-service-section .individual-services div p {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=servicePage.css.map */
