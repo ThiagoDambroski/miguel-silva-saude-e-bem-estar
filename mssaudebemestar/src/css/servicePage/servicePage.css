@@ -75,6 +75,17 @@ body.light-box-block {
   right: 10px;
 }
 
+.container-arrow {
+  position: relative;
+}
+.container-arrow .arrow-button {
+  position: absolute;
+  left: 0px;
+  top: 55%;
+  width: 25px;
+  height: 25px;
+}
+
 /*Professor*/
 html {
   -moz-text-size-adjust: none;
@@ -135,28 +146,25 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-.main-all-services .all-service-section .shedule-button {
-  transform: translateX(200%);
+.main-all-services .all-service-section .all-service-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.main-all-services .all-service-section .shedule-button.visible {
-  transform: translateX(0);
-}
-.main-all-services .all-service-section .individual-services {
+.main-all-services .all-service-section .all-service-div .individual-services {
   border-top: 1px solid #2F4156;
+  border-bottom: 1px solid #2F4156;
   transform: translateX(200%);
   display: flex;
   transition: all ease-in 0.5s;
 }
-.main-all-services .all-service-section .individual-services.active {
+.main-all-services .all-service-section .all-service-div .individual-services.active {
   transform: translateX(0%);
 }
-.main-all-services .all-service-section .individual-services:last-child {
-  border-bottom: 1px solid #2F4156;
-}
-.main-all-services .all-service-section .individual-services img {
+.main-all-services .all-service-section .all-service-div .individual-services img {
   width: 30%;
 }
-.main-all-services .all-service-section .individual-services div {
+.main-all-services .all-service-section .all-service-div .individual-services div {
   padding: 0.5rem;
   width: 100%;
   display: flex;
@@ -164,7 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
 }
-.main-all-services .all-service-section .individual-services div h2 {
+.main-all-services .all-service-section .all-service-div .individual-services div h2 {
   text-align: center;
   justify-self: center;
   color: #567C8D;
@@ -173,8 +181,37 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   font-size: 1.3rem;
 }
-.main-all-services .all-service-section .individual-services div p {
+.main-all-services .all-service-section .all-service-div .individual-services div p {
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 0.8rem;
+}
+.main-all-services .all-service-section .shedule-button {
+  transform: translateX(200%);
+}
+.main-all-services .all-service-section .shedule-button.visible {
+  transform: translateX(0);
+}
+.main-all-services .all-service-section .service-full-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-all-services .all-service-section .service-full-page .container-arrow {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main-all-services .all-service-section .service-full-page .container-arrow .arrow-button {
+  top: 5px;
+  left: 10px;
+}
+.main-all-services .all-service-section .service-full-page .principal-img {
+  width: 85%;
+}
+.main-all-services .all-service-section .service-full-page p {
+  padding: 1rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
 }/*# sourceMappingURL=servicePage.css.map */

@@ -17,50 +17,78 @@
             @include title();
             margin-bottom: 1rem;
         }
+        .all-service-div{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            .individual-services{
+                border-top: 1px solid $buttonColor;
+                border-bottom: 1px solid $buttonColor;
+                transform: translateX(200%);
+                display: flex;
+                transition: all ease-in 0.5s;
+                &.active{
+                    transform: translateX(0%);
+                }
+                
+                img{
+                    width: 30%;
+                }
+                div{
+                    padding: 0.5rem;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h2{
+                        
+                        text-align: center;
+                        justify-self: center;
+                        @include title();
+                        text-transform: capitalize;
+                        font-size: 1.3rem;
+                        
+                    }
+                    p{
+                        font-family: $primary-font;
+                        text-align: center;
+                        font-size: 0.8rem;
+                    }
+                }
+                
+               
+            }
+        }
         .shedule-button{
             transform: translateX(200%);
             &.visible{
                 transform: translateX(0);
             }
         }
-        .individual-services{
-            border-top: 1px solid $buttonColor;
-            transform: translateX(200%);
+        
+        .service-full-page{
             display: flex;
-            transition: all ease-in 0.5s;
-            &.active{
-                transform: translateX(0%);
-            }
-            &:last-child{
-                border-bottom: 1px solid $buttonColor;
-            }
-            img{
-                width: 30%;
-            }
-            div{
-                padding: 0.5rem;
-                width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .container-arrow{
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
-                align-items: center;
-                h2{
-                    
-                    text-align: center;
-                    justify-self: center;
-                    @include title();
-                    text-transform: capitalize;
-                    font-size: 1.3rem;
-                    
-                }
-                p{
-                    font-family: $primary-font;
-                    text-align: center;
-                    font-size: 0.8rem;
+                width: 100%;
+                .arrow-button{
+                    top: 5px;
+                    left: 10px;
                 }
             }
-            
-           
+            .principal-img{
+                width: 85%;
+            }
+            p{
+                padding: 1rem;
+                text-align: center;
+                font-family: $primary-font;
+            }
         }
         
     }

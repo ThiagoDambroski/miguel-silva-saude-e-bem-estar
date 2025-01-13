@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import services from "../../db/services"
+import profissionals from '../../db/profissionals';
 import IndividualService from './IndividualService'
 import ScheduleButton from '../../components/scheduleButton'
+import arrow from "../../assets/icons/left-arrow.png"
 
 function allServices() {
     const [currentIndex, setCurrentIndex] = useState(-1);
@@ -100,7 +102,7 @@ function allServices() {
         {page === null ?
             <>
                 <h1>Nossos Serviços</h1>
-                <div ref={containerRef}>
+                <div ref={containerRef} className='all-service-div'>
                     {services.map((service,index) => (
                         <>
                             {service.subService === null ?
@@ -133,8 +135,27 @@ function allServices() {
             </>
             :
             <>
-                <h1>{page.name}</h1>
-                <img src={page.image} alt={page.alt}/>
+                <div className='service-full-page'>
+                   <div className='container-arrow'>
+                                <img className='arrow-button' src={arrow} alt="Botão de voltar" onClick={() => setPage(null)} />
+                     <h1>{page.name}</h1>    
+                  </div>
+                  <img className='principal-img' src={page.image} alt={page.alt}/>
+                  <p>{page.description}</p>
+                  <p>Profissionais:<br></br>
+                    {profissionals.map((profi, index) => (
+                          page.professionals.includes(profi.id) ? (
+                          index === page.professionals.length - 1 ? (
+                          <span key={profi.id}>{profi.name}</span> // Last professional, no comma
+                          ) : (
+                          <span key={profi.id}>{profi.name},</span> // Add comma for others
+                          )
+                         ) : null
+                    ))}
+                  </p>
+
+                </div>
+                
             </>
         }
         

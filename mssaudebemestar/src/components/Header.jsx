@@ -48,7 +48,9 @@ function Header() {
                 <li onClick={toggleHamburger } >
                   <NavLink to='/services'  onClick={() => window.scrollTo(0, 0)}>Serviços</NavLink>
                 </li >
-                <li>Sobre Nós</li>
+                <li onClick={toggleHamburger } >
+                  <NavLink to='/aboutUs'  onClick={() => window.scrollTo(0, 0)}>Sobre Nós</NavLink>
+                </li >
                 <li>Blog</li>
                 
             </ul>

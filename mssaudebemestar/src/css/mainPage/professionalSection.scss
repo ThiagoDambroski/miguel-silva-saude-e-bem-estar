@@ -44,8 +44,8 @@
             flex-direction: column;
             p{
                 text-align: center;
-                
-                
+                font-size: 0.8rem;
+                font-family: $primary-font;
                 
             }
             ul{
@@ -80,7 +80,7 @@
             button{
                 position: absolute;
                 @include button();
-                bottom: 10px;
+                bottom: 25px;
                 padding: 0.7rem;
                 font-size: 0.8rem;
                 border-radius: 15px;

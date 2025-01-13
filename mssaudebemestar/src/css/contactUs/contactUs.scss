@@ -23,16 +23,16 @@
             align-items: center;
             gap: 25px;
             img{
-                width: 50px;
+                width: 40px;
                 transform: translateX(-200%);
                 &.active{
                     transform: translateX(0%);
                 }
             }
             p{
-                font-family: $primary-font;
-                font-size: 1rem;
-                font-weight: 600;
+                font-family: $title-font;
+                font-size: 0.8rem;
+                
 
                 transform: translateX(200%);
                 transition: all 0.5s ease-in ;
@@ -50,7 +50,7 @@
     }
     .contact-us-section-adress{
         text-align: center;
-        font-family: $primary-font;
+        font-family: $title-font;
         font-weight: bold;
     }
     .map{

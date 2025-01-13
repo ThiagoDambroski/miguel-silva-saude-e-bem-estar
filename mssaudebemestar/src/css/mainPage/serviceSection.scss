@@ -22,7 +22,7 @@
     .service-section-container{
         font-family: $primary-font;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         row-gap: 15px;
         overflow: hidden;
 
@@ -31,8 +31,8 @@
             justify-content: center;
             align-items: flex-end;
             position: relative;
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
         
             
     

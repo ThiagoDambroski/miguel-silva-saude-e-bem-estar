@@ -76,6 +76,17 @@ body.light-box-block {
   right: 10px;
 }
 
+.container-arrow {
+  position: relative;
+}
+.container-arrow .arrow-button {
+  position: absolute;
+  left: 0px;
+  top: 55%;
+  width: 25px;
+  height: 25px;
+}
+
 /*Professor*/
 html {
   -moz-text-size-adjust: none;
@@ -160,6 +171,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .profissional-section .profissional-section-container .profissional-square-information p {
   text-align: center;
+  font-size: 0.8rem;
+  font-family: "Raleway", sans-serif;
 }
 .profissional-section .profissional-section-container .profissional-square-information ul {
   padding: 1rem;
@@ -191,8 +204,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   background: #2F4156;
-  border: 1px solid rgb(56, 196, 207);
-  bottom: 10px;
+  border: none;
+  bottom: 25px;
   padding: 0.7rem;
   font-size: 0.8rem;
   border-radius: 15px;

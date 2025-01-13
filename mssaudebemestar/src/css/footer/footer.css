@@ -75,6 +75,17 @@ body.light-box-block {
   right: 10px;
 }
 
+.container-arrow {
+  position: relative;
+}
+.container-arrow .arrow-button {
+  position: absolute;
+  left: 0px;
+  top: 55%;
+  width: 25px;
+  height: 25px;
+}
+
 /*Professor*/
 html {
   -moz-text-size-adjust: none;
@@ -133,7 +144,7 @@ footer div img {
 }
 footer p {
   font-size: 0.8rem;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat";
   color: #567C8D;
   font-weight: bolder;
 }/*# sourceMappingURL=footer.css.map */

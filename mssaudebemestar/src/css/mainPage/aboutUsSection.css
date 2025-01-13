@@ -75,6 +75,17 @@ body.light-box-block {
   right: 10px;
 }
 
+.container-arrow {
+  position: relative;
+}
+.container-arrow .arrow-button {
+  position: absolute;
+  left: 0px;
+  top: 55%;
+  width: 25px;
+  height: 25px;
+}
+
 /*Professor*/
 html {
   -moz-text-size-adjust: none;
@@ -134,10 +145,10 @@ h1, h2, h3, h4, h5, h6 {
 .about-us-section p {
   font-family: "Raleway", sans-serif;
   padding: 1rem;
-  color: #567C8D;
+  color: #2F4156;
   font-weight: 600;
   border-radius: 10px;
-  background-color: azure;
+  background-color: #C8D9E6;
   transition: all ease-in 0.5s;
   opacity: 0;
 }
@@ -149,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   background: #2F4156;
-  border: 1px solid rgb(56, 196, 207);
+  border: none;
   width: 50%;
   padding: 1rem;
   border-radius: 30px;

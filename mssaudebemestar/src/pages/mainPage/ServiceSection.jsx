@@ -17,13 +17,13 @@ function ServiceSection() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const index = parseInt(entry.target.getAttribute('data-index'), 10);
-            setVisibleSquares((prev) => [...new Set([...prev, index])]); // Avoid duplicates
+            setVisibleSquares((prev) => [...new Set([...prev, index + 1])]); // Avoid duplicates
           }
         });
       },
       {
         threshold: 0.5, // Trigger when 50% of the element is visible
-        rootMargin: '0px 0px 0px 0px', // Expand the observation area slightly
+        rootMargin: '0px', // Expand the observation area slightly
       }
     );
 
@@ -38,9 +38,17 @@ function ServiceSection() {
 
   //button
   useEffect(() => {
-    if (visibleSquares.length === services.length) {
-      setShowScheduleButton(true); // Show the button when all squares are visible
+    if(visibleSquares.length === 8){
+      setVisibleSquares((prev) => [...new Set([...prev, 9])])
+      
     }
+    
+    if (visibleSquares.length === services.length  ) {
+      
+      setShowScheduleButton(true); // Show the button when all squares are visible
+    }else{
+      console.log(visibleSquares)
+    } 
   }, [visibleSquares]);
 
   return (
@@ -51,7 +59,7 @@ function ServiceSection() {
           <ServiceSquare
             key={service.id}
             service={service}
-            isVisible={visibleSquares.includes(index)}
+            isVisible={visibleSquares.includes(index + 1)}
           />
         ))}
       </div>

@@ -75,6 +75,17 @@ body.light-box-block {
   right: 10px;
 }
 
+.container-arrow {
+  position: relative;
+}
+.container-arrow .arrow-button {
+  position: absolute;
+  left: 0px;
+  top: 55%;
+  width: 25px;
+  height: 25px;
+}
+
 /*Professor*/
 html {
   -moz-text-size-adjust: none;
@@ -138,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 .service-section .service-section-container {
   font-family: "Raleway", sans-serif;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   row-gap: 15px;
   overflow: hidden;
 }
@@ -147,8 +158,8 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: flex-end;
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 1s ease, transform 0.5s ease;

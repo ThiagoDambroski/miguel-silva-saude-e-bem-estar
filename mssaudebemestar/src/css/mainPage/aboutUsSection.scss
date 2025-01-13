@@ -16,10 +16,10 @@
     p{
         font-family: $primary-font;
         padding: 1rem;
-        color: $title-color;
+        color: $buttonColor;
         font-weight: 600;
         border-radius: 10px;
-        background-color: azure;
+        background-color: $nav-menu-color;
         transition: all ease-in 0.5s;
         opacity: 0;
         &.active{

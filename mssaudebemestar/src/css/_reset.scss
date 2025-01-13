@@ -60,6 +60,16 @@ body {
 
 }
 
+.container-arrow{
+	position: relative;
+	.arrow-button{
+		position: absolute;
+		left: 0px;
+		top:55%;
+		width: 25px;
+		height: 25px;
+	}
+}
 
 /*Professor*/
 
