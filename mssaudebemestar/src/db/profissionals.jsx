@@ -11,19 +11,14 @@ const profissionals = [
         name:"Miguel Silva",
         description: "Miguel Silva é um profissional multifacetado, dedicado ao cuidado e ao bem-estar das pessoas. Com uma ampla experiência em diversas áreas da saúde e desenvolvimento pessoal. Com um compromisso profundo com o progresso e o equilíbrio dos seus pacientes, Miguel combina conhecimento técnico e empatia para proporcionar resultados transformadores.",
         jobs:["Responsável clínico","Especialista em Saúde e Bem-Estar","Osteopata","Coach","Hipnoterapeuta"],
-        certificates:[{
-            image:[jaquelineCertificate1,jaquelineCertificate1],
-            alt:["Certificado exemplo 1","Certificado exemplo 1"],
-            name:"Certificado exemplo 1",
-            description:"Jaqueline Lima é uma profissional dedicada ao bem-estar físico, mental e emocional dos seus pacientes. Com uma abordagem holística e personalizada, atua em diversas áreas complementares. Com um olhar atento às necessidades individuais, ",
-        }]
+        certificates:null
     },
     {
         id:2,
         image: jaqueline,
         alt:"Jaqueline Lima",
         name:"Jaqueline Lima",
-        description: "Sou uma profissional de com várias formações dentro da área das terapias manuais não evasivas.Tendo a primeira formação em 2009 como esteticista corporal, logo, Técnica em Massoterapia.Em seguida adentrei no universo das terapias complementares concluindo outros cursos como: Reiki, Massagem com pedras ( com exfoliação corporal)quentes; drenagem linfática manual ,  corporal e facial . Drenagem linfática pré e pós operatória;massagem em grávidas  tratamento terapêutico para dores e queixas musculares. Massagem Kobido ( técnica asiática de massagem facial ).Aromaterapia Massagem Clássica de relaxamento .Reflexologia podal Shiatsu .Meu atendimento é único tratando cada paciente de maneira específica consoante seu estado físico e emocional. Estou sempre 100% para cada um de vós. Minha missão é ajudar, minha satisfação é seu bem estar.",
+        description: "É uma profissional com diversas formações na área das terapias manuais não invasivas. Iniciou sua trajetória em 2009 como esteticista corporal e, em seguida, tornou-se Técnica em Massoterapia. Posteriormente, aprofundou-se no universo das terapias complementares, concluindo formações como Reiki, Massagem com pedras quentes (com esfoliação corporal), drenagem linfática manual (corporal e facial), drenagem linfática pré e pós-operatória, massagem para gestantes, tratamento terapêutico para dores e queixas musculares, Massagem Kobido (técnica asiática de massagem facial), Aromaterapia, Massagem Clássica de relaxamento, Reflexologia Podal e Shiatsu.Seu atendimento é personalizado, tratando cada paciente de maneira específica, de acordo com seu estado físico e emocional. Está sempre 100% comprometida com cada pessoa. Sua missão é ajudar, e sua maior satisfação é o bem-estar dos pacientes.",
         jobs:["Reiki  ","Massagem terapêutica ","Massagem com velas aromáticas","Massoterapia","Massagem facial ","Drenagem pós operatória "],
         certificates:[{
             image:[jaquelineCertificate1,jaquelineCertificate1],

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react';
 import ScheduleButton from './scheduleButton'
 import closeButton from '../assets/icons/close.png'
 import arrow from "../assets/icons/left-arrow.png"
@@ -36,16 +36,85 @@ function ProfissionalPage({profi}) {
 
     const [fullSize,setFullSize] = useState(null)
 
+    //obeserver
+
+    //container
+    const [containerVisible, setContainerVisible] = useState(false)
+    const containerRef = useRef(null)
+
+    useEffect(() => {
+            const observer = new IntersectionObserver(
+              ([entry]) => {
+                if(entry.isIntersecting){
+                    setContainerVisible(true);
+                }
+                
+              },
+              {
+                
+                threshold: 0.3,
+                rootMargin:"0px"
+              }
+            );
+        
+            if (containerRef.current) {
+              observer.observe(containerRef.current);
+            }
+        
+            return () => {
+              if (containerRef.current) {
+                observer.unobserve(containerRef.current);
+              }
+            };
+    }, []);
+
+    //speciality
+
+    const [specialityVisible, setSpecialityVisible] = useState(false)
+    const specialityRef = useRef(null)
+
+    useEffect(() => {
+            const observer = new IntersectionObserver(
+              ([entry]) => {
+                if(entry.isIntersecting){
+                    setSpecialityVisible(true);
+                }
+                
+              },
+              {
+                
+                threshold: 0.3,
+                rootMargin:"0px"
+              }
+            );
+        
+            if (specialityRef.current) {
+              observer.observe(specialityRef.current);
+            }
+        
+            return () => {
+              if (specialityRef.current) {
+                observer.unobserve(specialityRef.current);
+              }
+            };
+    }, []);
+
+
+
+
   return (
     <section className='about-us-page-profissional-page'>
-
-              <img className='about-us-page-profissional-page-img' src={profi.image} alt={profi.alt} />
-              <p>{profi.description}</p>
-              <div>
+              <div className={`about-us-page-profissional-page-container ${containerVisible ? 'visible' : ''}`} ref={containerRef}>
+                <img className='about-us-page-profissional-page-img' src={profi.image} alt={profi.alt} />
+                <p>{profi.description}</p>
+                <ScheduleButton isVisible={true}/> 
+              </div>
+              
+              <div ref={specialityRef}>
                 <h2>Especialidades:</h2>
-                <ul>
-                    {profi.jobs.map((job) => (
-                        <li>{job}</li>
+                <ul className={`${specialityVisible ? 'visible' : ''}`}>
+                    {profi.jobs.map((job,index) => (
+                        <li key={index}>{job}</li>
                     ))}
                 </ul>
               </div>

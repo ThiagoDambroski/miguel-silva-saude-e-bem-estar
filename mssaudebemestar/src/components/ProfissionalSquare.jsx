@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import { NavLink } from 'react-router-dom'
 function ProfissionalSquare({ profi, style }) {
   const containerRef2 = useRef(null);
   const [isSectionVisible, setIsSectionVisible] = useState(false);
@@ -47,13 +47,21 @@ function ProfissionalSquare({ profi, style }) {
             jobIndex < 3 ? <li key={jobIndex}>{job}</li> : null
           )}
         </ul>
-        <button>
-          Mais sobre{' '}
-          {profi.name.slice(
-            0,
-            profi.name.indexOf(' ') === -1 ? profi.name.length : profi.name.indexOf(' ')
-          )}
-        </button>
+        <NavLink to={`/aboutUs/${profi.id -1}`} onClick={(e) => {
+       
+          e.preventDefault();
+          window.scrollTo(0, 0);
+          window.location.href = `/#/aboutUs/${profi.id - 1}`;
+          }}>
+          <button>
+            Mais sobre{' '}
+            {profi.name.slice(
+              0,
+              profi.name.indexOf(' ') === -1 ? profi.name.length : profi.name.indexOf(' ')
+            )}
+          </button>
+        </NavLink>
+        
       </div>
     </div>
   );

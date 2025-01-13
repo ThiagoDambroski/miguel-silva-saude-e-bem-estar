@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer>
         <div>
-            <img src={whats} alt="Logo Whatsapp" />
+            <img src={whats} alt="Logo Whatsapp"  />
             <img src={insta} alt="Logo Instagram" />
             <img src={face} alt="Logo Facebook" />
             <img src={email} alt="Logo Email" />

@@ -59,8 +59,16 @@ body.light-box-block {
   padding: 1rem;
   border-radius: 10px;
   width: 85%;
-  height: 85%;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 600px;
   background-color: whitesmoke;
+}
+@media screen and (min-width: 480px) {
+  .ligth-box .ligth-box-content {
+    overflow-y: auto;
+    min-height: 90vh;
+  }
 }
 .ligth-box .ligth-box-content .arrow-button {
   width: 15px;
@@ -81,9 +89,9 @@ body.light-box-block {
 .container-arrow .arrow-button {
   position: absolute;
   left: 0px;
-  top: 55%;
-  width: 25px;
-  height: 25px;
+  top: 60%;
+  width: 20px;
+  height: 20px;
 }
 
 /*Professor*/
@@ -143,7 +151,7 @@ footer div img {
   width: 15px;
 }
 footer p {
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   font-family: "Montserrat";
   color: #567C8D;
   font-weight: bolder;

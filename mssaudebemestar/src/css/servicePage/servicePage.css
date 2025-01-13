@@ -59,8 +59,16 @@ body.light-box-block {
   padding: 1rem;
   border-radius: 10px;
   width: 85%;
-  height: 85%;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 600px;
   background-color: whitesmoke;
+}
+@media screen and (min-width: 480px) {
+  .ligth-box .ligth-box-content {
+    overflow-y: auto;
+    min-height: 90vh;
+  }
 }
 .ligth-box .ligth-box-content .arrow-button {
   width: 15px;
@@ -81,9 +89,9 @@ body.light-box-block {
 .container-arrow .arrow-button {
   position: absolute;
   left: 0px;
-  top: 55%;
-  width: 25px;
-  height: 25px;
+  top: 60%;
+  width: 20px;
+  height: 20px;
 }
 
 /*Professor*/
@@ -144,6 +152,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #567C8D;
   font-weight: 400;
   text-transform: uppercase;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 .main-all-services .all-service-section .all-service-div {
@@ -179,12 +188,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   text-transform: uppercase;
   text-transform: capitalize;
-  font-size: 1.3rem;
+  font-size: 1rem;
+}
+@media screen and (min-width: 480px) {
+  .main-all-services .all-service-section .all-service-div .individual-services div h2 {
+    font-size: 1.3rem;
+  }
 }
 .main-all-services .all-service-section .all-service-div .individual-services div p {
   font-family: "Raleway", sans-serif;
   text-align: center;
   font-size: 0.8rem;
+}
+@media screen and (min-width: 480px) {
+  .main-all-services .all-service-section .all-service-div .individual-services div p {
+    font-size: 1rem;
+  }
 }
 .main-all-services .all-service-section .shedule-button {
   transform: translateX(200%);
@@ -193,9 +212,9 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(0);
 }
 .main-all-services .all-service-section .service-full-page {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .main-all-services .all-service-section .service-full-page .container-arrow {
@@ -204,6 +223,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .main-all-services .all-service-section .service-full-page .container-arrow .arrow-button {
+  width: 15px;
+  height: 15px;
   top: 5px;
   left: 10px;
 }

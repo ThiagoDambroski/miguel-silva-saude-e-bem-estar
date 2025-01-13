@@ -1,5 +1,6 @@
 @import "../reset";
 @import "../variables";
+@import "../hamAnimated";
 
 header{
     font-family: $primary-font;
@@ -7,17 +8,32 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    display: relative;
     width: 100%;
-    height: 8%;
+    height: 55px;
     padding: 0.5rem 1rem;
     z-index: 99999;
     transition: all 200ms ease-in;
-    
+    .none{
+        display: none;
+        @media (max-width: $mobile-screen) {
+            display: block;
+        }
+    }
 
     &.add-bckg{
         background-color: $nav-color;
         transition: all 200ms ease-out;
-       
+      
+            li{
+                color: white;
+            }a{
+                color: white;
+            }
+
+            
+
+        
     }
 
     .logo{
@@ -55,11 +71,15 @@ header{
             display: flex;
             gap: 15px;
             li{
-                color: $buttonColor;
+                color: black;
                 a{
-                    color: $buttonColor; 
+                    color: black; 
                 }
                 @media (max-width: $mobile-screen) {
+                        color: $buttonColor;
+                    a{
+                        color: $buttonColor; 
+                    }
                     font-size: 1.6rem;
                     
                     font-weight: 300;
@@ -82,28 +102,6 @@ header{
         
     }
 
-    .hamburger{
-        display: none;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        width: 25px;
-        z-index: 99999;
-
-        span{
-            
-            display: block;
-            width: 100%;
-            height: 1px;
-            background-color: $primary-font-color;
-            margin: 7px auto;
-        }
-
-        @media (max-width: $mobile-screen) {
-            display: block;
-        }
-
-        
-    }
+    
 
 }

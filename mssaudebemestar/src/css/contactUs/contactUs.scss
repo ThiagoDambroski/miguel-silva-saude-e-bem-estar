@@ -22,11 +22,17 @@
             display: flex;
             align-items: center;
             gap: 25px;
+            
             img{
                 width: 40px;
                 transform: translateX(-200%);
                 &.active{
                     transform: translateX(0%);
+                }
+                @media screen and (min-width: $mobile-screen) {
+                    width: 10%;
+                    
+                    
                 }
             }
             p{
@@ -39,7 +45,10 @@
                 &.active{
                     transform: translateX(0%);
                 }
-                
+                @media screen and (min-width: $mobile-screen) {
+                    font-size: 1.3rem;
+                    transform: translateX(250%);
+                }
             }  
         }
     }

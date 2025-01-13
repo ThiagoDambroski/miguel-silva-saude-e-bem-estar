@@ -8,7 +8,16 @@ import arrow from "../../assets/icons/left-arrow.png"
 function allServices() {
     const [currentIndex, setCurrentIndex] = useState(-1);
     const [isVisible, setIsVisible] = useState(false);
+    const [checkAgain,setCheckAgain] = useState(false)
     const containerRef = useRef(null)
+
+    //Change page
+    const [page,setPage] = useState(null)
+
+    const setPageToNull = () => {
+      setPage(null)
+      setCheckAgain(true)
+    }
 
     const servicesNumber = services.map((service) => {
         if (service.subService === null) {
@@ -29,6 +38,7 @@ function allServices() {
           ([entry]) => {
             if(entry.isIntersecting){
                 setIsVisible(true);
+                
             }
             
           },
@@ -91,11 +101,10 @@ function allServices() {
             observer.unobserve(buttonRef.current);
           }
         };
-      }, [currentIndex]);
+      }, [currentIndex,checkAgain]);
 
 
-    //Change page
-    const [page,setPage] = useState(null)
+    
 
   return (
     <section className='all-service-section'>
@@ -132,12 +141,15 @@ function allServices() {
                         </>
                     ))}
                 </div>
+                <div ref={buttonRef} > 
+                  <ScheduleButton  isVisible={isButtonVisible}/>
+                </div>
             </>
             :
             <>
                 <div className='service-full-page'>
                    <div className='container-arrow'>
-                                <img className='arrow-button' src={arrow} alt="Botão de voltar" onClick={() => setPage(null)} />
+                                <img className='arrow-button' src={arrow} alt="Botão de voltar" onClick={setPageToNull} />
                      <h1>{page.name}</h1>    
                   </div>
                   <img className='principal-img' src={page.image} alt={page.alt}/>
@@ -153,16 +165,16 @@ function allServices() {
                          ) : null
                     ))}
                   </p>
-
+                  <div ref={buttonRef} > 
+                  <ScheduleButton  isVisible={true}/>
+                  </div>
                 </div>
                 
             </>
         }
         
         
-        <div ref={buttonRef} > 
-            <ScheduleButton  isVisible={isButtonVisible}/>
-        </div>
+       
         
 
 

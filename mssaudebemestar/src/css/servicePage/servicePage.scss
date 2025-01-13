@@ -15,6 +15,7 @@
         align-items: center;
         h1{
             @include title();
+            font-size: 1.1rem;
             margin-bottom: 1rem;
         }
         .all-service-div{
@@ -47,13 +48,20 @@
                         justify-self: center;
                         @include title();
                         text-transform: capitalize;
-                        font-size: 1.3rem;
-                        
+                        font-size: 1rem;
+                        @media screen and (min-width: $mobile-screen) {
+                            font-size: 1.3rem;
+                            
+                        }
                     }
                     p{
                         font-family: $primary-font;
                         text-align: center;
                         font-size: 0.8rem;
+                        @media screen and (min-width: $mobile-screen) {
+                            font-size: 1rem;
+                            
+                        }
                     }
                 }
                 
@@ -68,15 +76,18 @@
         }
         
         .service-full-page{
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            
             align-items: center;
             .container-arrow{
                 display: flex;
                 justify-content: center;
                 width: 100%;
                 .arrow-button{
+                    width: 15px;
+                    height: 15px;
                     top: 5px;
                     left: 10px;
                 }
@@ -85,6 +96,7 @@
                 width: 85%;
             }
             p{
+               
                 padding: 1rem;
                 text-align: center;
                 font-family: $primary-font;

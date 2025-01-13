@@ -59,8 +59,16 @@ body.light-box-block {
   padding: 1rem;
   border-radius: 10px;
   width: 85%;
-  height: 85%;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 600px;
   background-color: whitesmoke;
+}
+@media screen and (min-width: 480px) {
+  .ligth-box .ligth-box-content {
+    overflow-y: auto;
+    min-height: 90vh;
+  }
 }
 .ligth-box .ligth-box-content .arrow-button {
   width: 15px;
@@ -81,9 +89,9 @@ body.light-box-block {
 .container-arrow .arrow-button {
   position: absolute;
   left: 0px;
-  top: 55%;
-  width: 25px;
-  height: 25px;
+  top: 60%;
+  width: 20px;
+  height: 20px;
 }
 
 /*Professor*/
@@ -149,26 +157,42 @@ h1, h2, h3, h4, h5, h6 {
 .service-section .service-section-container {
   font-family: "Raleway", sans-serif;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
   overflow: hidden;
+}
+@media screen and (min-width: 480px) {
+  .service-section .service-section-container {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
 }
 .service-section .service-section-container .service-square {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 95%;
+  height: 120px;
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 1s ease, transform 0.5s ease;
+}
+@media screen and (min-width: 480px) {
+  .service-section .service-section-container .service-square {
+    height: 130px;
+    width: 95%;
+    padding-bottom: 0.2rem;
+  }
 }
 .service-section .service-section-container .service-square.visible {
   opacity: 1;
   transform: translateY(0);
 }
 .service-section .service-section-container .service-square p {
+  text-align: center;
   text-transform: uppercase;
   font-size: 0.7rem;
   color: whiteSmoke;
@@ -243,6 +267,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 0.8rem;
   font-family: "Raleway", sans-serif;
+}
+@media screen and (min-width: 480px) {
+  .service-section .service-section-container .ligth-box-service p {
+    font-size: 1rem;
+  }
 }
 .service-section .service-section-container .ligth-box-service .meat-team {
   margin-top: 15px;

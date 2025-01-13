@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "../css/header/header.css"
 import logo from "../assets/logo.png"
 import { NavLink } from 'react-router-dom'
@@ -7,7 +7,7 @@ function Header() {
 
     const [hamburugerActive,setHamburgerActive] = useState(false)
     const [scrollP,setScrollP] = useState(0)
-
+    const checkbox = useRef(null)
 
     useEffect(() => {
         
@@ -31,9 +31,13 @@ function Header() {
 
     const toggleHamburger = () => {
         setHamburgerActive(!hamburugerActive)
-        
+        checkbox.current.checked = !checkbox.current.checked;  
     }
 
+    const toggleHamburger2 = () => {
+      setHamburgerActive(!hamburugerActive)
+       
+  }
 
   return (
     <header className={`${scrollP >= 15 ? 'add-bckg' : ''}`}>
@@ -56,11 +60,19 @@ function Header() {
             </ul>
            
         </nav>
-        <div onClick={toggleHamburger} className={`hamburger ${hamburugerActive ? "ham-active" : ""}`}>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <div className='none'>
+          <input type="checkbox" id="checkbox2" class="checkbox2 visuallyHidden" ref={checkbox} />
+            <label for="checkbox2" >
+                <div class="hamburger hamburger2" onClick={toggleHamburger2}>
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                    <span class="bar bar4"></span>
+                </div>
+            </label>
+        </div>
+        
+        
     </header>
   )
 }

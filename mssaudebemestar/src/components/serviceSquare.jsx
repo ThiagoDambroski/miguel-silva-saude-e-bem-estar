@@ -3,6 +3,7 @@ import ScheduleButton from './scheduleButton'
 import closeButton from '../assets/icons/close.png'
 import profissionals from '../db/profissionals'
 import leftArrow from "../assets/icons/left-arrow.png"
+import { NavLink } from 'react-router-dom'
 
 function serviceSquare({service,isVisible}) {
 
@@ -57,9 +58,44 @@ function serviceSquare({service,isVisible}) {
                                         {profissionals.map((profi, index) => (
                                         service.professionals.includes(profi.id) ? (
                                             index === service.professionals.length - 1 ? (
-                                            <span key={profi.id}>{profi.name}</span> // Last professional, no comma
+                                                <NavLink 
+                                                to={`/aboutUs/${profi.id - 1}`} 
+                                                onClick={(e) => {
+                                                    // Prevent default NavLink behavior momentarily
+                                                    e.preventDefault();
+
+                                                    // Scroll to the top
+                                                    window.scrollTo(0, 0);
+
+                                                    // Perform your custom logic
+                                                    toggleLigthBox();
+
+                                                    // Navigate to the target URL
+                                                    window.location.href = `/#/aboutUs/${profi.id - 1}`;
+                                                }}
+                                                >
+                                                    <span key={profi.id}>{profi.name}</span>
+                                                </NavLink>
+                                             // Last professional, no comma
                                             ) : (
-                                            <span key={profi.id}>{profi.name},</span> // Add comma for others
+                                                <NavLink 
+                                                to={`/aboutUs/${profi.id - 1}`} 
+                                                onClick={(e) => {
+                                                    // Prevent default NavLink behavior momentarily
+                                                    e.preventDefault();
+
+                                                    // Scroll to the top
+                                                    window.scrollTo(0, 0);
+
+                                                    // Perform your custom logic
+                                                    toggleLigthBox();
+
+                                                    // Navigate to the target URL
+                                                    window.location.href = `/#/aboutUs/${profi.id - 1}`;
+                                                }}
+                                                >
+                                                    <span key={profi.id}>{profi.name},</span>
+                                                </NavLink>
                                             )
                                         ) : null
                                         ))}
@@ -103,9 +139,44 @@ function serviceSquare({service,isVisible}) {
                                                 {profissionals.map((profi, index) => (
                                                 subForPage.professionals.includes(profi.id) ? (
                                                     index === subForPage.professionals.length - 1 ? (
-                                                    <span key={profi.id}>{profi.name}</span> // Last professional, no comma
+                                                        <NavLink 
+                                                        to={`/aboutUs/${profi.id - 1}`} 
+                                                        onClick={(e) => {
+                                                            // Prevent default NavLink behavior momentarily
+                                                            e.preventDefault();
+
+                                                            // Scroll to the top
+                                                            window.scrollTo(0, 0);
+
+                                                            // Perform your custom logic
+                                                            toggleLigthBox();
+
+                                                            // Navigate to the target URL
+                                                            window.location.href = `/#/aboutUs/${profi.id - 1}`;
+                                                        }}
+                                                        >
+                                                            <span key={profi.id}>{profi.name}</span>
+                                                        </NavLink>
+                                                     // Last professional, no comma
                                                     ) : (
-                                                    <span key={profi.id}>{profi.name},</span> // Add comma for others
+                                                        <NavLink 
+                                                        to={`/aboutUs/${profi.id - 1}`} 
+                                                        onClick={(e) => {
+                                                            // Prevent default NavLink behavior momentarily
+                                                            e.preventDefault();
+
+                                                            // Scroll to the top
+                                                            window.scrollTo(0, 0);
+
+                                                            // Perform your custom logic
+                                                            toggleLigthBox();
+
+                                                            // Navigate to the target URL
+                                                            window.location.href = `/#/aboutUs/${profi.id - 1}`;
+                                                        }}
+                                                        >
+                                                            <span key={profi.id}>{profi.name},</span>
+                                                        </NavLink>
                                                     )
                                                 ) : null
                                                 ))}
