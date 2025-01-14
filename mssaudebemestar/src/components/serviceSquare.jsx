@@ -96,7 +96,7 @@ function serviceSquare({service,isVisible}) {
                                                 to={`/aboutUs/${profi.id - 1}`} 
                                                 onClick={(e) => {
 
-                                                    e.preventDefault();
+                                                    
 
                                                     // Scroll to the top
                                                     window.scrollTo(0, 0);
@@ -105,7 +105,7 @@ function serviceSquare({service,isVisible}) {
                                                     toggleLigthBox();
 
                                                     // Navigate to the target URL
-                                                    window.location.href = `/#/aboutUs/${profi.id - 1}`;
+                                                    
                                                 }}
                                                 >
                                                     <span key={profi.id}>{profi.name}</span>
@@ -116,8 +116,7 @@ function serviceSquare({service,isVisible}) {
                                                 to={`/aboutUs/${profi.id - 1}`} 
                                                 onClick={(e) => {
 
-                                                    e.preventDefault();
-
+                                                   
                                                     // Scroll to the top
                                                     window.scrollTo(0, 0);
 
@@ -125,7 +124,7 @@ function serviceSquare({service,isVisible}) {
                                                     toggleLigthBox();
 
                                                     // Navigate to the target URL
-                                                    window.location.href = `/#/aboutUs/${profi.id - 1}`;
+                                                    
                                                 }}
                                                 >
                                                     <span key={profi.id}>{profi.name},</span>
@@ -200,7 +199,7 @@ function serviceSquare({service,isVisible}) {
                                                             toggleLigthBox();
 
                                                             // Navigate to the target URL
-                                                            window.location.href = `/#/aboutUs/${profi.id - 1}`;
+                                                           
                                                         }}
                                                         >
                                                             <span key={profi.id}>{profi.name}</span>
@@ -220,7 +219,7 @@ function serviceSquare({service,isVisible}) {
                                                             toggleLigthBox();
 
                                                             // Navigate to the target URL
-                                                            window.location.href = `/#/aboutUs/${profi.id - 1}`;
+                                                           
                                                         }}
                                                         >
                                                             <span key={profi.id}>{profi.name},</span>

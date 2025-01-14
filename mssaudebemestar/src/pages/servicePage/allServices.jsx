@@ -191,7 +191,7 @@ function allServices() {
 
 
                                 // Navigate to the target URL
-                                window.location.href = `/#/aboutUs/${profi.id - 1}`;
+                                
                             }}
                             >
                                 <span key={profi.id}>{profi.name}</span>
@@ -208,7 +208,7 @@ function allServices() {
 
 
                                 // Navigate to the target URL
-                                window.location.href = `/#/aboutUs/${profi.id - 1}`;
+                               
                             }}
                             >
                                 <span key={profi.id}>{profi.name},</span>

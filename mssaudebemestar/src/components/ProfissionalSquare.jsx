@@ -5,6 +5,8 @@ function ProfissionalSquare({ profi, style }) {
   const [isSectionVisible, setIsSectionVisible] = useState(false);
   const [disactive,setDisactive] = useState(false)
 
+  const url = "/miguel-silva-saude-e-bem-estar/#"
+
   useEffect(() => {
     if ( disactive||!containerRef2.current) return;
 
@@ -79,9 +81,9 @@ function ProfissionalSquare({ profi, style }) {
         </ul>
         <NavLink to={`/aboutUs/${profi.id -1}`} onClick={(e) => {
        
-          e.preventDefault();
+          
           window.scrollTo(0, 0);
-          window.location.href = `/#/aboutUs/${profi.id - 1}`;
+          
           }}>
           <button>
             Mais sobre{' '}
