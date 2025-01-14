@@ -221,6 +221,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-size: 1.1rem;
   margin-bottom: 1rem;
+  width: 80%;
+  text-align: center;
 }
 @media screen and (min-width: 480px) {
   .main-all-services .all-service-section h1 {

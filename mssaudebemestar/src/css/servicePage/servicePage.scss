@@ -16,8 +16,11 @@
             @include title();
             font-size: 1.1rem;
             margin-bottom: 1rem;
+            width: 80%;
+            text-align: center;
             @media screen and (min-width: $mobile-screen) {
                 font-size: 1.6rem;
+               
                 
             }
             @media screen and (min-width: $tablet-screen) {
