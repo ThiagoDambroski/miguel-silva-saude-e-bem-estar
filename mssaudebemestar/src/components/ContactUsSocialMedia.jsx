@@ -16,8 +16,29 @@ function ContactUsSocialMedia({ contact, isActive }) {
     }
   }, [isActive]);
 
+  const openLink = () => {
+    switch(contact.id){
+      case 1:
+        const phoneNumber = "351919630219"; 
+        const message = "Olá! Gostaria de agendar um horário.";
+        const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappLink, "_blank");
+        break;
+      case 2:
+        window.open("https://www.instagram.com/miguelsilva_saude_e_bem_estar/", "_blank");
+        break;
+      case 3:
+        window.open("https://www.facebook.com/miguelsilvaterapiassaude/", "_blank");
+        break;
+      case 4:
+        window.location.href = "mailto:miguelsilvaterapeuta@gmail.com";
+        break;
+    }
+  }
+
+
   return (
-    <div className="contact-us-social-media">
+    <div className="contact-us-social-media" onClick={openLink}>
       <img
         className={`${imageActive ? "active" : ""}`}
         src={contact.image}

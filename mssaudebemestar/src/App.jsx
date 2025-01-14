@@ -7,11 +7,12 @@ import Mainpage from './pages/mainPage/mainpage';
 import ServicePage from './pages/servicePage/servicePage';
 import AboutUsPage from './pages/aboutUsPage/AboutUsPage';
 import Footer from './components/Footer';
+import Blog from './pages/BlogPage/blog';
 
 
 function App() {
   
-  //  
+  //  <Route  path="/blog" element={< Blog/>} />
   //<Route path="*" element={<Missing />} />
 
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route  path="/aboutUs/0" element={<AboutUsPage profiIndex={0} />} />
         <Route  path="/aboutUs/1" element={<AboutUsPage profiIndex={1} />} />
         <Route  path="/aboutUs/2" element={<AboutUsPage profiIndex={2} />} />
+        
 	    </Routes>
       <Footer/> 
     </>

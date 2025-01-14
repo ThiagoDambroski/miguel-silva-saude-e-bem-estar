@@ -36,7 +36,7 @@ function AboutUsPage({profiIndex}) {
           },
           {
             
-            threshold: 0.3,
+            threshold: 0.1,
             rootMargin:"0px"
           }
         );
@@ -181,10 +181,10 @@ function AboutUsPage({profiIndex}) {
             <h2 >Nossa Missão</h2 >
             <div className={`${missionVisible ? 'visible' : ''}`} ref={missionRef}>
               <h4>O caminho para uma vida mais saudável</h4>
-              <p>Ser o local onde os nossos clientes se sentem acolhidos e onde encontram a melhor solução para tratarem os seus problemas/dores, bem como adquirir/manter uma plena Saúde e Bem-Estar, seja no plano Físico, como o Mental e o Emocional.​</p>
+              <p className='misson-p'>Ser o local onde os nossos clientes se sentem acolhidos e onde encontram a melhor solução para tratarem os seus problemas/dores, bem como adquirir/manter uma plena Saúde e Bem-Estar, seja no plano Físico, como o Mental e o Emocional.​</p>
             </div>
           </section>
-          <div ref={buttonRef}>
+          <div ref={buttonRef} className='button-div'>
             <ScheduleButton isVisible = {buttonVisible}/>
           </div>
           
@@ -203,7 +203,9 @@ function AboutUsPage({profiIndex}) {
             
           </>
         }
-        <ScheduleButton isVisible = {true}/>
+        <div  className='button-div'>
+            <ScheduleButton isVisible = {true}/>
+          </div>
 
     </main>
   )

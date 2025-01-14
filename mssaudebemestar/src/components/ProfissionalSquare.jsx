@@ -50,6 +50,13 @@ function ProfissionalSquare({ profi, style }) {
     } else if (screenWidth <= 1024) {
           maxLength = 250; // Adjust for medium-sized screens
     }
+  //ul
+  let maxUl = profi.jobs.length; // Default for larger screens
+    if (screenWidth <= 800) {
+      maxUl = 3; // Shorter length for smaller screens
+    } else if (screenWidth <= 1024) {
+      maxUl = profi.jobs.length; // Adjust for medium-sized screens
+    }
 
   return (
     <div
@@ -67,7 +74,7 @@ function ProfissionalSquare({ profi, style }) {
         </p>
         <ul>
           {profi.jobs.map((job, jobIndex) =>
-            jobIndex < 3 ? <li key={jobIndex}>{job}</li> : null
+            jobIndex < maxUl ? <li key={jobIndex}>{job}</li> : null
           )}
         </ul>
         <NavLink to={`/aboutUs/${profi.id -1}`} onClick={(e) => {

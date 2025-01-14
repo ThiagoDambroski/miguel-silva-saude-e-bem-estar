@@ -5,11 +5,10 @@
 .main-all-services{
     
     padding: 3rem 0rem 0.5rem 0rem;
-    
+    min-height: 95vh;
     .all-service-section{
         display: flex;
         flex-direction: column;
-        gap: 1rem;
         overflow-x: hidden;
         justify-content: center;
         align-items: center;
@@ -21,19 +20,18 @@
                 font-size: 1.6rem;
                 
             }
+            @media screen and (min-width: $tablet-screen) {
+                font-size: 2rem;
+                
+            
+            }
         }
         .all-service-div{
+            width: 100%;
             display: flex;
             flex-direction: column;
             gap:10px;
-            input{
-                align-self: center;
-                width: 80%;
-                height: 30px;
-                &::placeholder{
-                    padding: 0.5rem;
-                }
-            }
+            
             .individual-services{
                 border-top: 1px solid $buttonColor;
                 border-bottom: 1px solid $buttonColor;
@@ -43,9 +41,25 @@
                 &.active{
                     transform: translateX(0%);
                 }
-                
+               
+            
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.01);
+                }
                 img{
                     width: 30%;
+                    @media screen and (min-width: $tablet-screen) {
+                        width: 35%;
+                        height: 200px;
+                        
+                    
+                    }
+                    @media screen and (min-width: $desktop-screen) {
+                        width: 40%;
+                        height: 300px;
+                    }
+                    
                 }
                 div{
                     padding: 0.5rem;
@@ -66,6 +80,14 @@
                             font-size: 1.3rem;
                             
                         }
+                        @media screen and (min-width: $tablet-screen) {
+                            font-size: 1.5rem;
+                            
+                        
+                        }
+                        @media screen and (min-width: $desktop-screen) {
+                            font-size: 1.8rem;
+                        }
                     }
                     p{
                         font-family: $primary-font;
@@ -75,13 +97,23 @@
                             font-size: 1rem;
                             
                         }
+                        @media screen and (min-width: $tablet-screen) {
+                            font-size: 1.2rem;
+                            
+                        }
+                        @media screen and (min-width: $desktop-screen) {
+                            font-size: 1.5rem;
+                        }
+                        
                     }
+                    
                 }
                 
                
             }
         }
         .shedule-button{
+            margin: 1rem 0 0.5rem 0;
             transform: translateX(200%);
             &.visible{
                 transform: translateX(0);
@@ -112,10 +144,21 @@
                         height: 20px;
                         
                     }
+                    @media screen and (min-width: $tablet-screen) {
+                        width: 30px;
+                        height: 30px;
+                        
+                    }
                 }
             }
             .principal-img{
                 width: 85%;
+                border-radius: 10px;
+                @media screen and (min-width: $tablet-screen) {
+                    width: 65%;
+                    
+                    
+                }
             }
             p{
                 @media screen and (min-width: $mobile-screen) {
@@ -123,9 +166,16 @@
                     font-size: 1.3rem;
                     
                 }
+                @media screen and (min-width: $tablet-screen) {
+                    font-size: 1.5rem;
+                    
+                }
                 padding: 1rem;
                 text-align: center;
                 font-family: $primary-font;
+            }
+            span{
+                color: $miguel-logo-color;
             }
         }
         

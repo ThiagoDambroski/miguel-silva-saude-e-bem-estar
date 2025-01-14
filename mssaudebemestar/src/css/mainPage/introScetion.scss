@@ -22,6 +22,7 @@
    
     
     .text-overlay{
+       
         position: absolute;
         width: 100%;
         top: 50%;
@@ -35,9 +36,23 @@
             font-size: 3rem;
             z-index: 10;
             
+            @media screen and (min-width: $mobile-screen) {
+                font-size: 4rem;
+            }
+            @media screen and (min-width: $tablet-screen) {
+                font-size: 4rem;
+            }
+            
         }
         h2{
             text-transform: uppercase;
+            
+            @media screen and (min-width: $mobile-screen) {
+                font-size: 2rem;
+            }
+            @media screen and (min-width: $tablet-screen) {
+                font-size: 2rem;
+            }
         }
     }
 

@@ -3,6 +3,11 @@ import React, { useState,useEffect } from 'react'
 function IndividualService({service,isActive,setPage}) {
 
   //Screen size limit chars
+
+  const setPageAndWindow = () => {
+    window.scrollTo(0,0)
+    setPage(service)
+  }
     
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
         
@@ -25,7 +30,7 @@ function IndividualService({service,isActive,setPage}) {
         maxLength = 250; // Adjust for medium-sized screens
   }
   return (
-    <div className={`individual-services ${isActive ? 'active' : ''}`} onClick={() => setPage(service)}>
+    <div className={`individual-services ${isActive ? 'active' : ''}`} onClick={setPageAndWindow}>
         <img src={service.image} alt={service.alt} />
         <div>
             <h2>{service.name}</h2>

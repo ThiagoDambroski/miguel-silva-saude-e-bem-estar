@@ -23,10 +23,10 @@ function profissionalShowCase({profi,setProfiPage,isActive}) {
           };
     }, []);
       
-    let maxLength = 350; // Default for larger screens
+    let maxLength = 400; // Default for larger screens
     if (screenWidth <= 600) {
-          maxLength = 100; // Shorter length for smaller screens
-    } else if (screenWidth <= 1024) {
+          maxLength = 190; // Shorter length for smaller screens
+    } else if (screenWidth < 1024) {
           maxLength = 300; // Adjust for medium-sized screens
     }
 

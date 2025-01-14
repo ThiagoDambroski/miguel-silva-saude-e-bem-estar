@@ -11,6 +11,10 @@
     h2{
         text-align: center;
         @include title();
+        @media screen and (min-width: $tablet-screen) {
+            font-size: 2rem;
+            
+        }
     }
 
     .contact-us-media-container{
@@ -18,11 +22,18 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+        padding-bottom: 10px;
         div{
             display: flex;
             align-items: center;
             gap: 25px;
+            transition: all ease 0.2s;
             
+            &:hover{
+                padding-left: 10px;
+                cursor: pointer;
+                transform: scale(1.01);
+            }
             img{
                 width: 40px;
                 transform: translateX(-200%);
@@ -31,8 +42,11 @@
                 }
                 @media screen and (min-width: $mobile-screen) {
                     width: 7%;
-                    
-                    
+
+                }
+                @media screen and (min-width: $tablet-screen) {
+                    width: 6%;
+                
                 }
             }
             p{
@@ -49,6 +63,11 @@
                     font-size: 1.2rem;
                     transform: translateX(250%);
                 }
+                @media screen and (min-width: $tablet-screen) {
+                    font-size: 1.6rem;
+                    transform: translateX(500%)
+                
+                }
             }  
         }
     }
@@ -56,11 +75,21 @@
         align-self: center;
         @include title();
         font-weight: 600;
+        @media screen and (min-width: $tablet-screen) {
+            font-size: 1.5rem;
+            
+        
+        }
     }
     .contact-us-section-adress{
         text-align: center;
         font-family: $title-font;
         font-weight: bold;
+        @media screen and (min-width: $tablet-screen) {
+            font-size: 1.4rem;
+            
+        
+        }
     }
     .map{
         display: flex;

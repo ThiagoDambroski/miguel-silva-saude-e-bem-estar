@@ -3,7 +3,7 @@ import "../css/whatsaap/whats.css"
 import whatsIcon from "../assets/icons/whatsappFixed.png"
 
 function Whatsapp() {
-  const phoneNumber = "351261092645"; 
+  const phoneNumber = "351919630219"; 
   const message = "Olá! Gostaria de agendar um horário.";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

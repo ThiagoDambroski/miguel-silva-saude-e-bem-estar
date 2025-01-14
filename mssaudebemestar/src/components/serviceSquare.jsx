@@ -12,11 +12,13 @@ function serviceSquare({service,isVisible}) {
     const[subForPage,setSubForPage] = useState(null)
 
     const toggleLigthBox = () => {
+        
         document.body.classList.toggle("light-box-block")
         setLigthBox(!ligthBox)
     }
 
     const changeSubForPage = (sub) => {
+        
         setSubForPage(sub)
     }
 
@@ -42,7 +44,15 @@ function serviceSquare({service,isVisible}) {
     } else if (screenWidth <= 1024) {
           maxLength = 150; // Adjust for medium-sized screens
     }
+    //Filter
 
+    const [input, setInput] = useState(''); // Initialize with an empty string
+
+    const servicesFilter = service.subService !== null 
+    ? service.subService.filter((subServiceItem) => {
+        return subServiceItem.name.toLowerCase().includes(input.toLowerCase());
+        })
+    : []; 
 
   return (
     <>
@@ -130,21 +140,35 @@ function serviceSquare({service,isVisible}) {
                             <>
                                 {subForPage === null ?
                                     <>
-                                        {service.subService.map((sub,index) => (
-                                        <div key={index} className='submenu' onClick={() => changeSubForPage(sub)}>
-                                            <img src={sub.image} alt={sub.alt} />
-                                            <div className="submenu-div">
-                                                <h3>{sub.name}</h3>
-                                                <p>
-                                                    {sub.description.length > maxLength
-                                                        ? `${sub.description.slice(0, maxLength)}...`
-                                                        : sub.description}
-                                                </p>
-                                                
-                                            </div>
-                                            
-                                        </div>
-                                        ))}
+                                        <input type="text"  placeholder='Procure um Serviço'
+                                        value={input}
+                                        onChange={(e) => setInput(e.target.value)}
+                                        />
+                                        {servicesFilter.length > 0 
+                                            ?
+                                            <>
+                                                {servicesFilter.map((sub,index) => (
+                                                <div key={index} className='submenu' onClick={() => changeSubForPage(sub)}>
+                                                    <img src={sub.image} alt={sub.alt} />
+                                                    <div className="submenu-div">
+                                                        <h3>{sub.name}</h3>
+                                                        <p>
+                                                            {sub.description.length > maxLength
+                                                                ? `${sub.description.slice(0, maxLength)}...`
+                                                                : sub.description}
+                                                        </p>
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                                ))}
+                                            </>
+                                            :
+                                            <>
+                                            <h2 className='not-found'>Nenhum Serviço Encontrado</h2>
+                                            </>
+                                        }
+                                        
                                     </>
                                     :
                                     <>

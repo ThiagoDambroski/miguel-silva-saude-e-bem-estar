@@ -1,8 +1,8 @@
 import React from 'react'
 import miguel from "../assets/professionals/miguelSilva.png"
-import jaqueline from "../assets/professionals/jaqueline.jpg"
+import jaqueline from "../assets/professionals/jaqueline.png"
 import elizete from "../assets/professionals/elizete.png"
-import jaquelineCertificate1 from "../assets/professionals/jaqueline.jpg"
+import jaquelineCertificate1 from "../assets/professionals/jaqueline.png"
 const profissionals = [
     {
         id:1,
@@ -20,12 +20,7 @@ const profissionals = [
         name:"Jaqueline Lima",
         description: "É uma profissional com diversas formações na área das terapias manuais não invasivas. Iniciou sua trajetória em 2009 como esteticista corporal e, em seguida, tornou-se Técnica em Massoterapia. Posteriormente, aprofundou-se no universo das terapias complementares, concluindo formações como Reiki, Massagem com pedras quentes (com esfoliação corporal), drenagem linfática manual (corporal e facial), drenagem linfática pré e pós-operatória, massagem para gestantes, tratamento terapêutico para dores e queixas musculares, Massagem Kobido (técnica asiática de massagem facial), Aromaterapia, Massagem Clássica de relaxamento, Reflexologia Podal e Shiatsu.Seu atendimento é personalizado, tratando cada paciente de maneira específica, de acordo com seu estado físico e emocional. Está sempre 100% comprometida com cada pessoa. Sua missão é ajudar, e sua maior satisfação é o bem-estar dos pacientes.",
         jobs:["Reiki  ","Massagem terapêutica ","Massagem com velas aromáticas","Massoterapia","Massagem facial ","Drenagem pós operatória "],
-        certificates:[{
-            image:[jaquelineCertificate1,jaquelineCertificate1],
-            alt:["Certificado exemplo 1","Certificado exemplo 1"],
-            name:"Certificado exemplo 1",
-            description:"Jaqueline Lima é uma profissional dedicada ao bem-estar físico, mental e emocional dos seus pacientes. Com uma abordagem holística e personalizada, atua em diversas áreas complementares. Com um olhar atento às necessidades individuais, ",
-        }]
+        certificates:null
     },
     {
         id:3,

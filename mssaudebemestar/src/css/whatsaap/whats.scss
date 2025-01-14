@@ -7,4 +7,8 @@
     right: 15px;
     bottom: 10%;
     width: 30px;
+    @media screen and (min-width: $tablet-screen) {
+        width: 60px;
+        
+    }
 }

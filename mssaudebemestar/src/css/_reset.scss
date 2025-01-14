@@ -20,6 +20,7 @@ body {
 }
 
 p{
+	line-height: 1.3;
 	@media screen and (min-width: $mobile-screen) {
 		line-height: 1.5;
 		
@@ -51,7 +52,7 @@ p{
 	
 	@media screen and (min-width: $mobile-screen) {
 		overflow-y: auto;
-		min-height: 90vh
+		height: 90vh
 	}
 
 	background-color: whitesmoke;
@@ -61,6 +62,14 @@ p{
 		position: absolute;
 		top: 10px;
 		left: 10px;
+		&:hover{
+			cursor: pointer;
+		}
+		@media screen and (min-width: $tablet-screen) {
+			top: 20px;
+			width: 30px;
+		
+		}
 	}
 
 	.close-button{
@@ -68,7 +77,15 @@ p{
 		position: absolute;
 		top: 10px;
 		right: 10px;
-		
+		&:hover{
+			cursor: pointer;
+		}
+		@media screen and (min-width: $tablet-screen) {
+			top: 15px;
+			right: 20px;
+			width: 30px;
+                
+		}
 	}
 }
 
@@ -76,15 +93,57 @@ p{
 
 .container-arrow{
 	position: relative;
+	
 	.arrow-button{
 		position: absolute;
 		left: 0px;
 		top:60%;
 		width: 20px;
 		height: 20px;
+		&:hover{
+			cursor: pointer;
+		}
+		@media screen and (min-width: $tablet-screen) {
+			width: 30px;
+			height: 30px;
+			
+			
+		}
 	}
 }
 
+.not-found{
+	text-align: center;
+	font-size: 1rem;
+	font-family: $primary-font;
+	@media screen and (min-width: $tablet-screen) {
+		font-size: 2rem;
+		
+	
+	}
+
+}
+
+input{
+	font-size: 1rem;
+	padding: 1rem;
+	border-radius: 10px;
+	font-family: $primary-font;
+	align-self: center;
+	width: 80%;
+	height: 30px;
+	@media screen and (min-width: $tablet-screen) {
+		width: 60%;
+		height: 50px;
+		margin-bottom: 0.2rem;
+		font-size: 1.2rem;
+		padding: 1.2rem;
+		
+	
+	}
+
+	
+}
 /*Professor*/
 
 

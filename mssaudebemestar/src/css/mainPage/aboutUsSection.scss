@@ -13,6 +13,10 @@
     
     h2{
         @include title();
+        @media screen and (min-width: $tablet-screen) {
+            font-size: 2rem;
+            
+        }
     }
     p{
         font-family: $primary-font;
@@ -30,6 +34,18 @@
             width: 95%;
             padding: 2rem;
         }
+        @media screen and (min-width: $tablet-screen) {
+            text-align: center;
+            width: 90%;
+            font-size: 1.5rem;
+            
+        
+        }
+
+        @media screen and (min-width: $desktop-screen) {
+            width: 70%;
+        }
+        
     }
     a{
         display: flex;
@@ -45,6 +61,14 @@
             transform: translateX(200%);
             &.active{
                 transform: translateX(0%);
+            }
+            @media screen and (min-width: $tablet-screen) {
+                margin-top: 1rem;
+               width: 60%;
+                font-size: 1.2rem;
+               padding: 1.2rem;
+                
+            
             }
         }
     }

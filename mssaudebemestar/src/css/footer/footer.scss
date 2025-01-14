@@ -7,11 +7,30 @@ footer{
     padding: 0.8rem;
     display: flex;
     justify-content: space-between;
+    @media screen and (min-width: $tablet-screen) {
+        padding: 0.9rem;
+    
+    }
     div{
         display: flex;
         gap: 5px;
         img{
             width: 15px;
+            transition: all ease 0.2s;
+            
+            &:hover{
+              
+                cursor: pointer;
+                transform: scale(1.11);
+            }
+            @media screen and (min-width: $tablet-screen) {
+                width: 25px;
+            
+            }
+        }
+        @media screen and (min-width: $tablet-screen) {
+            gap: 10px;
+        
         }
         
     }
@@ -20,5 +39,9 @@ footer{
         font-family: $title-font;
         color: $title-color;
         font-weight: bolder;
+        @media screen and (min-width: $tablet-screen) {
+            font-size: 1rem;
+        
+        }
     }
 }

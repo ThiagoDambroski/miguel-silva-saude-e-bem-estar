@@ -42,7 +42,8 @@ function Header() {
   return (
     <header className={`${scrollP >= 15 ? 'add-bckg' : ''}`}>
         <div>
-            <img className='logo' src={logo} alt="Logótipo de Miguel Silva Saúde e Bem-Estar" />
+          <NavLink to='/' onClick={() => window.scrollTo(0, 0)}><img className='logo' src={logo} alt="Logótipo de Miguel Silva Saúde e Bem-Estar" /></NavLink>
+            
         </div>
         <nav className={`${hamburugerActive ? "ham-active" : ""}`}>
             <ul >
@@ -55,7 +56,9 @@ function Header() {
                 <li onClick={toggleHamburger } >
                   <NavLink to='/aboutUs'  onClick={() => window.scrollTo(0, 0)}>Sobre Nós</NavLink>
                 </li >
-                <li>Blog</li>
+
+
+                
                 
             </ul>
            

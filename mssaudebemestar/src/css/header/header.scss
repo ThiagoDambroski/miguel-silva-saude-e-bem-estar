@@ -20,7 +20,10 @@ header{
             display: block;
         }
     }
-
+    @media screen and (min-width: $tablet-screen) {
+        height: 60px;
+    
+    }
     &.add-bckg{
         background-color: $nav-color;
         transition: all 200ms ease-out;
@@ -40,6 +43,10 @@ header{
 
     .logo{
         width: 35px;
+        @media screen and (min-width: $tablet-screen) {
+            width: 45px;
+        
+        }
     }
 
     nav{
@@ -87,6 +94,11 @@ header{
                     font-weight: 300;
                     text-transform: uppercase;
         
+                }
+
+                @media screen and (min-width: $tablet-screen) {
+                    font-size: 1.3rem;
+                
                 }
                 
                 transition: all 200ms ease-in ;

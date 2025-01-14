@@ -4,6 +4,7 @@ import profissionals from '../../db/profissionals';
 import IndividualService from './IndividualService'
 import ScheduleButton from '../../components/scheduleButton'
 import arrow from "../../assets/icons/left-arrow.png"
+import { NavLink } from 'react-router-dom'
 
 function allServices() {
     const [currentIndex, setCurrentIndex] = useState(-1);
@@ -44,7 +45,7 @@ function allServices() {
           },
           {
             
-            threshold: 0.3,
+            threshold: 0.1,
             rootMargin:"0px"
           }
         );
@@ -123,7 +124,10 @@ function allServices() {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     />
-                    {servicesFilter.map((service,index) => (
+                    {servicesFilter.length > 0 
+                      ?
+                      <>
+                        {servicesFilter.map((service,index) => (
                         <>
                             {service.subService === null ?
                                 <>
@@ -150,7 +154,14 @@ function allServices() {
 
                             }
                         </>
-                    ))}
+                        ))}
+                      </>
+                      :
+                      <>
+                      <h2 className='not-found'>Nenhum Serviço Encontrado</h2>
+                      </>
+                    }
+                    
                 </div>
                 <div ref={buttonRef} > 
                   <ScheduleButton  isVisible={isButtonVisible}/>
@@ -169,9 +180,39 @@ function allServices() {
                     {profissionals.map((profi, index) => (
                           page.professionals.includes(profi.id) ? (
                           index === page.professionals.length - 1 ? (
-                          <span key={profi.id}>{profi.name}</span> // Last professional, no comma
+                            <NavLink 
+                            to={`/aboutUs/${profi.id - 1}`} 
+                            onClick={(e) => {
+
+                                e.preventDefault();
+
+                                // Scroll to the top
+                                window.scrollTo(0, 0);
+
+
+                                // Navigate to the target URL
+                                window.location.href = `/#/aboutUs/${profi.id - 1}`;
+                            }}
+                            >
+                                <span key={profi.id}>{profi.name}</span>
+                            </NavLink>
                           ) : (
-                          <span key={profi.id}>{profi.name},</span> // Add comma for others
+                            <NavLink 
+                            to={`/aboutUs/${profi.id - 1}`} 
+                            onClick={(e) => {
+
+                                e.preventDefault();
+
+                                // Scroll to the top
+                                window.scrollTo(0, 0);
+
+
+                                // Navigate to the target URL
+                                window.location.href = `/#/aboutUs/${profi.id - 1}`;
+                            }}
+                            >
+                                <span key={profi.id}>{profi.name},</span>
+                            </NavLink>
                           )
                          ) : null
                     ))}
