@@ -207,11 +207,22 @@
             }
             .ligth-box-service-img{
                 width: 100%;
-                @media screen and (min-width: $tablet-screen) {
-                    width: 60%;
-                    
+                
+                @media screen and (max-width: $mobile-screen) {
+                    max-height: 200px;
                     
                 }
+                @media screen and (min-width: $mobile-screen) {
+                    width: 80%;
+                    
+                }
+               
+                @media screen and (min-width: $tablet-screen) {
+                    width: 60%;
+                    max-height: 600px;
+                    
+                }
+                
             }
             p{
                 margin-top: 5px;
@@ -246,7 +257,7 @@
                 bottom: 20px;
                 width: 80%;
 
-                @media screen and (min-width: $tablet-screen) {
+                @media screen and (min-width: $mobile-screen) {
                     position: static;
                 
                 }

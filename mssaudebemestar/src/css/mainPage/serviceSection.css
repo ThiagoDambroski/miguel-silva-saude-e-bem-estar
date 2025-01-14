@@ -406,9 +406,20 @@ h1, h2, h3, h4, h5, h6 {
 .service-section .service-section-container .ligth-box-service .ligth-box-service-img {
   width: 100%;
 }
+@media screen and (max-width: 480px) {
+  .service-section .service-section-container .ligth-box-service .ligth-box-service-img {
+    max-height: 200px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .service-section .service-section-container .ligth-box-service .ligth-box-service-img {
+    width: 80%;
+  }
+}
 @media screen and (min-width: 800px) {
   .service-section .service-section-container .ligth-box-service .ligth-box-service-img {
     width: 60%;
+    max-height: 600px;
   }
 }
 .service-section .service-section-container .ligth-box-service p {
@@ -447,7 +458,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 20px;
   width: 80%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 480px) {
   .service-section .service-section-container .ligth-box-service button {
     position: static;
   }
