@@ -10,8 +10,9 @@ import ContactUs from "../../components/ContactUsSection"
 import { useParams } from 'react-router-dom';
 
 function AboutUsPage({profiIndex}) {
-  const { id } = useParams();
-  const [profiPage,setProfiPage] = useState(id === null ? null : profissionals[id]);
+  const { id } = useParams(null);
+
+  const [profiPage,setProfiPage] = useState(!id  ? null : profissionals[id]);
   const [checkAgain,setCheckAgain] = useState(false)
   const setProfiToNull = () => {
     
