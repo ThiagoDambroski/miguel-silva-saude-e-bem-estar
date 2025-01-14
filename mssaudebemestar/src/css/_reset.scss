@@ -48,7 +48,7 @@ p{
 	border-radius: 10px;
 	width: 85%;
 	height: fit-content;
-	min-height: 600px;
+	min-height: 80vh;
 	
 	@media screen and (min-width: $mobile-screen) {
 		overflow-y: auto;
