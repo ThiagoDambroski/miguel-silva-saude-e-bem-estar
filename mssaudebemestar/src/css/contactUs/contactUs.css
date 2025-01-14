@@ -42,6 +42,12 @@ body.light-box-block {
   overflow: hidden;
 }
 
+@media screen and (min-width: 480px) {
+  p {
+    line-height: 1.5;
+  }
+}
+
 .ligth-box {
   position: fixed;
   top: 0;
@@ -169,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 480px) {
   .contact-us-section .contact-us-media-container div img {
-    width: 10%;
+    width: 7%;
   }
 }
 .contact-us-section .contact-us-media-container div p {
@@ -183,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 480px) {
   .contact-us-section .contact-us-media-container div p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transform: translateX(250%);
   }
 }
@@ -203,4 +209,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: center;
   position: relative;
+  opacity: 0%;
+  transition: all ease-in 0.3s;
+}
+.contact-us-section .map.visible {
+  opacity: 100%;
 }/*# sourceMappingURL=contactUs.css.map */

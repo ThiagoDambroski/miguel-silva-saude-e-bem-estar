@@ -7,7 +7,28 @@ function profissionalShowCase({profi,setProfiPage,isActive}) {
     setProfiPage(profi)
   }
  
-    
+    //description
+
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+          
+    useEffect(() => {
+          const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+          };
+          
+          window.addEventListener('resize', handleResize);
+          
+          return () => {
+            window.removeEventListener('resize', handleResize);
+          };
+    }, []);
+      
+    let maxLength = 350; // Default for larger screens
+    if (screenWidth <= 600) {
+          maxLength = 100; // Shorter length for smaller screens
+    } else if (screenWidth <= 1024) {
+          maxLength = 300; // Adjust for medium-sized screens
+    }
 
   return (
     <>
@@ -20,8 +41,8 @@ function profissionalShowCase({profi,setProfiPage,isActive}) {
           <div  className='profi-showcase-content'>
               <h3>{profi.name}</h3>
               <p>
-                  {profi.description.length > 100
-              ? `${profi.description.slice(0, 100)}...`
+                  {profi.description.length > maxLength
+              ? `${profi.description.slice(0, maxLength)}...`
               : profi.description}
               </p>
               <button onClick={windowTopAndChange}>Saiba Mais</button>

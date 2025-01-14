@@ -43,6 +43,12 @@ body.light-box-block {
   overflow: hidden;
 }
 
+@media screen and (min-width: 480px) {
+  p {
+    line-height: 1.5;
+  }
+}
+
 .ligth-box {
   position: fixed;
   top: 0;
@@ -179,6 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 480px) {
   .profissional-section .profissional-section-container .profissional-square img {
     width: 35%;
+    height: 390px;
   }
 }
 .profissional-section .profissional-section-container .profissional-square-information {
@@ -197,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 480px) {
   .profissional-section .profissional-section-container .profissional-square-information p {
-    width: 70%;
+    width: 95%;
     font-size: 1rem;
   }
 }
@@ -248,8 +255,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 480px) {
   .profissional-section .profissional-section-container .profissional-square-information a button {
-    width: 100%;
-    padding: 0.9rem;
+    width: 110%;
+    padding: 1rem;
     font-size: 0.9rem;
   }
 }

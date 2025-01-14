@@ -15,7 +15,9 @@ function ContactUsSection() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+        if(entry.isIntersecting){
+          setIsVisible(true);
+        } 
       },
       {
         threshold: 0.1,
@@ -46,6 +48,34 @@ function ContactUsSection() {
     }
   }, [currentIndex, isVisible]);
 
+  //MAP
+  const [showMap,setShowMap] = useState(false)
+  const mapRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if(entry.isIntersecting){
+          setShowMap(true);
+        } 
+        
+      },
+      {
+        threshold: 0.1,
+        rootMargin: "20px",
+      }
+    );
+
+    if (mapRef.current) {
+      observer.observe(mapRef.current);
+    }
+
+    return () => {
+      if (mapRef.current) {
+        observer.unobserve(mapRef.current);
+      }
+    };
+  }, []);
  
   return (
     <section className="contact-us-section" ref={mediaContainerRef}>
@@ -61,7 +91,7 @@ function ContactUsSection() {
       </div>
       <h3>Endereço</h3>
       <p className="contact-us-section-adress">R. do Fontanário 45, 2640-410 Mafra</p>
-      <div className="map">
+      <div className={`map ${showMap ? 'visible' : ''}`} ref={mapRef}>
        <ContactUsMap/>
       </div>
     </section>

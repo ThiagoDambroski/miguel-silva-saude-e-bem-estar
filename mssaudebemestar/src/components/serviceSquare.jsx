@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import ScheduleButton from './scheduleButton'
 import closeButton from '../assets/icons/close.png'
 import profissionals from '../db/profissionals'
@@ -19,6 +19,30 @@ function serviceSquare({service,isVisible}) {
     const changeSubForPage = (sub) => {
         setSubForPage(sub)
     }
+
+    //Screen size limit chars
+    
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+        
+    useEffect(() => {
+          const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+          };
+          
+          window.addEventListener('resize', handleResize);
+          
+          return () => {
+            window.removeEventListener('resize', handleResize);
+          };
+    }, []);
+      
+    let maxLength = 200; // Default for larger screens
+    if (screenWidth <= 600) {
+          maxLength = 80; // Shorter length for smaller screens
+    } else if (screenWidth <= 1024) {
+          maxLength = 150; // Adjust for medium-sized screens
+    }
+
 
   return (
     <>
@@ -61,7 +85,7 @@ function serviceSquare({service,isVisible}) {
                                                 <NavLink 
                                                 to={`/aboutUs/${profi.id - 1}`} 
                                                 onClick={(e) => {
-                                                    // Prevent default NavLink behavior momentarily
+
                                                     e.preventDefault();
 
                                                     // Scroll to the top
@@ -81,7 +105,7 @@ function serviceSquare({service,isVisible}) {
                                                 <NavLink 
                                                 to={`/aboutUs/${profi.id - 1}`} 
                                                 onClick={(e) => {
-                                                    // Prevent default NavLink behavior momentarily
+
                                                     e.preventDefault();
 
                                                     // Scroll to the top
@@ -112,8 +136,8 @@ function serviceSquare({service,isVisible}) {
                                             <div className="submenu-div">
                                                 <h3>{sub.name}</h3>
                                                 <p>
-                                                    {sub.description.length > 80
-                                                        ? `${sub.description.slice(0, 80)}...`
+                                                    {sub.description.length > maxLength
+                                                        ? `${sub.description.slice(0, maxLength)}...`
                                                         : sub.description}
                                                 </p>
                                                 
@@ -142,7 +166,7 @@ function serviceSquare({service,isVisible}) {
                                                         <NavLink 
                                                         to={`/aboutUs/${profi.id - 1}`} 
                                                         onClick={(e) => {
-                                                            // Prevent default NavLink behavior momentarily
+        
                                                             e.preventDefault();
 
                                                             // Scroll to the top
@@ -162,7 +186,7 @@ function serviceSquare({service,isVisible}) {
                                                         <NavLink 
                                                         to={`/aboutUs/${profi.id - 1}`} 
                                                         onClick={(e) => {
-                                                            // Prevent default NavLink behavior momentarily
+        
                                                             e.preventDefault();
 
                                                             // Scroll to the top

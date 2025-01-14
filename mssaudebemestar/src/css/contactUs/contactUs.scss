@@ -30,7 +30,7 @@
                     transform: translateX(0%);
                 }
                 @media screen and (min-width: $mobile-screen) {
-                    width: 10%;
+                    width: 7%;
                     
                     
                 }
@@ -46,7 +46,7 @@
                     transform: translateX(0%);
                 }
                 @media screen and (min-width: $mobile-screen) {
-                    font-size: 1.3rem;
+                    font-size: 1.2rem;
                     transform: translateX(250%);
                 }
             }  
@@ -66,5 +66,10 @@
         display: flex;
         justify-content: center;
         position: relative;
+        opacity: 0%;
+        transition: all ease-in 0.3s;
+        &.visible{
+            opacity: 100%;
+        }
     }
 }

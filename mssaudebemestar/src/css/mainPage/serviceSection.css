@@ -42,6 +42,12 @@ body.light-box-block {
   overflow: hidden;
 }
 
+@media screen and (min-width: 480px) {
+  p {
+    line-height: 1.5;
+  }
+}
+
 .ligth-box {
   position: fixed;
   top: 0;
@@ -166,7 +172,6 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
-    align-self: center;
   }
 }
 .service-section .service-section-container .service-square {
@@ -236,6 +241,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 45%;
   height: 100px;
 }
+@media screen and (min-width: 480px) {
+  .service-section .service-section-container .ligth-box-service .submenu img {
+    width: 100%;
+    height: 140px;
+  }
+}
 .service-section .service-section-container .ligth-box-service .submenu .submenu-div {
   display: flex;
   flex-direction: column;
@@ -253,6 +264,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 0.3rem;
   text-align: start;
   font-family: "Raleway", sans-serif;
+}
+@media screen and (min-width: 480px) {
+  .service-section .service-section-container .ligth-box-service .submenu .submenu-div p {
+    text-align: center;
+    width: 90%;
+  }
 }
 .service-section .service-section-container .ligth-box-service h2 {
   color: #567C8D;

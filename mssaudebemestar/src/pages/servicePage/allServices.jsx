@@ -31,7 +31,7 @@ function allServices() {
         return prev + number;
     }, 0);
 
-    const transitionDelay = 200;
+    const transitionDelay = 300;
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -103,7 +103,13 @@ function allServices() {
         };
       }, [currentIndex,checkAgain]);
 
+    //Filter
 
+    const [input, setInput] = useState(''); // Initialize with an empty string
+
+    const servicesFilter = services.filter((service) => {
+      return service.name.toLowerCase().includes(input.toLowerCase());
+    });
     
 
   return (
@@ -111,8 +117,13 @@ function allServices() {
         {page === null ?
             <>
                 <h1>Nossos Serviços</h1>
-                <div ref={containerRef} className='all-service-div'>
-                    {services.map((service,index) => (
+                <div ref={containerRef} 
+                className='all-service-div'>
+                    <input type="text"  placeholder='Procure um Serviço'
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                    />
+                    {servicesFilter.map((service,index) => (
                         <>
                             {service.subService === null ?
                                 <>

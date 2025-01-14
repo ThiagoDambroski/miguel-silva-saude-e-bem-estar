@@ -30,6 +30,12 @@ body.light-box-block {
   overflow: hidden;
 }
 
+@media screen and (min-width: 480px) {
+  p {
+    line-height: 1.5;
+  }
+}
+
 .ligth-box {
   position: fixed;
   top: 0;

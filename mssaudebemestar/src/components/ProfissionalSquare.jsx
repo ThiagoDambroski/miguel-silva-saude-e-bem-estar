@@ -19,7 +19,7 @@ function ProfissionalSquare({ profi, style }) {
       },
       {
         threshold: 0, 
-        rootMargin: '-150px 300px', 
+        rootMargin: '-100px 300px', 
       }
     );
 
@@ -27,6 +27,29 @@ function ProfissionalSquare({ profi, style }) {
 
     return () => sectionObserver.disconnect();
   }, []); 
+
+  //description
+
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+          
+    useEffect(() => {
+          const handleResize = () => {
+            setScreenWidth(window.innerWidth);
+          };
+          
+          window.addEventListener('resize', handleResize);
+          
+          return () => {
+            window.removeEventListener('resize', handleResize);
+          };
+    }, []);
+      
+    let maxLength = 300; // Default for larger screens
+    if (screenWidth <= 600) {
+          maxLength = 90; // Shorter length for smaller screens
+    } else if (screenWidth <= 1024) {
+          maxLength = 250; // Adjust for medium-sized screens
+    }
 
   return (
     <div
@@ -38,8 +61,8 @@ function ProfissionalSquare({ profi, style }) {
       <div className="profissional-square-information">
         <h3>{profi.name}</h3>
         <p>
-          {profi.description.length > 80
-            ? `${profi.description.slice(0, 80)}...`
+          {profi.description.length > maxLength
+            ? `${profi.description.slice(0, maxLength)}...`
             : profi.description}
         </p>
         <ul>

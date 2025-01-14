@@ -24,12 +24,14 @@ header{
     &.add-bckg{
         background-color: $nav-color;
         transition: all 200ms ease-out;
-      
+        @media screen and (min-width: $mobile-screen) {
             li{
                 color: white;
             }a{
                 color: white;
             }
+        }
+            
 
             
 
