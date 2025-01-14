@@ -11,7 +11,7 @@ import Blog from './pages/BlogPage/blog';
 
 
 function App() {
-  
+  const url = "/miguel-silva-saude-e-bem-estar/#"
   //  <Route  path="/blog" element={< Blog/>} />
   //<Route path="*" element={<Missing />} />
 
@@ -23,9 +23,9 @@ function App() {
         <Route exact path="/" element={<Mainpage />} />
         <Route  path="/services" element={<ServicePage />} />
         <Route  path="/aboutUs" element={<AboutUsPage profiIndex={null} />} />
-        <Route  path="/#/aboutus/0" element={<AboutUsPage profiIndex={0} />} />
-        <Route  path="/#/aboutus/1" element={<AboutUsPage profiIndex={1} />} />
-        <Route  path="/#/aboutus/2" element={<AboutUsPage profiIndex={2} />} />
+        <Route  path={`${url}/aboutus/0`} element={<AboutUsPage profiIndex={0} />} />
+        <Route  path={`${url}/aboutus/1`} element={<AboutUsPage profiIndex={1} />} />
+        <Route  path={`${url}/aboutus/2`} element={<AboutUsPage profiIndex={2} />} />
         
 	    </Routes>
       <Footer/> 
