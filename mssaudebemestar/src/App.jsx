@@ -23,9 +23,7 @@ function App() {
         <Route exact path="/" element={<Mainpage />} />
         <Route  path="/services" element={<ServicePage />} />
         <Route  path="/aboutUs" element={<AboutUsPage profiIndex={null} />} />
-        <Route  path={`${url}/aboutus/0`} element={<AboutUsPage profiIndex={0} />} />
-        <Route  path={`${url}/aboutus/1`} element={<AboutUsPage profiIndex={1} />} />
-        <Route  path={`${url}/aboutus/2`} element={<AboutUsPage profiIndex={2} />} />
+        <Route path="/aboutus/:id" element={<AboutUsPage />} />
         
 	    </Routes>
       <Footer/> 

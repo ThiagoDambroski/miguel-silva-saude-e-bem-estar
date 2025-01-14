@@ -7,11 +7,11 @@ import arrow from "../../assets/icons/left-arrow.png"
 import team from "../../assets/professionals/equipa.jpg"
 import ScheduleButton from '../../components/scheduleButton';
 import ContactUs from "../../components/ContactUsSection"
-
+import { useParams } from 'react-router-dom';
 
 function AboutUsPage({profiIndex}) {
-
-  const [profiPage,setProfiPage] = useState(profiIndex === null ? null : profissionals[profiIndex]);
+  const { id } = useParams();
+  const [profiPage,setProfiPage] = useState(id === null ? null : profissionals[id]);
   const [checkAgain,setCheckAgain] = useState(false)
   const setProfiToNull = () => {
     
