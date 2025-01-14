@@ -23,9 +23,9 @@ function App() {
         <Route exact path="/" element={<Mainpage />} />
         <Route  path="/services" element={<ServicePage />} />
         <Route  path="/aboutUs" element={<AboutUsPage profiIndex={null} />} />
-        <Route  path="/aboutUs/0" element={<AboutUsPage profiIndex={0} />} />
-        <Route  path="/aboutUs/1" element={<AboutUsPage profiIndex={1} />} />
-        <Route  path="/aboutUs/2" element={<AboutUsPage profiIndex={2} />} />
+        <Route  path="/#/aboutus/0" element={<AboutUsPage profiIndex={0} />} />
+        <Route  path="/#/aboutus/1" element={<AboutUsPage profiIndex={1} />} />
+        <Route  path="/#/aboutus/2" element={<AboutUsPage profiIndex={2} />} />
         
 	    </Routes>
       <Footer/> 
