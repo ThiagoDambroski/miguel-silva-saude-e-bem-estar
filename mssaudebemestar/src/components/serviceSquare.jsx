@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react';
 import ScheduleButton from './scheduleButton'
 import closeButton from '../assets/icons/close.png'
 import profissionals from '../db/profissionals'
@@ -54,6 +54,27 @@ function serviceSquare({service,isVisible}) {
         })
     : []; 
 
+
+    //about of ligthbox
+    const lightBoxRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (lightBoxRef.current && !lightBoxRef.current.contains(event.target)) {
+                setLigthBox(false);
+                document.body.classList.remove("light-box-block");
+            }
+        };
+        if (ligthBox) {
+            document.addEventListener('mousedown', handleClickOutside);
+        } else {
+            document.removeEventListener('mousedown', handleClickOutside);
+        }
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [ligthBox]);
+
   return (
     <>
         <div className={`service-square ${isVisible ? 'visible' : ''}`} onClick={toggleLigthBox}>
@@ -63,20 +84,25 @@ function serviceSquare({service,isVisible}) {
         {ligthBox ? 
         <>
             <div className="ligth-box">
-                <div className="ligth-box-content">
+                <div className="ligth-box-content" ref={lightBoxRef}>
                     <div className='ligth-box-service'>
-                        {subForPage !== null ? 
-                            <>
-                                <img className='arrow-button' src={leftArrow} alt="Botão de voltar ao sub menu" onClick={() => changeSubForPage(null)} />
-                            </>
-                            :
-                            <>
-                            </>
-                        }
-                        <img className='close-button' src={closeButton} alt="Botão de fechar" onClick={toggleLigthBox} />
-                        <h2>{service.name}</h2>
+                        <div className='ligth-box-nav'>
+                            {subForPage !== null ? 
+                                <>
+                                    <img className='arrow-button' src={leftArrow} alt="Botão de voltar ao sub menu" onClick={() => changeSubForPage(null)} />
+                                </>
+                                :
+                                <>
+                                </>
+                            }
+                            <img className='close-button' src={closeButton} alt="Botão de fechar" onClick={toggleLigthBox} />
+                        </div>
+                        
+                        
                         {service.subService === null ?
+                        
                             <>
+                                <h2>{service.name}</h2>
                                 <img className='ligth-box-service-img' src={service.image} alt={service.alt} />
                                 <p>
                                     {service.description.split('\n').map((line, index) => (
@@ -87,11 +113,12 @@ function serviceSquare({service,isVisible}) {
                                     ))}
                                 </p>
                                 <div>
-                                    <p className='meat-team'>Concheça os profissionais:</p>
-                                    <p>
-                                        {profissionals.map((profi, index) => (
-                                        service.professionals.includes(profi.id) ? (
-                                            index === service.professionals.length - 1 ? (
+                                    <p className='meat-team'>Concheça os profissionais :</p>
+                                    <p className='meat-team-container'>
+                                        
+                                        {profissionals.filter((prof) => service.professionals.includes(prof.id)).map((profi, index) => (
+                                            index === service.professionals.length -1 ? (
+                                                
                                                 <NavLink 
                                                 to={`/aboutUs/${profi.id - 1}`} 
                                                 onClick={(e) => {
@@ -108,6 +135,7 @@ function serviceSquare({service,isVisible}) {
                                                     
                                                 }}
                                                 >
+                                                    
                                                     <span key={profi.id}>{profi.name}</span>
                                                 </NavLink>
                                              // Last professional, no comma
@@ -130,7 +158,6 @@ function serviceSquare({service,isVisible}) {
                                                     <span key={profi.id}>{profi.name},</span>
                                                 </NavLink>
                                             )
-                                        ) : null
                                         ))}
                                     </p>
                                 </div>
@@ -171,6 +198,7 @@ function serviceSquare({service,isVisible}) {
                                     </>
                                     :
                                     <>
+                                        <h2>{subForPage.name}</h2>
                                         <img className='ligth-box-service-img' src={subForPage.image} alt={subForPage.alt} />
                                         <p>
                                             {subForPage.description.split('\n').map((line, index) => (
@@ -181,24 +209,23 @@ function serviceSquare({service,isVisible}) {
                                             ))}
                                         </p>
                                         <div>
-                                            <p className='meat-team'>Concheça os profissionais:</p>
-                                            <p>
-                                                {profissionals.map((profi, index) => (
-                                                subForPage.professionals.includes(profi.id) ? (
-                                                    index === subForPage.professionals.length - 1 ? (
+                                            <p className='meat-team'>Concheça os profissionais :</p>
+                                            <p className='meat-team-container'>
+                                                {profissionals.filter((prof) => subForPage.professionals.includes(prof.id)).map((profi, index) => (
+                                                    index === subForPage.professionals.length -1 ? (
                                                         <NavLink 
                                                         to={`/aboutUs/${profi.id - 1}`} 
                                                         onClick={(e) => {
         
                                                             e.preventDefault();
 
-                                                            // Scroll to the top
+                                                            
                                                             window.scrollTo(0, 0);
 
-                                                            // Perform your custom logic
+                                                            
                                                             toggleLigthBox();
 
-                                                            // Navigate to the target URL
+                                                            
                                                            
                                                         }}
                                                         >
@@ -222,10 +249,10 @@ function serviceSquare({service,isVisible}) {
                                                            
                                                         }}
                                                         >
-                                                            <span key={profi.id}>{profi.name},</span>
+                                                            <span key={profi.id}>{profi.name},
+                                                            </span>
                                                         </NavLink>
                                                     )
-                                                ) : null
                                                 ))}
                                             </p>
                                         </div>
@@ -235,8 +262,10 @@ function serviceSquare({service,isVisible}) {
                             </>
                         }
                         
+                        <div className='button-padding-container'>
+                            <ScheduleButton isVisible={true}/>
+                        </div>
                         
-                        <ScheduleButton isVisible={true}/>
                     </div>
                     
                 </div>

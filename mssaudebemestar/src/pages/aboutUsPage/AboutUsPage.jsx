@@ -164,7 +164,7 @@ function AboutUsPage({profiIndex}) {
            <h1>Sobre Nós</h1>
             <section className='about-us-page-profi' ref={containerRef}>
               
-              <h2>Nossos profissionals</h2>
+              <h2>Concheça os profissionais</h2>
               {profissionals.map((profi,index) => (
                 <ProfissionalShowCase
                   profi={profi}
@@ -174,12 +174,12 @@ function AboutUsPage({profiIndex}) {
               ))}
           </section>
           <section className={`about-us-page-history ${historyVisible ? 'visible' : ''}`} ref={historyRef}>
-            <h2>Nossa Historia</h2>
+            <h2>A nossa história</h2>
             <img src={team} alt="Equipa Miguel Silva - saude e bem estar" />
             <p>Abrimos as nossas portas em Mafra em Novembro de 2016, acreditando que é essencial investir na saúde para desfrutar de uma vida cheia de alegria, gratidão e satisfação. Isso orienta nossa abordagem, incluindo os nossos serviços, ensinamentos e tratamentos. No nosso espaço concentramo-nos em ajudar os clientes a melhorarem a sua saúde física e mental e transmitimos ferramentas para que possam mantê-la.
             Orgulhamo-nos da capacidade de mudar e impactar vidas de maneira saudável. Fazemos isso oferecendo serviços que ajudam todos os nossos clientes a alcançarem corpos e mentes mais positivos.
             Entre em contato ainda hoje!</p>
-            <h2 >Nossa Missão</h2 >
+            <h2 >A nossa missão </h2 >
             <div className={`${missionVisible ? 'visible' : ''}`} ref={missionRef}>
               <h4>O caminho para uma vida mais saudável</h4>
               <p className='misson-p'>Ser o local onde os nossos clientes se sentem acolhidos e onde encontram a melhor solução para tratarem os seus problemas/dores, bem como adquirir/manter uma plena Saúde e Bem-Estar, seja no plano Físico, como o Mental e o Emocional.​</p>

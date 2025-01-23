@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 
+
 function profissionalShowCase({profi,setProfiPage,isActive}) {
+
 
   const windowTopAndChange = () => {
     window.scrollTo(0, 0);

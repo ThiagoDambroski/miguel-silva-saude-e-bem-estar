@@ -62,16 +62,22 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
 }
 .ligth-box .ligth-box-content {
   position: relative;
-  padding: 1rem;
   border-radius: 10px;
   width: 85%;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 80vh;
+  min-height: 85vh;
+  overflow-y: auto;
   background-color: whitesmoke;
+}
+@media screen and (max-width: 480px) {
+  .ligth-box .ligth-box-content {
+    padding-bottom: 20px;
+  }
 }
 @media screen and (min-width: 480px) {
   .ligth-box .ligth-box-content {
@@ -79,35 +85,53 @@ p {
     height: 90vh;
   }
 }
-.ligth-box .ligth-box-content .arrow-button {
-  width: 15px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+.ligth-box .ligth-box-content .ligth-box-service {
+  padding: 1rem;
 }
-.ligth-box .ligth-box-content .arrow-button:hover {
+.ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav {
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+}
+@media screen and (min-width: 800px) {
+  .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav {
+    top: 10px;
+  }
+}
+.ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .arrow-button {
+  width: 15px;
+}
+.ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .arrow-button:hover {
   cursor: pointer;
 }
 @media screen and (min-width: 800px) {
-  .ligth-box .ligth-box-content .arrow-button {
-    top: 20px;
+  .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .arrow-button {
     width: 30px;
   }
 }
-.ligth-box .ligth-box-content .close-button {
+.ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button {
   width: 15px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
 }
-.ligth-box .ligth-box-content .close-button:hover {
+.ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button:hover {
   cursor: pointer;
 }
 @media screen and (min-width: 800px) {
-  .ligth-box .ligth-box-content .close-button {
-    top: 15px;
-    right: 20px;
+  .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button {
     width: 30px;
+  }
+}
+
+.button-padding-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .button-padding-container {
+    padding-bottom: 10px;
   }
 }
 
@@ -316,7 +340,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .service-section .service-section-container .ligth-box-service {
-  overflow-y: auto;
   display: flex;
   gap: 10px;
   flex-direction: column;
@@ -325,7 +348,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 480px) {
   .service-section .service-section-container .ligth-box-service {
-    max-height: 80vh;
+    max-height: 85vh;
     justify-content: start;
   }
 }
@@ -353,7 +376,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .service-section .service-section-container .ligth-box-service .submenu img {
   border-radius: 15px 0px 0px 15px;
-  width: 45%;
+  width: 35%;
   height: 100px;
 }
 @media screen and (min-width: 480px) {
@@ -370,6 +393,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .service-section .service-section-container .ligth-box-service .submenu .submenu-div {
   display: flex;
+  padding: 0.2rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -379,6 +403,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 0.7rem;
+  text-align: center;
   text-transform: capitalize;
 }
 @media screen and (min-width: 800px) {
@@ -388,8 +414,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .service-section .service-section-container .ligth-box-service .submenu .submenu-div p {
   padding-left: 0.3rem;
-  text-align: start;
+  text-align: center;
   font-family: "Raleway", sans-serif;
+  font-size: 0.6rem;
 }
 @media screen and (min-width: 480px) {
   .service-section .service-section-container .ligth-box-service .submenu .submenu-div p {
@@ -407,6 +434,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #567C8D;
   font-weight: 400;
   text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  .service-section .service-section-container .ligth-box-service h2 {
+    font-size: 1rem;
+  }
 }
 .service-section .service-section-container .ligth-box-service .ligth-box-service-img {
   width: 100%;
@@ -455,16 +487,21 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 }
+.service-section .service-section-container .ligth-box-service .meat-team-container {
+  width: 100%;
+}
 .service-section .service-section-container .ligth-box-service span {
   color: #567C8D;
 }
 .service-section .service-section-container .ligth-box-service button {
-  position: static;
-  bottom: 20px;
-  width: 80%;
+  position: relative;
+  bottom: 0px;
+  width: 85%;
+  font-size: 0.65rem;
 }
 @media screen and (min-width: 480px) {
   .service-section .service-section-container .ligth-box-service button {
+    font-size: 1rem;
     position: static;
   }
 }/*# sourceMappingURL=serviceSection.css.map */

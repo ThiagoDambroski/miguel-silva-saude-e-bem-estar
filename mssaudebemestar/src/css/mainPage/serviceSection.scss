@@ -35,7 +35,7 @@
             align-items: center;
             
         }
-
+    
         .service-square{
             display: flex;
             justify-content: center;
@@ -54,19 +54,19 @@
                 
                 
             }
-
+    
             @media screen and (min-width: $mobile-screen) {
                 height: 130px;
                 width: 95%;
                 padding-bottom: 0.2rem;
             }
-
+    
             @media screen and (min-width: $tablet-screen) {
                 
                 height: 18vw;
                 
             }
-
+    
         
             
     
@@ -116,7 +116,7 @@
             }
         }
         .ligth-box-service{
-            overflow-y: auto;
+            
             display: flex;
             gap: 10px;
             flex-direction: column;
@@ -124,7 +124,7 @@
             align-items: center;
             
             @media screen and (max-width: $mobile-screen) {
-                max-height: 80vh;
+                max-height: 85vh;
                 justify-content: start;
                 
                 
@@ -154,7 +154,7 @@
                 }
                 img{
                     border-radius: 15px 0px 0px 15px;
-                    width: 45%;
+                    width: 35%;
                     height: 100px;
                     @media screen and (min-width: $mobile-screen) {
                         
@@ -170,7 +170,7 @@
                 }
                 .submenu-div{
                     display: flex;
-                    
+                    padding: 0.2rem;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
@@ -178,6 +178,9 @@
                     h3{
                         @include title();
                         font-weight: 600;
+                        font-size: 0.7rem;
+                        
+                        text-align: center;
                         text-transform: capitalize;
                         @media screen and (min-width: $tablet-screen) {
                             font-size: 1.6rem;
@@ -186,8 +189,10 @@
                     }
                     p{
                         padding-left: 0.3rem;
-                        text-align: start;
+                        text-align: center;
                         font-family: $primary-font;
+                        font-size: 0.6rem;
+                        
                         @media screen and (min-width: $mobile-screen) {
                             text-align: center;
                             font-size: 1rem;
@@ -197,15 +202,19 @@
                             font-size: 1.4rem;
                             
                         }
-
+    
                     }
                 }
                
             }
-
+    
             h2{
                 @include title();
                 
+                @media screen and (max-width: $mobile-screen) {
+                    font-size: 1rem;
+                    
+                }
             }
             .ligth-box-service-img{
                 width: 100%;
@@ -234,7 +243,7 @@
                 @media screen and (min-width: $mobile-screen) {
                     font-size: 1rem;
                 }
-
+    
                 @media screen and (min-width: $tablet-screen) {
                     padding: 0 1rem 0 1rem;
                     width: 90%;
@@ -251,22 +260,31 @@
       
                  }
             }
+            .meat-team-container{
+                width: 100%;
+            }
             span{
                 color: $title-color;
+                
             }
             button{
-                position: static;
-                bottom: 20px;
-                width: 80%;
-
+               
+                position: relative;
+                bottom: 0px;
+                width: 85%;
+                font-size: 0.65rem;
+                
+                
                 @media screen and (min-width: $mobile-screen) {
+                    font-size: 1rem;
                     position: static;
                 
                 }
-
+    
             }
         }
     }
     
 
 }
+

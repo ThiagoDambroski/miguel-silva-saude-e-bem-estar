@@ -13,7 +13,9 @@ function scheduleButton({ isVisible }) {
     <>
     
       <button className={`shedule-button ${isVisible ? "visible" : ""}`} onClick={textwpp}>
-          Marque a sua sessão
+      Marque a sua sessão via Whatsapp 
+
+
       </button>
     
     </>

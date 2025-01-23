@@ -48,7 +48,7 @@ function Header() {
         <nav className={`${hamburugerActive ? "ham-active" : ""}`}>
             <ul >
                 <li onClick={toggleHamburger}>
-                  <NavLink to='/' onClick={() => window.scrollTo(0, 0)}>Inicio</NavLink>
+                  <NavLink to='/' onClick={() => window.scrollTo(0, 0)}>Início</NavLink>
                 </li>
                 <li onClick={toggleHamburger } >
                   <NavLink to='/services'  onClick={() => window.scrollTo(0, 0)}>Serviços</NavLink>

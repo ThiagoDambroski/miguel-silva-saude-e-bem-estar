@@ -38,7 +38,7 @@ function ProfissionalsSection() {
 
   return (
     <section className="profissional-section">
-      <h2>Nossa Equipa</h2>
+      <h2>A nossa Equipa</h2>
       <div className="profissional-section-container">
         {profissionals.map((profi, index) => (
           <ProfissionalSquare

@@ -41,7 +41,7 @@ function aboutUsSection() {
   return (
     <section className='about-us-section'>
         <h2>Sobre Nós</h2>
-        <p className={`${active ? 'active' : ''}`} ref={containerRef}>Na nossa clínica, valorizamos mais do que tratamentos – valorizamos pessoas. Primamos pela Empatia, assegurando que cada cliente se sente compreendido e acolhido. Oferecemos Qualidade em todos os nossos serviços, desde massagens relaxantes a tratamentos especializados em osteopatia, com foco na sua Saúde e bem-estar.
+        <p className={`${active ? 'active' : ''}`} ref={containerRef}>Na nossa clínica, valorizamos mais do que tratamentos – valorizamos pessoas. Primamos pela Empatia, assegurando que cada cliente se sente compreendido e acolhido. Oferecemos Qualidade em todos os nossos serviços, com uma abordagem Holística e o foco da saúde e bem-estar físico e mental. 
         </p>
         <NavLink to={`/aboutUs`} onClick={() => window.scrollTo(0, 0)}>
           <button  className={`${buttonActive ? 'active' : ''}`}>

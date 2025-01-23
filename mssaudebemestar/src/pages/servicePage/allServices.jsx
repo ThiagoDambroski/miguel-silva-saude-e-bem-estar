@@ -109,6 +109,9 @@ function allServices() {
     const [input, setInput] = useState(''); // Initialize with an empty string
 
     const servicesFilter = services.filter((service) => {
+      if(input.toLowerCase() === "massagem"){
+        return service.name.toLowerCase().includes("massagens");
+      }
       return service.name.toLowerCase().includes(input.toLowerCase());
     });
     
@@ -177,14 +180,13 @@ function allServices() {
                   <img className='principal-img' src={page.image} alt={page.alt}/>
                   <p>{page.description}</p>
                   <p>Profissionais:<br></br>
-                    {profissionals.map((profi, index) => (
-                          page.professionals.includes(profi.id) ? (
+                    {profissionals.filter((prof) => page.professionals.includes(prof.id)).map((profi, index) => (
                           index === page.professionals.length - 1 ? (
                             <NavLink 
                             to={`/aboutUs/${profi.id - 1}`} 
                             onClick={(e) => {
 
-                                e.preventDefault();
+                                
 
                                 // Scroll to the top
                                 window.scrollTo(0, 0);
@@ -201,7 +203,7 @@ function allServices() {
                             to={`/aboutUs/${profi.id - 1}`} 
                             onClick={(e) => {
 
-                                e.preventDefault();
+                                
 
                                 // Scroll to the top
                                 window.scrollTo(0, 0);
@@ -214,8 +216,7 @@ function allServices() {
                                 <span key={profi.id}>{profi.name},</span>
                             </NavLink>
                           )
-                         ) : null
-                    ))}
+                         ))}
                   </p>
                   <div ref={buttonRef} > 
                   <ScheduleButton  isVisible={true}/>

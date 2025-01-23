@@ -79,7 +79,7 @@ function ContactUsSection() {
  
   return (
     <section className="contact-us-section" ref={mediaContainerRef}>
-      <h2>Nossos Contatos</h2>
+      <h2>Contatos</h2>
       <div className="contact-us-media-container">
         {contacts.map((contact, index) => (
           <ContactUsSocialMedia

@@ -50,16 +50,22 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
 }
 .ligth-box .ligth-box-content {
   position: relative;
-  padding: 1rem;
   border-radius: 10px;
   width: 85%;
   height: -moz-fit-content;
   height: fit-content;
-  min-height: 80vh;
+  min-height: 85vh;
+  overflow-y: auto;
   background-color: whitesmoke;
+}
+@media screen and (max-width: 480px) {
+  .ligth-box .ligth-box-content {
+    padding-bottom: 20px;
+  }
 }
 @media screen and (min-width: 480px) {
   .ligth-box .ligth-box-content {
@@ -67,35 +73,53 @@ p {
     height: 90vh;
   }
 }
-.ligth-box .ligth-box-content .arrow-button {
-  width: 15px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+.ligth-box .ligth-box-content .ligth-box-service {
+  padding: 1rem;
 }
-.ligth-box .ligth-box-content .arrow-button:hover {
+.ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav {
+  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+}
+@media screen and (min-width: 800px) {
+  .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav {
+    top: 10px;
+  }
+}
+.ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .arrow-button {
+  width: 15px;
+}
+.ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .arrow-button:hover {
   cursor: pointer;
 }
 @media screen and (min-width: 800px) {
-  .ligth-box .ligth-box-content .arrow-button {
-    top: 20px;
+  .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .arrow-button {
     width: 30px;
   }
 }
-.ligth-box .ligth-box-content .close-button {
+.ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button {
   width: 15px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
 }
-.ligth-box .ligth-box-content .close-button:hover {
+.ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button:hover {
   cursor: pointer;
 }
 @media screen and (min-width: 800px) {
-  .ligth-box .ligth-box-content .close-button {
-    top: 15px;
-    right: 20px;
+  .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button {
     width: 30px;
+  }
+}
+
+.button-padding-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .button-padding-container {
+    padding-bottom: 10px;
   }
 }
 

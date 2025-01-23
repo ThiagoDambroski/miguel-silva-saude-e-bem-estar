@@ -41,54 +41,82 @@ p{
   display: flex;
   align-items: center;
   justify-content: center;
-
+  overflow-y: auto;
+  
   .ligth-box-content{
 	position: relative;
-	padding: 1rem;
+	
+	
 	border-radius: 10px;
 	width: 85%;
 	height: fit-content;
-	min-height: 80vh;
-	
+	min-height: 85vh;
+	overflow-y: auto;
+	@media screen and (max-width: $mobile-screen) {
+		padding-bottom: 20px;
+	}
 	@media screen and (min-width: $mobile-screen) {
 		overflow-y: auto;
 		height: 90vh
 	}
 
 	background-color: whitesmoke;
-	
-	.arrow-button{
-		width: 15px;
-		position: absolute;
-		top: 10px;
-		left: 10px;
-		&:hover{
-			cursor: pointer;
+		.ligth-box-service{
+			padding: 1rem;
+			
+			.ligth-box-nav{
+				position: sticky ;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				top: 0;
+				@media screen and (min-width: $tablet-screen) {
+						
+					top: 10px;
+				
+				}
+				.arrow-button{
+					width: 15px;
+					
+					&:hover{
+						cursor: pointer;
+					}
+					@media screen and (min-width: $tablet-screen) {
+						
+						width: 30px;
+					
+					}
+				}
+			
+				.close-button{
+					width: 15px;
+					
+					
+					&:hover{
+						cursor: pointer;
+					}
+					@media screen and (min-width: $tablet-screen) {
+						
+						width: 30px;
+							
+					}
+				}
+			}
 		}
-		@media screen and (min-width: $tablet-screen) {
-			top: 20px;
-			width: 30px;
 		
-		}
+		
 	}
 
-	.close-button{
-		width: 15px;
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		&:hover{
-			cursor: pointer;
-		}
-		@media screen and (min-width: $tablet-screen) {
-			top: 15px;
-			right: 20px;
-			width: 30px;
-                
-		}
-	}
 }
 
+.button-padding-container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media screen and (max-width: $mobile-screen) {
+		padding-bottom: 10px;
+	}
 }
 
 .container-arrow{
@@ -144,6 +172,13 @@ input{
 
 	
 }
+
+
+//service square
+
+
+
+
 /*Professor*/
 
 
