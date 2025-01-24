@@ -106,14 +106,40 @@ function allServices() {
 
     //Filter
 
-    const [input, setInput] = useState(''); // Initialize with an empty string
+    const [input, setInput] = useState(''); 
 
-    const servicesFilter = services.filter((service) => {
-      if(input.toLowerCase() === "massagem"){
-        return service.name.toLowerCase().includes("massagens");
+    const servicesFilter = services
+    .map((service) => {
+      if (service.subService && Array.isArray(service.subService)) {
+        // Filter matching sub-services
+        const filteredSubServices = service.subService.filter((sub) =>
+          sub.name.toLowerCase().includes(input.toLowerCase())
+        );
+
+        // If any sub-service matches, return only those sub-services
+        if (filteredSubServices.length > 0) {
+          return {
+            ...service,
+            subService: filteredSubServices,
+          };
+        }
       }
-      return service.name.toLowerCase().includes(input.toLowerCase());
-    });
+
+      // If no sub-service matches, check the main service name
+      if (input.toLowerCase() === "massagem") {
+        if (service.name.toLowerCase().includes("massagens")) {
+          return service;
+        }
+      } else if (service.name.toLowerCase().includes(input.toLowerCase())) {
+        return service;
+      }
+
+      // Exclude services with no matches
+      return null;
+    })
+    .filter((service) => service !== null); // Remove null values
+    
+    
     
 
   return (

@@ -56,7 +56,20 @@ const services = [
         image: tratamento,
         alt:"Imagem de Tratamento Terapêutico",
         name:"Tratamento Terapêutico",
-        description:"O tratamento terapêutico é um conjunto de intervenções planejadas que visam promover a recuperação, aliviar sintomas e melhorar o bem-estar físico, mental ou emocional do indivíduo. Ele pode incluir abordagens como terapia manual, exercícios, técnicas psicológicas, uso de tecnologias ou medicamentos, dependendo das necessidades específicas de cada pessoa, sempre focando na restauração do equilíbrio e na melhora da qualidade de vida.",
+        description:`
+        O nosso Tratamento Terapêutico é o acompanhamento personalizado que tem como objetivo o alívio de dores e a recuperação de lesões, bem como a manutenção e promoção da saúde e do bem-estar dos clientes.
+
+        Com recurso a uma abordagem Holística, os clientes terão sempre uma avaliação para assim permitir um tratamento mais adaptado às suas queixas e necessidades. 
+
+        De acordo com o plano de tratamento, são utilizadas um conjunto de técnicas Terapêuticas, sendo a Massagem Terapêutica (mais profunda) um dos pontos principais da terapia. 
+
+        Para potenciar a eficácia do tratamento, também poderão ser aplicadas técnicas como:
+        - Eletroterapia;
+        - Calores húmidos; 
+        - Ventosas; 
+        - Infravermelhos;
+        - Massajador Pneumático;
+        -Alongamentos e/ou mobilizações específicas.`,
         professionals:[1,2,3],
         subService:null
     },

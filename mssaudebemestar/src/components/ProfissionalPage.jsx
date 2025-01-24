@@ -148,7 +148,7 @@ function ProfissionalPage({profi}) {
               {servicesForProfissional !== null ?
               <>
                 <h2>Serviços</h2>
-                
+                 
                 <div className='service-section-container' >
                   {servicesForProfissional.map((service, index) => (
                     <ServiceSquare
