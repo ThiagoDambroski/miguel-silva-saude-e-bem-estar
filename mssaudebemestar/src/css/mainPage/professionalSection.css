@@ -114,6 +114,7 @@ p {
 }
 .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button {
   width: 15px;
+  z-index: 99999999;
 }
 .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button:hover {
   cursor: pointer;
@@ -417,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .profissional-section .profissional-section-button-container {
-  width: 60%;
+  width: 80%;
 }
 .profissional-section .profissional-section-button-container .shedule-button {
   transform: translateX(200%);

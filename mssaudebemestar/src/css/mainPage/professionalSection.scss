@@ -177,10 +177,11 @@
         }
     }
     .profissional-section-button-container{
-        width: 60%;
+        width: 80%;
         .shedule-button{
             transform: translateX(200%);
             width: 100%; 
+           
             transition: transform 1s ease, opacity 0.5s ease;
             &.visible{
                 transform: translateX(00%); 

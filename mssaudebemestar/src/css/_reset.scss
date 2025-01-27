@@ -90,7 +90,7 @@ p{
 			
 				.close-button{
 					width: 15px;
-					
+					z-index: 99999999;
 					
 					&:hover{
 						cursor: pointer;
