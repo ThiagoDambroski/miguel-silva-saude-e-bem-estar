@@ -287,13 +287,14 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 800px) {
   .profissional-section .profissional-section-container .profissional-square img {
     width: 35%;
-    height: 450px;
+    min-height: 480px;
+    height: 100%;
   }
 }
 @media screen and (min-width: 1500px) {
   .profissional-section .profissional-section-container .profissional-square img {
     width: 40%;
-    height: 480px;
+    height: 100%;
   }
 }
 .profissional-section .profissional-section-container .profissional-square-information {

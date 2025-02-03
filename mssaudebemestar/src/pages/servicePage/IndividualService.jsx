@@ -29,7 +29,7 @@ function IndividualService({service,isActive,setPage}) {
   } else if (screenWidth <= 1024) {
         maxLength = 250; // Adjust for medium-sized screens
   }
-  return (
+  return ( 
     <div className={`individual-services ${isActive ? 'active' : ''}`} onClick={setPageAndWindow}>
         <img src={service.image} alt={service.alt} />
         <div>

@@ -86,7 +86,8 @@ const services = [
                 image: mTerapeu,
                 alt:"Imagem de Terapêutica",
                 name:"Massagem Terapêutica",
-                description:`A massagem terapêutica é uma técnica que utiliza manobras específicas de pressão, alongamento e fricção para tratar dores musculares, tensões e desconfortos no corpo. Ela visa melhorar a circulação, aliviar o estresse, promover o relaxamento e restaurar o equilíbrio físico e emocional, sendo aplicada conforme as necessidades individuais de cada paciente.`,
+                description:`É um tipo de massagem que utiliza técnicas específicas profundas que procuram aliviar dores musculares, tensões e desconfortos no corpo. 
+                Este é o tipo de massagem indicado para tratar de lesões específicas nos músculos, tendões, ligamentos e/ou nervos.`,
                 professionals:[1,2,3],
 
             },
@@ -95,7 +96,9 @@ const services = [
                 image: mSport,
                 alt:"Imagem de Massagem Desportiva",
                 name:"Massagem Desportiva",
-                description:`A massagem desportiva é uma técnica voltada para a prevenção e recuperação de lesões em praticantes de atividades físicas. Ela envolve movimentos rápidos e profundos para aliviar tensões musculares, melhorar a circulação sanguínea, reduzir o risco de lesões e acelerar a recuperação pós-treino. Além disso, auxilia no aumento da flexibilidade, proporcionando melhor desempenho esportivo.`,
+                description:`É o tipo de massagem voltada para a prevenção e recuperação de lesões em atletas e outros praticantes de atividades físicas. 
+                Envolvendo um conjunto de movimentos harmoniosos e profundos, alivia tensões musculares, melhora a circulação sanguínea, reduz o risco de lesões e acelera a recuperação, proporcionando assim um melhor desempenho desportivo.
+                `,
                 professionals:[1,3],
             },
             {
@@ -103,7 +106,9 @@ const services = [
                 image: message,
                 alt:"Imagem de Massagem de Relaxamento",
                 name:"Massagem de Relaxamento",
-                description:`A massagem de relaxamento é uma técnica suave e envolvente que tem como objetivo aliviar o estresse e promover o bem-estar. Por meio de movimentos lentos e fluidos, ela estimula a circulação sanguínea, relaxa os músculos tensos e proporciona uma sensação de calma e tranquilidade, ajudando a reduzir a ansiedade e a melhorar o equilíbrio emocional.`,
+                description:`É um tipo de massagem que utiliza uma técnica suave e envolvente que tem como objetivo aliviar o stress, promover o relaxamento e o bem-estar. 
+                Através de movimentos lentos, envolventes e fluidos, estimula a circulação sanguínea, relaxa os músculos tensos e proporciona uma sensação de calma e tranquilidade, ajudando a reduzir a ansiedade e a melhorar o equilíbrio emocional.
+                `,
                 professionals:[1,2,3],
             },
             {
@@ -119,7 +124,7 @@ const services = [
                 image: mPedra,
                 alt:"Imagem de Massagem Pedras quentes ",
                 name:"Massagem Pedras quentes",
-                description:`A massagem com pedras quentes é uma técnica terapêutica que utiliza pedras aquecidas para relaxar os músculos e promover uma sensação profunda de tranquilidade. As pedras, geralmente de basalto, são posicionadas em pontos específicos do corpo, enquanto o terapeuta realiza movimentos suaves para aliviar tensões, melhorar a circulação e reduzir o estresse, proporcionando um relaxamento intenso e restaurador.`,
+                description:`É uma técnica terapêutica que utiliza pedras aquecidas para relaxar os músculos e promover uma sensação profunda de tranquilidade. As pedras, geralmente de basalto, são posicionadas em pontos específicos do corpo, enquanto o terapeuta realiza movimentos suaves para aliviar tensões, melhorar a circulação e reduzir o stress, proporcionando um relaxamento intenso e restaurador.`,
                 professionals:[2],
             },
             {
@@ -135,7 +140,7 @@ const services = [
                 image: mGravida,
                 alt:"Imagem de Massagem para Grávidas ",
                 name:"Massagem para Grávidas",
-                description:`A massagem para grávidas é uma técnica terapêutica suave e segura, adaptada às necessidades das gestantes, visando aliviar desconfortos comuns durante a gravidez, como dores nas costas, inchaço e tensões musculares. Com movimentos leves e cuidadosos, ela melhora a circulação, reduz o estresse, promove o relaxamento e contribui para o bem-estar geral, respeitando as condições e limitações do corpo durante essa fase.`,
+                description:`É uma técnica terapêutica suave e segura, adaptada às necessidades das grávidas, procurando aliviar desconfortos comuns durante a gravidez, como dores nas costas, inchaço e tensões musculares. Com movimentos leves e cuidadosos, melhora a circulação, reduz o stress, promove o relaxamento e contribui para o bem-estar geral, respeitando as condições e limitações do corpo durante a gestação.`,
                 professionals:[2,3],
             },
             {
@@ -143,7 +148,9 @@ const services = [
                 image: mKob,
                 alt:"Imagem de Massagem facial asiática KOBIDO ",
                 name:"Massagem facial asiática KOBIDO ",
-                description:`A massagem facial asiática Kobido é uma técnica tradicional japonesa que combina movimentos rápidos e suaves para tonificar, relaxar e rejuvenescer a pele. Ela utiliza acupressão, alongamentos faciais e massagens circulares para estimular a circulação sanguínea, aliviar tensões faciais, reduzir linhas de expressão e melhorar a elasticidade da pele, proporcionando um efeito lifting natural e uma aparência mais jovem e radiante.`,
+                description:`A massagem facial asiática Kobido é uma técnica tradicional japonesa que combina movimentos rápidos e suaves para tonificar, relaxar e rejuvenescer a pele.
+                Utiliza acupressão, alongamentos faciais e massagens circulares para estimular a circulação sanguínea, aliviar tensões faciais, reduzir linhas de expressão e melhorar a elasticidade da pele, proporcionando um efeito lifting natural e uma aparência mais jovem e radiante.
+                `,
                 professionals:[2],
             },
             {
@@ -151,7 +158,7 @@ const services = [
                 image: mVela,
                 alt:"Imagem de Candle Massaje ( Velas aromáticas ) ",
                 name:"Massagem Candle Massaje ( Velas aromáticas ) ",
-                description:`A massagem Candle Massage, ou massagem com velas aromáticas, utiliza velas especiais que derretem em óleos quentes e nutritivos, proporcionando uma experiência sensorial única. Durante o tratamento, o terapeuta derrama o óleo morno sobre o corpo, aplicando movimentos suaves e relaxantes que ajudam a aliviar tensões, hidratar a pele e promover o relaxamento profundo. O aroma das velas também contribui para o alívio do estresse e uma sensação de bem-estar.`,
+                description:`A massagem Candle Massage, ou massagem com velas aromáticas, utiliza velas especiais que derretem em óleos quentes e nutritivos, proporcionando uma experiência sensorial única. Durante o tratamento, o terapeuta derrama o óleo morno sobre o corpo, aplicando movimentos suaves e relaxantes que ajudam a aliviar tensões, hidratar a pele e promover o relaxamento profundo. O aroma das velas também contribui para o alívio do stress e para uma sensação de bem-estar.`,
                 professionals:[2],
             },
             {
@@ -159,7 +166,21 @@ const services = [
                 image: mshiatstu,
                 alt:"Imagem de Shiatsu",
                 name:"Massagem Shiatsu ",
-                description:`Descubra o equilíbrio entre corpo e mente com os nossos serviços de massagem. Oferecemos um ambiente acolhedor e relaxante, ideal para aliviar o stress, melhorar a circulação e promover o bem-estar geral.\n As nossas massagens são realizadas por profissionais qualificados, adaptando técnicas às suas necessidades individuais. Seja para relaxamento, alívio de tensões ou revitalização, temos a solução perfeita para si.`,
+                description:`Esta terapia alia o tratamento da estrutura física do corpo, com a ativação dos seus pontos energéticos, visando melhorar o seu funcionamento e saúde. 
+
+                É uma massagem utilizando a pressão dos dedos, os polegares, as mãos, as palmas das mãos, os cotovelos e os joelhos para alongar o corpo, pressionar os pontos adequados (“tsubos”). 
+
+                Os pontos onde ocorrem essa pressão são canais de energia do corpo (meridianos), que estão presentes, por exemplo, nas articulações, nos músculos e nos nervos. 
+                Os seus benefícios desta terapia são promover a melhoria: 
+
+                -Da pele;
+                -Dos músculos;
+                -Do sistema circulatório;
+                -Do aparelho digestivo;
+                -Da parte óssea;
+                -Do sistema endócrino;
+                -Do sistema nervoso;
+                -Do aparelho respiratório;`,
                 professionals:[2],
             },
         ]
@@ -195,7 +216,11 @@ const services = [
                 image: cLife,
                 alt:"Imagem de Life Coaching ",
                 name:"Life Coaching ",
-                description:`O Life Coaching é um processo de orientação e desenvolvimento pessoal que visa ajudar o indivíduo a alcançar seus objetivos, superar desafios e maximizar seu potencial. Através de sessões estruturadas, o coach trabalha com o cliente para identificar metas, desbloquear crenças limitantes, melhorar habilidades de tomada de decisão e promover mudanças positivas na vida. O objetivo é impulsionar o autoconhecimento, aumentar a motivação e ajudar a criar uma vida mais satisfatória e alinhada com os valores pessoais.`,
+                description:`É um processo de orientação e desenvolvimento pessoal que visa ajudar as pessoas no seu autoconhecimento, a alcançar o seus objetivos, a superar desafios e a maximizar seu potencial. 
+                Através de sessões estruturadas, procura-se a identificação de metas, desbloquear medos e limitações, melhorar a capacidade de tomada de decisão e promover mudanças positivas na vida. 
+
+                Também tem como objetivo impulsionar a auto-estima, aumentar a motivação e ajudar a criar uma vida mais satisfatória e alinhada com os valores pessoais de cada pessoa. 
+                `,
                 professionals:[1],
 
             },
@@ -204,7 +229,11 @@ const services = [
                 image: cSport,
                 alt:"Imagem de Treino Mental para Atletas ",
                 name:"Treino Mental para Atletas ",
-                description:`O treino mental para atletas é uma abordagem focada no desenvolvimento das habilidades psicológicas necessárias para melhorar o desempenho esportivo. Ele envolve técnicas como visualização, controle da ansiedade, concentração, estabelecimento de metas e resiliência emocional, ajudando o atleta a lidar com a pressão, superar obstáculos e manter o foco durante a competição. O objetivo é fortalecer a mente, promovendo confiança, motivação e equilíbrio emocional para alcançar o máximo potencial físico e psicológico`,
+                description:`
+                É um tipo de Coaching especializado no desenvolvimento das habilidades psicológicas necessárias para melhorar o desempenho desportivo. 
+                Além do processo de autoconhecimento e reforço mental, também envolve técnicas como a visualização, controlo da ansiedade, concentração, estabelecimento de metas e resiliência emocional, ajudando assim o atleta a lidar com a pressão, a superar obstáculos e a manter o foco. 
+                O objetivo é fortalecer a mente, promover a confiança, a motivação e equilíbrio emocional para alcançar o máximo potencial físico e psicológico e ter uma carreira mais sustentável. 
+                `,
                 professionals:[1],
             },
             {
@@ -212,7 +241,10 @@ const services = [
                 image: cEnea,
                 alt:"Imagem de Eneacoaching ",
                 name:"Eneacoaching ",
-                description:`O Eneacoaching é uma abordagem de coaching baseada na integração dos princípios da metodologia do Eneagrama com as técnicas de coaching. O Eneagrama é um sistema que classifica nove tipos de personalidade, e o Eneacoaching utiliza esse conhecimento para ajudar o indivíduo a compreender melhor seus padrões de comportamento, crenças limitantes e motivações. O objetivo é promover o autoconhecimento, o desenvolvimento pessoal e profissional, e a melhoria das relações interpessoais, através da exploração das forças e desafios de cada tipo de personalidade.`,
+                description:`É uma abordagem de coaching baseada na integração dos princípios da metodologia do Eneagrama com as técnicas de coaching. 
+                O Eneagrama é um sistema que classifica o tipo de personalidade da pessoa e o Eneacoaching utiliza esse conhecimento para ajudar o indivíduo a compreender melhor o seus padrões de comportamento, as suas motivações e os seus desafios internos. 
+                O objetivo é promover o autoconhecimento, o desenvolvimento pessoal e profissional e a melhoria das relações interpessoais, através da exploração das forças e desafios de cada tipo de personalidade.
+                `,
                 professionals:[1],
             },
             {
@@ -220,7 +252,12 @@ const services = [
                 image: cSaude,
                 alt:"Imagem de Coaching de Saúde e Bem-Estar  ",
                 name:"Coaching de Saúde e Bem-Estar ",
-                description:`O Coaching de Saúde e Bem-Estar é um processo que visa ajudar o indivíduo a alcançar um equilíbrio saudável em todas as áreas da vida, incluindo alimentação, exercício físico, saúde mental e emocional. O coach trabalha com o cliente para estabelecer metas realistas, identificar obstáculos e desenvolver hábitos saudáveis e sustentáveis. O foco é promover mudanças positivas no estilo de vida, melhorar a qualidade de vida e aumentar a energia, motivação e autoestima, incentivando uma abordagem holística e personalizada para o bem-estar.`,
+                description:`
+                Coaching de Saúde e Bem-Estar 
+                É um processo que visa ajudar o indivíduo a alcançar um equilíbrio na sua vida de forma a promover a sua saúde mental e emocional. 
+                Começando com um diagnóstico personalizado, estabelecem-se metas realistas de forma a alcançar hábitos saudáveis e sustentáveis. 
+                O foco é promover mudanças positivas no estilo de vida, melhorar a qualidade de vida e aumentar a energia, motivação e autoestima, incentivando uma abordagem holística e personalizada para o bem-estar.
+                `,
                 professionals:[1],
             },
             {
@@ -228,7 +265,10 @@ const services = [
                 image: cMentoria,
                 alt:"Imagem de Mentoria",
                 name:"Mentoria",
-                description:`A mentoria é um processo de desenvolvimento pessoal e profissional no qual um mentor, geralmente alguém com mais experiência e conhecimento em uma área específica, orienta e apoia o mentorado a alcançar seus objetivos. O mentor compartilha sua sabedoria, oferece conselhos, orientações práticas e ajuda o mentorado a enfrentar desafios, aprimorar habilidades e tomar decisões estratégicas. A mentoria é uma relação de aprendizagem e crescimento mútuo, com o objetivo de acelerar o desenvolvimento e alcançar o sucesso em diversas áreas da vida.`,
+                description:`É um processo de desenvolvimento pessoal e profissional no qual um mentor, geralmente alguém com mais experiência e conhecimento numa área específica, orienta e apoia o mentorando a alcançar o seus objetivos. 
+                O mentor partilha a sua sabedoria, oferece conselhos, orientações práticas e ajuda o mentorado a enfrentar desafios, aprimorar habilidades e a tomar decisões estratégicas, acelerando o sucesso do mentorando ao evitar ter de "criar a roda do zero".
+
+                Temos Mentoria referente aos temas de todos os serviços de Coaching que oferecemos.`,
                 professionals:[1],
             },
             {
@@ -236,7 +276,11 @@ const services = [
                 image: cCarreira,
                 alt:"Imagem de Coaching de Carreira/Liderança",
                 name:"Coaching de Carreira/Liderança",
-                description:`O Coaching de Carreira e Liderança é um processo estruturado de desenvolvimento pessoal e profissional que ajuda indivíduos a explorar seu potencial, definir metas claras e alcançar resultados. Com foco em carreira e habilidades de liderança, o coach auxilia o cliente a identificar forças, superar desafios, aprimorar competências estratégicas e tomar decisões alinhadas aos seus objetivos. Essa jornada promove autoconhecimento, aumento de performance e crescimento sustentável, capacitando o cliente a liderar com confiança e avançar em sua trajetória profissional.`,
+                description:`É um processo estruturado de desenvolvimento pessoal e profissional, ajudando a pessoa a ter um rumo e uma estratégia para a sua carreira e/ou para o seu projeto profissional, adquirindo competências de liderança e de Alta-performance profissional. 
+
+                Identificando forças, superando desafios, aprimorando competências estratégicas e tomando decisões alinhadas com os valores e objetivos, é um acompanhamento que promove o autoconhecimento, o crescimento sustentável e, assim, uma carreira saudável e com maior potencial para a realização e o sucesso. 
+
+                `,
                 professionals:[1],
             },
         ]
@@ -256,7 +300,9 @@ const services = [
                 alt:"Imagem de Processo Terapêutico Emotional Lúmen ",
                 name:"Processo Terapêutico Emotional Lúmen",
                 description:`
-                O Processo Terapêutico Emotional Lúmen é uma abordagem terapêutica que visa promover o equilíbrio emocional e o autoconhecimento, utilizando técnicas para identificar e transformar padrões de comportamento, crenças limitantes e bloqueios emocionais. A metodologia busca iluminar e restaurar a harmonia interior, permitindo ao indivíduo acessar seu potencial máximo, liberar traumas do passado e desenvolver uma maior consciência emocional. Através desse processo, a pessoa é guiada a alcançar uma vida mais equilibrada, com maior bem-estar e clareza emocional.`,
+                É um processo sustentado de Hipnoterapia que visa promover o equilíbrio emocional e o autoconhecimento, utilizando técnicas para identificar e transformar padrões de comportamento, crenças limitadoras e bloqueios emocionais. 
+                A metodologia busca iluminar e restaurar a harmonia interior, permitindo libertar traumas do passado e desenvolver uma maior consciência emocional. 
+                `,
                 professionals:[1],
 
             },
@@ -265,7 +311,7 @@ const services = [
                 image: hAns,
                 alt:"Imagem de Processo Terapêutico para Ansiedade e/ou Depressão  ",
                 name:"Processo Terapêutico para Ansiedade e/ou Depressão  ",
-                description:`O Processo Terapêutico para Ansiedade e/ou Depressão é uma abordagem focada no tratamento desses transtornos emocionais, buscando aliviar os sintomas e promover a recuperação. A terapia envolve técnicas como a reestruturação cognitiva, o enfrentamento de crenças limitantes, a regulação emocional e o desenvolvimento de estratégias de coping. O terapeuta trabalha com o indivíduo para identificar gatilhos, explorar causas subjacentes, melhorar a autoestima e ensinar ferramentas para lidar com o estresse, a negatividade e a falta de motivação, com o objetivo de restaurar o equilíbrio emocional e promover uma vida mais saudável e equilibrada.`,
+                description:`É um processo com bases do Emotional Lumen aliado a mais técnicas específicas numa abordagem focada ao tratamento da Ansiedade e da Depressão, procurando aliviar os sintomas, promover a recuperação e uma vida mais saudável e equilibrada. `,
                 professionals:[1],
             },
             {
@@ -273,7 +319,10 @@ const services = [
                 image: hRegre,
                 alt:"Imagem de Regressão (Vidas Passadas) ",
                 name:"Regressão (Vidas Passadas) ",
-                description:`A regressão a vidas passadas é uma técnica terapêutica que busca acessar memórias ou experiências de supostas encarnações anteriores, com o objetivo de compreender padrões de comportamento, traumas ou bloqueios que podem influenciar a vida atual. Durante a sessão, o terapeuta utiliza a hipnose ou outras ferramentas de relaxamento profundo para guiar o indivíduo a reviver esses momentos, visando promover o autoconhecimento, a cura emocional e a liberação de questões não resolvidas. O processo é frequentemente usado como uma forma de ajudar a resolver questões persistentes ou encontrar respostas para desafios atuais.`,
+                description:`É uma técnica terapêutica que promove uma experiência que leva a pessoa a fazer uma viagem no seu subconsciente, reavivando memórias do passado e/ou vivendo uma projecção para onde o subconsciente a direcciona.
+                Existem sessões em que se atingem outros tempos e outros lugares, onde há quem acredite ser uma vida passada.
+
+                O objetivo, além de reavivar memórias, é encontrar respostas que a pessoa procure encontrar que podem estar profundas no subconsciente.`,
                 professionals:[1],
             },
             {
@@ -281,7 +330,7 @@ const services = [
                 image: hCigarro,
                 alt:"Imagem de Processo Anti-tabágico.",
                 name:"Processo Anti-tabágico.",
-                description:`O Processo Anti-tabágico é um tratamento terapêutico que visa ajudar o indivíduo a parar de fumar, por meio de uma abordagem focada na mudança de comportamento, controle da dependência física e emocional, e desenvolvimento de estratégias para evitar recaídas. O processo pode envolver técnicas como aconselhamento, reestruturação cognitiva, apoio emocional, além de métodos como a terapia de reposição de nicotina ou uso de medicamentos, se necessário. O objetivo é promover a cessação do tabagismo de forma sustentável, melhorando a qualidade de vida e prevenindo doenças relacionadas ao uso do cigarro.`,
+                description:`É um tratamento terapêutico que visa ajudar a pessoa a deixar de fumar através de técnicas como a Hipnoterapia e outras técnicas complementares de Coaching e PNL.`,
                 professionals:[1],
             },
             {
@@ -289,7 +338,7 @@ const services = [
                 image: hFino,
                 alt:"Imagem de Processo Emagrecimento ",
                 name:"Processo Emagrecimento ",
-                description:`O Processo de Emagrecimento é um tratamento focado na redução de peso de forma saudável e sustentável, levando em consideração aspectos físicos, emocionais e comportamentais. Ele envolve o desenvolvimento de hábitos alimentares equilibrados, prática regular de atividades físicas e o trabalho de fatores emocionais que possam estar relacionados ao comer excessivo ou à dificuldade de manter a disciplina. O processo é personalizado, visando não apenas a perda de peso, mas a promoção de uma mudança duradoura no estilo de vida, visando a saúde e o bem-estar integral.`,
+                description:`É um tratamento através da hipnoterapia que ajuda a pessoa a emagrecer adquirindo mais força de vontade para promover hábitos saudáveis e para diminuir a dependência emocional pelos alimentos.`,
                 professionals:[1],
             },
             {
@@ -297,7 +346,7 @@ const services = [
                 image: hTrauma,
                 alt:"Imagem de Destraumatização",
                 name:"Processo Destraumatização",
-                description:`O Processo de Destraumatização é uma abordagem terapêutica que visa ajudar o indivíduo a lidar com e superar traumas emocionais ou psicológicos passados. Utilizando técnicas específicas, como a reprocessamento de memórias traumáticas, a liberação de emoções reprimidas e o fortalecimento de recursos internos, o objetivo é diminuir o impacto negativo do trauma na vida da pessoa. Esse processo busca restaurar o equilíbrio emocional, promover a cura e permitir ao indivíduo seguir em frente, liberando-se das dores do passado e desenvolvendo uma nova perspectiva de vida.`,
+                description:`É uma abordagem terapêutica que visa ajudar a pessoa a superar e a ressignificar traumas emocionais e/ou psicológicos. Utiliza técnicas específicas de desbloqueio emocional e de destraumatização. `,
                 professionals:[1],
             },
             {
@@ -305,7 +354,8 @@ const services = [
                 image: hPisico,
                 alt:"Imagem de Psicodrama",
                 name:"Processo Psicodrama",
-                description:`O Psicodrama é uma abordagem terapêutica que utiliza a dramatização e a ação para explorar e resolver conflitos emocionais, traumas e dilemas pessoais. Através de encenações, o indivíduo pode representar situações do passado ou do presente, revivendo experiências e sentimentos, e encontrando novas formas de entender e lidar com suas questões. O psicodrama envolve o uso de papéis, improvisação e interação com outros participantes ou o terapeuta, promovendo uma expressão mais profunda das emoções e facilitando o autoconhecimento, a cura e a transformação emocional.`,
+                description:`É uma abordagem terapêutica que utiliza a dramatização a ação e a memória para explorar e resolver conflitos emocionais, traumas e dilemas pessoais. 
+                Através de encenações, o indivíduo pode revisitar situações do passado ou do presente, revivendo experiências e sentimentos, encontrando novas formas de entender e de libertar a tensão emocional associada aos seus problemas.`,
                 professionals:[1],
             },
         ]
@@ -315,7 +365,7 @@ const services = [
         image: reiki,
         alt:"Imagem de Reiki",
         name:"Reiki",
-        description:"O Reiki é uma prática terapêutica energética que busca equilibrar e harmonizar o corpo, a mente e o espírito por meio da canalização de energia universal. Durante a sessão, o terapeuta utiliza as mãos, posicionando-as suavemente sobre ou próximo ao corpo do receptor, promovendo relaxamento, redução do estresse, alívio emocional e estímulo ao processo natural de cura.",
+        description:"Prática terapêutica energética que busca equilibrar e harmonizar o corpo, a mente e o espírito através da canalização de energia em pontos específicos (Chakras).Durante a sessão, o terapeuta utiliza as mãos, posicionando-as suavemente sobre ou junto ao corpo do receptor, promovendo relaxamento, redução do stress, alívio emocional, alinhamento energético e estímulo do processo natural de cura.",
         professionals:[2],
         subService:null
     },

@@ -851,7 +851,7 @@ h1, h2, h3, h4, h5, h6 {
 .service-section .service-section-container .ligth-box-service .submenu:hover {
   cursor: pointer;
   transform: scale(1.02);
-  z-index: 10;
+  z-index: 1;
 }
 @media screen and (min-width: 800px) {
   .service-section .service-section-container .ligth-box-service .submenu {
@@ -876,7 +876,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 800px) {
   .service-section .service-section-container .ligth-box-service .submenu img {
-    width: 100%;
+    width: 60%;
     height: 100%;
   }
 }
@@ -886,6 +886,11 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 800px) {
+  .service-section .service-section-container .ligth-box-service .submenu .submenu-div {
+    width: 100%;
+  }
 }
 .service-section .service-section-container .ligth-box-service .submenu .submenu-div h3 {
   color: #567C8D;

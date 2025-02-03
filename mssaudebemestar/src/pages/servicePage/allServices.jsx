@@ -20,6 +20,7 @@ function allServices() {
       setCheckAgain(true)
     }
 
+    /*
     const servicesNumber = services.map((service) => {
         if (service.subService === null) {
             return 1; 
@@ -73,6 +74,8 @@ function allServices() {
         }
     }, [currentIndex, isVisible]);
     
+  */
+
     //Button
     const [isButtonVisible,setIsButtonVisible] = useState(false)
 
@@ -106,40 +109,39 @@ function allServices() {
 
     //Filter
 
-    const [input, setInput] = useState(''); 
+    const [input, setInput] = useState('');
 
-    const servicesFilter = services
-    .map((service) => {
-      if (service.subService && Array.isArray(service.subService)) {
-        // Filter matching sub-services
-        const filteredSubServices = service.subService.filter((sub) =>
-          sub.name.toLowerCase().includes(input.toLowerCase())
-        );
+    const servicesFilterFunction = () => {
+      let matchedServices = [];
+      let matchedSubServices = [];
 
-        // If any sub-service matches, return only those sub-services
-        if (filteredSubServices.length > 0) {
-          return {
-            ...service,
-            subService: filteredSubServices,
-          };
+      services.forEach((service) => {
+        // Check if the main service name matches
+        if (
+          (input.toLowerCase() === "massagem" && service.name.toLowerCase().includes("massagens")) ||
+          service.name.toLowerCase().includes(input.toLowerCase())
+        ) {
+          matchedServices.push(service);
+        } 
+        if (service.subService && Array.isArray(service.subService)) {
+          // Check if any sub-service matches
+          const filteredSubServices = service.subService.filter((sub) =>
+            sub.name.toLowerCase().includes(input.toLowerCase())
+          );
+          
+          if (filteredSubServices.length > 0) {
+            matchedSubServices.push( ...filteredSubServices);
+          }
         }
-      }
+      });
 
-      // If no sub-service matches, check the main service name
-      if (input.toLowerCase() === "massagem") {
-        if (service.name.toLowerCase().includes("massagens")) {
-          return service;
-        }
-      } else if (service.name.toLowerCase().includes(input.toLowerCase())) {
-        return service;
-      }
+      // First show matched main services, then show matched sub-services
+      return [...matchedServices, ...matchedSubServices];
+    };
 
-      // Exclude services with no matches
-      return null;
-    })
-    .filter((service) => service !== null); // Remove null values
-    
-    
+    const servicesFilter = servicesFilterFunction();
+
+
     
 
   return (
@@ -158,12 +160,12 @@ function allServices() {
                       <>
                         {servicesFilter.map((service,index) => (
                         <>
-                            {service.subService === null ?
+                            {service ?
                                 <>
                                     <IndividualService
                                     key={index}
                                     service={service}
-                                    isActive={index <= currentIndex}
+                                    isActive={true}
                                     setPage = {setPage}
                                     />
                                 </>
@@ -193,7 +195,7 @@ function allServices() {
                     
                 </div>
                 <div ref={buttonRef} > 
-                  <ScheduleButton  isVisible={isButtonVisible}/>
+                  <ScheduleButton  isVisible={true}/>
                 </div>
             </>
             :

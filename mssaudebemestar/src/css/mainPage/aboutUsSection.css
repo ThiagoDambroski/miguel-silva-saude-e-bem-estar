@@ -252,6 +252,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem;
   color: #2F4156;
   font-weight: 600;
+  text-align: center;
   border-radius: 10px;
   background-color: #C8D9E6;
   transition: all ease-in 0.5s;

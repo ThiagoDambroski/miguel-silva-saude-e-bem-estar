@@ -176,13 +176,18 @@ function AboutUsPage({profiIndex}) {
           <section className={`about-us-page-history ${historyVisible ? 'visible' : ''}`} ref={historyRef}>
             <h2>A nossa história</h2>
             <img src={team} alt="Equipa Miguel Silva - saude e bem estar" />
-            <p>Abrimos as nossas portas em Mafra em Novembro de 2016, acreditando que é essencial investir na saúde para desfrutar de uma vida cheia de alegria, gratidão e satisfação. Isso orienta nossa abordagem, incluindo os nossos serviços, ensinamentos e tratamentos. No nosso espaço concentramo-nos em ajudar os clientes a melhorarem a sua saúde física e mental e transmitimos ferramentas para que possam mantê-la.
-            Orgulhamo-nos da capacidade de mudar e impactar vidas de maneira saudável. Fazemos isso oferecendo serviços que ajudam todos os nossos clientes a alcançarem corpos e mentes mais positivos.
-            Entre em contato ainda hoje!</p>
+            <p>{`Abrimos as nossas portas em Novembro de 2016, iniciando com o Miguel Silva sozinho, com a ambição de servir bem os clientes e de um dia vir a criar uma equipa de qualidade e de confiança.
+
+            Nessa altura os tratamentos eram maioritariamente para alívio de lesões e de outro tipo de dores físicas mas, apesar de ainda hoje ser um dos fatores principais pelos quais servimos os nossos clientes, a ideia começou a estruturar-se no sentido de ter uma abordagem Holística e poder ajudar as pessoas num todo e poder promover a sua qualidade de vida em vez de ajudar apenas quando estas já estão em sofrimento. 
+
+            Passo a passo, esse processo solidificou-se e hoje temos o orgulho em ter uma equipa sólida e equilibrada com a presença da Jaqueline Lima e da Elizete Silva.
+            Com uma Missão que nos move e com uma cultura virada para a satisfação e confiança dos nossos clientes, seguimos juntos a querer evoluir cada vez mais num ambiente harmonioso e positivo. 
+
+            `}</p>
             <h2 >A nossa missão </h2 >
             <div className={`${missionVisible ? 'visible' : ''}`} ref={missionRef}>
               <h4>O caminho para uma vida mais saudável</h4>
-              <p className='misson-p'>Ser o local onde os nossos clientes se sentem acolhidos e onde encontram a melhor solução para tratarem os seus problemas/dores, bem como adquirir/manter uma plena Saúde e Bem-Estar, seja no plano Físico, como o Mental e o Emocional.​</p>
+              <p className='misson-p'>{`Promover a qualidade de vida melhorando a Saúde e o Bem-Estar de todos os nossos clientes, através de um bom acolhimento, humanização e de um tratamento personalizado.`}​</p>
             </div>
           </section>
           <div ref={buttonRef} className='button-div'>

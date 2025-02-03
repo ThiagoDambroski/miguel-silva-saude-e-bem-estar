@@ -139,7 +139,7 @@
                 &:hover{
                     cursor: pointer;
                     transform: scale(1.02);
-                    z-index: 10;
+                    z-index: 1;
                 }
                 @media screen and (min-width: $tablet-screen) {
                     height: 220px;
@@ -159,7 +159,7 @@
                         height: 140px;
                     }
                     @media screen and (min-width: $tablet-screen) {
-                        width: 100%;
+                        width: 60%;
                         height: 100%;
                         
                     }
@@ -171,7 +171,10 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    
+                    @media screen and (min-width: $tablet-screen) {
+                        width: 100%;
+                        
+                    }
                     h3{
                         @include title();
                         font-weight: 600;
