@@ -16,8 +16,8 @@ import mPodal from "../assets/services/mpodal.jpg"
 import mPedra from "../assets/services/mpedra.jpg"
 import mEsfo from "../assets/services/mesfo.jpg"
 import mGravida from "../assets/services/mgravida.jpg"
-import mKob from "../assets/services/mKob.jpg"
-import mVela from "../assets/services/mVela.jpg"
+import mKob from "../assets/services/mkob.jpg"
+import mVela from "../assets/services/mvela.jpg"
 import mshiatstu from "../assets/services/mshiatsu.jpg"
 
 //SubService COACH
