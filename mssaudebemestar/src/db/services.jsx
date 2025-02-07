@@ -79,7 +79,7 @@ const services = [
         alt:"Imagem de massagem",
         name:"Massagens ",
         description:"Descubra o equilíbrio entre corpo e mente com os nossos serviços de massagem. Oferecemos um ambiente acolhedor e relaxante, ideal para aliviar o stress, melhorar a circulação e promover o bem-estar geral. As nossas massagens são realizadas por profissionais qualificados, adaptando técnicas às suas necessidades individuais. Seja para relaxamento, alívio de tensões ou revitalização, temos a solução perfeita para si.",
-        professionals:[],
+        professionals:[1,2,3],
         subService:[
             {
                 subServiceId:1,
@@ -208,8 +208,13 @@ const services = [
         image: coach,
         alt:"Imagem de Coaching/Treino Mental",
         name:"Coaching/Treino Mental",
-        description:"Descubra o equilíbrio entre corpo e mente com os nossos serviços de massagem. Oferecemos um ambiente acolhedor e relaxante, ideal para aliviar o stress, melhorar a circulação e promover o bem-estar geral. As nossas massagens são realizadas por profissionais qualificados, adaptando técnicas às suas necessidades individuais. Seja para relaxamento, alívio de tensões ou revitalização, temos a solução perfeita para si.",
-        professionals:[],
+        description:`É um acompanhamento personalizado de orientação e de desenvolvimento pessoal que visa ajudar as pessoas no seu autoconhecimento, a alcançar o seus objetivos, a superar desafios e a maximizar seu potencial. 
+        Através de sessões estruturadas, procura-se a identificação de metas, desbloquear medos e limitações, melhorar a capacidade de tomada de decisão e promover mudanças positivas na vida. 
+
+        Também tem como objetivo impulsionar a auto-estima, aumentar a motivação e ajudar a criar uma vida mais satisfatória e alinhada com os valores pessoais de cada pessoa. 
+
+        `,
+        professionals:[1],
         subService:[
             {
                 subServiceId:1,
@@ -291,8 +296,21 @@ const services = [
         image: hipo,
         alt:"Imagem de Hipnoterapia ",
         name:"Hipnoterapia ",
-        description:"Descubra o equilíbrio entre corpo e mente com os nossos serviços de massagem. Oferecemos um ambiente acolhedor e relaxante, ideal para aliviar o stress, melhorar a circulação e promover o bem-estar geral. As nossas massagens são realizadas por profissionais qualificados, adaptando técnicas às suas necessidades individuais. Seja para relaxamento, alívio de tensões ou revitalização, temos a solução perfeita para si.",
-        professionals:[],
+        description:`É uma terapia que acede ao inconsciente do paciente através de um estado profundo de consciência com o objetivo de explorar e de tratar o seu inconsciente de forma a potenciar o seu equilíbrio físico, mental, emocional e até espiritual.
+                Trata problemas como:
+                -Bloqueios emocionais;
+                -Traumas;
+                -Tristeza;
+                -Falta de confiança;
+                -Fadiga mental/emocional;
+                -Vícios (tabaco p.e);
+                -Medos;
+                -Problemas amorosos;
+                -Stress;
+        Além de ajudar a resolver estes problemas e tantos mais, esta é uma óptima terapia para estimular o bem-estar, autoconhecimento e relaxamento. 
+
+        `,
+        professionals:[1],
         subService:[
             {
                 subServiceId:1,

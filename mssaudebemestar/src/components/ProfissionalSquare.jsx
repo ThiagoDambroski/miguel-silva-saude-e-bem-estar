@@ -46,9 +46,9 @@ function ProfissionalSquare({ profi, style }) {
           };
     }, []);
       
-    let maxLength = 300; // Default for larger screens
+    let maxLength = 350; // Default for larger screens
     if (screenWidth <= 600) {
-          maxLength = 90; // Shorter length for smaller screens
+          maxLength = 130; // Shorter length for smaller screens
     } else if (screenWidth <= 1024) {
           maxLength = 250; // Adjust for medium-sized screens
     }

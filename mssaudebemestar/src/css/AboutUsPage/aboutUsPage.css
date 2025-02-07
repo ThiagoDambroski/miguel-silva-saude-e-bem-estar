@@ -49,7 +49,7 @@ body.light-box-block {
 p {
   line-height: 1.3;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   p {
     line-height: 1.5;
   }
@@ -78,12 +78,12 @@ p {
   overflow-y: auto;
   background-color: whitesmoke;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .ligth-box .ligth-box-content {
     padding-bottom: 20px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .ligth-box .ligth-box-content {
     overflow-y: auto;
     height: 90vh;
@@ -99,7 +99,7 @@ p {
   justify-content: space-between;
   top: 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav {
     top: 10px;
   }
@@ -110,7 +110,7 @@ p {
 .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .arrow-button:hover {
   cursor: pointer;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .arrow-button {
     width: 30px;
   }
@@ -122,7 +122,7 @@ p {
 .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button:hover {
   cursor: pointer;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button {
     width: 30px;
   }
@@ -134,7 +134,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .button-padding-container {
     padding-bottom: 10px;
   }
@@ -153,7 +153,7 @@ p {
 .container-arrow .arrow-button:hover {
   cursor: pointer;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .container-arrow .arrow-button {
     width: 30px;
     height: 30px;
@@ -165,7 +165,7 @@ p {
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .not-found {
     font-size: 2rem;
   }
@@ -180,7 +180,7 @@ input {
   width: 80%;
   height: 30px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   input {
     width: 60%;
     height: 50px;
@@ -276,7 +276,7 @@ body.light-box-block {
 p {
   line-height: 1.3;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   p {
     line-height: 1.5;
   }
@@ -305,12 +305,12 @@ p {
   overflow-y: auto;
   background-color: whitesmoke;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .ligth-box .ligth-box-content {
     padding-bottom: 20px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .ligth-box .ligth-box-content {
     overflow-y: auto;
     height: 90vh;
@@ -326,7 +326,7 @@ p {
   justify-content: space-between;
   top: 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav {
     top: 10px;
   }
@@ -337,7 +337,7 @@ p {
 .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .arrow-button:hover {
   cursor: pointer;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .arrow-button {
     width: 30px;
   }
@@ -349,7 +349,7 @@ p {
 .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button:hover {
   cursor: pointer;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button {
     width: 30px;
   }
@@ -361,7 +361,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .button-padding-container {
     padding-bottom: 10px;
   }
@@ -380,7 +380,7 @@ p {
 .container-arrow .arrow-button:hover {
   cursor: pointer;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .container-arrow .arrow-button {
     width: 30px;
     height: 30px;
@@ -392,7 +392,7 @@ p {
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .not-found {
     font-size: 2rem;
   }
@@ -407,7 +407,7 @@ input {
   width: 80%;
   height: 30px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   input {
     width: 60%;
     height: 50px;
@@ -467,7 +467,7 @@ h1, h2, h3, h4, h5, h6 {
   row-gap: 10px;
   overflow: hidden;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .service-section-container {
     grid-template-columns: repeat(4, 1.2fr);
     justify-content: center;
@@ -493,14 +493,14 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform ease-in 0.2s;
   transform: scale(0.95);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .service-section-container .service-square {
-    height: 130px;
+    height: 30vw;
     width: 95%;
     padding-bottom: 0.2rem;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .service-section-container .service-square {
     height: 18vw;
   }
@@ -516,7 +516,7 @@ h1, h2, h3, h4, h5, h6 {
   color: whiteSmoke;
   z-index: 1;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .service-section-container .service-square p {
     font-size: 0.9rem;
   }
@@ -544,7 +544,7 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
   z-index: 0; /* Places it between the text and the image */
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .service-section-container .service-square::before {
     height: 70%;
   }
@@ -556,7 +556,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .service-section-container .ligth-box-service {
     max-height: 85vh;
     justify-content: start;
@@ -573,8 +573,9 @@ h1, h2, h3, h4, h5, h6 {
 .service-section-container .ligth-box-service .submenu:hover {
   cursor: pointer;
   transform: scale(1.02);
+  z-index: 1;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .service-section-container .ligth-box-service .submenu {
     height: 220px;
   }
@@ -586,18 +587,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 .service-section-container .ligth-box-service .submenu img {
   border-radius: 15px 0px 0px 15px;
-  width: 35%;
+  width: 40%;
   height: 100px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .service-section-container .ligth-box-service .submenu img {
-    width: 100%;
-    height: 140px;
+    width: 80%;
+    height: 200px;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .service-section-container .ligth-box-service .submenu img {
-    width: 100%;
+    width: 60%;
     height: 100%;
   }
 }
@@ -608,16 +609,31 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1024px) {
+  .service-section-container .ligth-box-service .submenu .submenu-div {
+    width: 100%;
+  }
+}
 .service-section-container .ligth-box-service .submenu .submenu-div h3 {
   color: #567C8D;
   font-weight: 400;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   text-align: center;
   text-transform: capitalize;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 680px) {
+  .service-section-container .ligth-box-service .submenu .submenu-div h3 {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .service-section-container .ligth-box-service .submenu .submenu-div h3 {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1500px) {
   .service-section-container .ligth-box-service .submenu .submenu-div h3 {
     font-size: 1.6rem;
   }
@@ -626,16 +642,21 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 0.3rem;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .service-section-container .ligth-box-service .submenu .submenu-div p {
     text-align: center;
-    font-size: 1rem;
-    width: 90%;
+    font-size: 0.9rem;
+    width: 80%;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
+  .service-section-container .ligth-box-service .submenu .submenu-div p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1500px) {
   .service-section-container .ligth-box-service .submenu .submenu-div p {
     font-size: 1.4rem;
   }
@@ -645,7 +666,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   text-transform: uppercase;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .service-section-container .ligth-box-service h2 {
     font-size: 1rem;
   }
@@ -653,17 +674,17 @@ h1, h2, h3, h4, h5, h6 {
 .service-section-container .ligth-box-service .ligth-box-service-img {
   width: 100%;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .service-section-container .ligth-box-service .ligth-box-service-img {
     max-height: 200px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .service-section-container .ligth-box-service .ligth-box-service-img {
     width: 80%;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .service-section-container .ligth-box-service .ligth-box-service-img {
     width: 60%;
     max-height: 600px;
@@ -675,12 +696,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.8rem;
   font-family: "Raleway", sans-serif;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .service-section-container .ligth-box-service p {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .service-section-container .ligth-box-service p {
     padding: 0 1rem 0 1rem;
     width: 90%;
@@ -692,7 +713,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #567C8D;
   font-weight: bold;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .service-section-container .ligth-box-service .meat-team {
     width: 100%;
   }
@@ -705,14 +726,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .service-section-container .ligth-box-service button {
   position: relative;
-  bottom: 0px;
   width: 85%;
   font-size: 0.65rem;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1024px) {
   .service-section-container .ligth-box-service button {
     font-size: 1rem;
-    position: static;
+    position: relative;
+    bottom: 0px;
   }
 }
 
@@ -731,7 +752,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   text-transform: uppercase;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page h1 {
     font-size: 2.2rem;
   }
@@ -745,7 +766,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   justify-content: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .about-us-page .about-us-page-profi {
     gap: 1rem;
   }
@@ -754,7 +775,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   color: #2F4156;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-profi h2 {
     font-size: 2rem;
   }
@@ -764,23 +785,22 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   transform: translateX(200%);
   transition: transform 0.4s ease-in;
-  min-height: 250px;
   padding: 0rem -1rem 0rem -1rem;
   border-radius: 10px;
 }
 .about-us-page .about-us-page-profi .profi-showcase.visible {
   transform: translateX(0%);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .about-us-page .about-us-page-profi .profi-showcase {
     display: grid;
     grid-template-columns: 0.8fr 1fr;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-profi .profi-showcase {
     display: grid;
-    grid-template-columns: 0.4fr 1fr;
+    grid-template-columns: 0.45fr 1fr;
   }
 }
 .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-image img {
@@ -790,10 +810,10 @@ h1, h2, h3, h4, h5, h6 {
      object-position: top;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 120px;
+  width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-image img {
     width: 100%;
   }
@@ -804,7 +824,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #C8D9E6;
   display: flex;
   flex-direction: column;
-  gap: 5%;
+  gap: 10px;
   align-items: center;
   padding: 1rem;
   text-align: center;
@@ -812,29 +832,40 @@ h1, h2, h3, h4, h5, h6 {
 .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-content h3 {
   color: #2F4156;
   font-weight: 500;
+  font-size: 1rem;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-content h3 {
     font-size: 1.5rem;
   }
 }
+@media screen and (min-width: 1500px) {
+  .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-content h3 {
+    font-size: 2cap;
+  }
+}
 .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-content p {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   width: 100%;
   font-family: "Raleway", sans-serif;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-content p {
     font-size: 1rem;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-content p {
     font-size: 1.3rem;
   }
 }
+@media screen and (min-width: 1500px) {
+  .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-content p {
+    font-size: 1.5rem;
+  }
+}
 .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-content button {
-  position: absolute;
+  position: block;
   bottom: 15px;
   color: whiteSmoke;
   font-family: "Raleway", sans-serif;
@@ -843,15 +874,25 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   transition: background-color ease-in 0.3s;
   width: 60%;
-  padding: 0.8rem;
+  font-size: 0.5rem;
+  padding: 0.5rem;
   border-radius: 10px;
 }
 .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-content button:hover {
   cursor: pointer;
   background-color: #1d2835;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 680px) {
   .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-content button {
+    position: absolute;
+    width: 60%;
+    font-size: 0.6rem;
+    padding: 0.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-us-page .about-us-page-profi .profi-showcase .profi-showcase-content button {
+    position: absolute;
     width: 65%;
     font-size: 1.2rem;
     padding: 1rem;
@@ -874,7 +915,14 @@ h1, h2, h3, h4, h5, h6 {
 .about-us-page .about-us-page-history.visible {
   opacity: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
+  .about-us-page .about-us-page-history {
+    padding: 1rem;
+    justify-self: center;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-history {
     justify-self: center;
     width: 80%;
@@ -889,14 +937,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 .about-us-page .about-us-page-history h2 {
   font-weight: 500;
+  font-size: 1rem;
   color: #2F4156;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .about-us-page .about-us-page-history h2 {
+    font-size: 1.5rem;
     text-align: center;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-history h2 {
     font-size: 1.8rem;
   }
@@ -906,55 +956,63 @@ h1, h2, h3, h4, h5, h6 {
   color: #567C8D;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   color: #2F4156;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .about-us-page .about-us-page-history h4 {
     font-size: 1.2rem;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-history h4 {
     margin-bottom: 0;
     font-size: 1.3rem;
   }
 }
 .about-us-page .about-us-page-history img {
-  width: 100%;
+  width: 80%;
   border-radius: 15px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .about-us-page .about-us-page-history img {
     width: 90%;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-history img {
     -o-object-position: top;
        object-position: top;
     -o-object-fit: cover;
        object-fit: cover;
     width: 70%;
-    height: 500px;
+    height: 70vh;
   }
 }
 .about-us-page .about-us-page-history p {
   font-family: "Raleway", sans-serif;
   text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .about-us-page .about-us-page-history p {
     width: 100%;
     font-size: 1.2rem;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-history p {
     padding: 2rem;
     width: 90%;
     font-size: 1.2rem;
+    line-height: 1.8;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .about-us-page .about-us-page-history p {
+    font-size: 1.4rem;
   }
 }
 .about-us-page .about-us-page-history .misson-p {
@@ -968,7 +1026,7 @@ h1, h2, h3, h4, h5, h6 {
 .about-us-page .button-div .shedule-button {
   width: 100%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .button-div .shedule-button {
     width: 70%;
   }
@@ -990,10 +1048,10 @@ h1, h2, h3, h4, h5, h6 {
 .about-us-page .about-us-page-profissional-page .about-us-page-profissional-page-container.visible {
   opacity: 100%;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-profissional-page .about-us-page-profissional-page-container {
     align-self: center;
-    width: 75%;
+    width: 85%;
   }
 }
 .about-us-page .about-us-page-profissional-page .about-us-page-profissional-page-container .about-us-page-profissional-page-img {
@@ -1005,15 +1063,16 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .about-us-page .about-us-page-profissional-page .about-us-page-profissional-page-container .about-us-page-profissional-page-img {
     align-self: center;
     width: 80%;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-profissional-page .about-us-page-profissional-page-container .about-us-page-profissional-page-img {
     width: 60%;
+    height: 90vh;
   }
 }
 .about-us-page .about-us-page-profissional-page .about-us-page-profissional-page-container p {
@@ -1023,14 +1082,15 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #2F4156;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .about-us-page .about-us-page-profissional-page .about-us-page-profissional-page-container p {
     font-size: 1.2rem;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-profissional-page .about-us-page-profissional-page-container p {
     font-size: 1.5rem;
+    line-height: 2;
   }
 }
 .about-us-page .about-us-page-profissional-page .about-us-page-profissional-div {
@@ -1064,12 +1124,12 @@ h1, h2, h3, h4, h5, h6 {
 .about-us-page .about-us-page-profissional-page .about-us-page-profissional-div ul.visible {
   transform: translateX(0%);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-profissional-page .about-us-page-profissional-div ul {
     width: 75%;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .about-us-page .about-us-page-profissional-page .about-us-page-profissional-div ul {
     padding: 1.5rem;
   }
@@ -1080,7 +1140,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .about-us-page .about-us-page-profissional-page .about-us-page-profissional-div ul li {
     font-size: 1.4rem;
   }
@@ -1099,7 +1159,7 @@ h2 {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .service-section-container {
     flex-direction: row;
     gap: 10px;

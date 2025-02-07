@@ -38,22 +38,24 @@ function serviceSquare({service,isVisible}) {
           };
     }, []);
       
-    let maxLength = 200; // Default for larger screens
+    let maxLength = 250; // Default for larger screens
     if (screenWidth <= 600) {
-          maxLength = 80; // Shorter length for smaller screens
+          maxLength = 150; // Shorter length for smaller screens
     } else if (screenWidth <= 1024) {
-          maxLength = 150; // Adjust for medium-sized screens
+          maxLength = 180; // Adjust for medium-sized screens
     }
     //Filter
 
     const [input, setInput] = useState(''); // Initialize with an empty string
 
-    const servicesFilter = service.subService !== null 
+    const servicesFilter =
+  service.subService !== null
     ? service.subService.filter((subServiceItem) => {
-        return subServiceItem.name.toLowerCase().includes(input.toLowerCase());
-        })
-    : []; 
-
+        const words = input.toLowerCase().split(/\s+/); // Split input into words
+        return words.every((word) => subServiceItem.name.toLowerCase().includes(word));
+      })
+    : [];
+ 
 
     //about of ligthbox
     const lightBoxRef = useRef(null);
@@ -113,7 +115,7 @@ function serviceSquare({service,isVisible}) {
                                     ))}
                                 </p>
                                 <div>
-                                    <p className='meat-team'>Concheça os profissionais :</p>
+                                    <p className='meat-team'>Conheça os profissionais :</p>
                                     <p className='meat-team-container'>
                                         
                                         {profissionals.filter((prof) => service.professionals.includes(prof.id)).map((profi, index) => (
@@ -209,7 +211,7 @@ function serviceSquare({service,isVisible}) {
                                             ))}
                                         </p>
                                         <div>
-                                            <p className='meat-team'>Concheça os profissionais :</p>
+                                            <p className='meat-team'>Conheça os profissionais :</p>
                                             <p className='meat-team-container'>
                                                 {profissionals.filter((prof) => subForPage.professionals.includes(prof.id)).map((profi, index) => (
                                                     index === subForPage.professionals.length -1 ? (

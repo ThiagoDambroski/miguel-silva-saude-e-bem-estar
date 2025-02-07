@@ -23,11 +23,11 @@ function IndividualService({service,isActive,setPage}) {
         };
   }, []);
     
-  let maxLength = 300; // Default for larger screens
+  let maxLength = 450; // Default for larger screens
   if (screenWidth <= 600) {
-        maxLength = 90; // Shorter length for smaller screens
+        maxLength = 180; // Shorter length for smaller screens
   } else if (screenWidth <= 1024) {
-        maxLength = 250; // Adjust for medium-sized screens
+        maxLength = 200; // Adjust for medium-sized screens
   }
   return ( 
     <div className={`individual-services ${isActive ? 'active' : ''}`} onClick={setPageAndWindow}>

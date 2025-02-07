@@ -45,7 +45,11 @@
 
                 }
                 @media screen and (min-width: $tablet-screen) {
-                    width: 6%;
+                    width: 4%;
+                
+                }
+                @media screen and (min-width: $desktop-screen) {
+                    width: 4%;
                 
                 }
             }
@@ -64,7 +68,7 @@
                     transform: translateX(250%);
                 }
                 @media screen and (min-width: $tablet-screen) {
-                    font-size: 1.6rem;
+                    font-size: 1.4rem;
                     transform: translateX(500%)
                 
                 }

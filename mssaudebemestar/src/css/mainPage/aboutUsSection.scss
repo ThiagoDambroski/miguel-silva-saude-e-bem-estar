@@ -4,7 +4,7 @@
 
 .about-us-section{
     
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
     overflow-x: hidden;
     flex-direction: column;
@@ -21,7 +21,9 @@
     p{
         font-family: $primary-font;
         padding: 1rem;
+        font-size: 0.7rem;
         color: $buttonColor;
+        line-height: 1.4;
         font-weight: 600;
         text-align: center;
         border-radius: 10px;
@@ -37,14 +39,16 @@
         }
         @media screen and (min-width: $tablet-screen) {
             text-align: center;
+            padding: 3rem;
             width: 90%;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             
         
         }
 
         @media screen and (min-width: $desktop-screen) {
             width: 70%;
+            
         }
         
     }

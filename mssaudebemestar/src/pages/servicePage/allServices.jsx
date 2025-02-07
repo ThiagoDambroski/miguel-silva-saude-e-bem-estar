@@ -114,32 +114,43 @@ function allServices() {
     const servicesFilterFunction = () => {
       let matchedServices = [];
       let matchedSubServices = [];
-
+    
+      // Normalize input: trim, lowercase, and split into words
+      const inputWords = input.toLowerCase().trim().split(/\s+/);
+    
       services.forEach((service) => {
-        // Check if the main service name matches
-        if (
-          (input.toLowerCase() === "massagem" && service.name.toLowerCase().includes("massagens")) ||
-          service.name.toLowerCase().includes(input.toLowerCase())
-        ) {
+        // Normalize service name and split into words
+        const serviceWords = service.name.toLowerCase().trim().split(/\s+/);
+    
+        // Check if every word in input exists somewhere in the service name
+        const matchesService = inputWords.every(word => 
+          serviceWords.some(serviceWord => serviceWord.includes(word))
+        );
+    
+        if (matchesService) {
           matchedServices.push(service);
-        } 
+        }
+    
         if (service.subService && Array.isArray(service.subService)) {
-          // Check if any sub-service matches
-          const filteredSubServices = service.subService.filter((sub) =>
-            sub.name.toLowerCase().includes(input.toLowerCase())
-          );
-          
+          // Check sub-services with the same logic
+          const filteredSubServices = service.subService.filter((sub) => {
+            const subWords = sub.name.toLowerCase().trim().split(/\s+/);
+            return inputWords.every(word => 
+              subWords.some(subWord => subWord.includes(word))
+            );
+          });
+    
           if (filteredSubServices.length > 0) {
-            matchedSubServices.push( ...filteredSubServices);
+            matchedSubServices.push(...filteredSubServices);
           }
         }
       });
-
-      // First show matched main services, then show matched sub-services
+    
       return [...matchedServices, ...matchedSubServices];
     };
-
+    
     const servicesFilter = servicesFilterFunction();
+    
 
 
     
@@ -160,30 +171,14 @@ function allServices() {
                       <>
                         {servicesFilter.map((service,index) => (
                         <>
-                            {service ?
-                                <>
-                                    <IndividualService
-                                    key={index}
-                                    service={service}
-                                    isActive={true}
-                                    setPage = {setPage}
-                                    />
-                                </>
-                                :
-                                <>
-                                    {service.subService.map((sub,index2) => (
-                                        <>
-                                            <IndividualService
-                                            key={index}
-                                            service={sub}
-                                            isActive={index + index2 <= currentIndex}
-                                            setPage = {setPage}
-                                            />
-                                        </>
-                                    ))}
-                                </>
+                         
+                          <IndividualService
+                           key={index}
+                            service={service}
+                            isActive={true}
+                            setPage = {setPage}
+                          />
 
-                            }
                         </>
                         ))}
                       </>
@@ -198,7 +193,7 @@ function allServices() {
                   <ScheduleButton  isVisible={true}/>
                 </div>
             </>
-            :
+            : 
             <>
                 <div className='service-full-page'>
                    <div className='container-arrow'>
@@ -206,7 +201,15 @@ function allServices() {
                      <h1>{page.name}</h1>    
                   </div>
                   <img className='principal-img' src={page.image} alt={page.alt}/>
-                  <p>{page.description}</p>
+                  
+                  <p>
+                    {page.description.split('\n').map((line, index) => (
+                     <React.Fragment key={index}>
+                      {line}
+                      <br />
+                      </React.Fragment>
+                    ))}
+                  </p>
                   <p>Profissionais:<br></br>
                     {profissionals.filter((prof) => page.professionals.includes(prof.id)).map((profi, index) => (
                           index === page.professionals.length - 1 ? (

@@ -33,7 +33,7 @@ body.light-box-block {
 p {
   line-height: 1.3;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   p {
     line-height: 1.5;
   }
@@ -62,12 +62,12 @@ p {
   overflow-y: auto;
   background-color: whitesmoke;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .ligth-box .ligth-box-content {
     padding-bottom: 20px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   .ligth-box .ligth-box-content {
     overflow-y: auto;
     height: 90vh;
@@ -83,7 +83,7 @@ p {
   justify-content: space-between;
   top: 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav {
     top: 10px;
   }
@@ -94,7 +94,7 @@ p {
 .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .arrow-button:hover {
   cursor: pointer;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .arrow-button {
     width: 30px;
   }
@@ -106,7 +106,7 @@ p {
 .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button:hover {
   cursor: pointer;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .ligth-box .ligth-box-content .ligth-box-service .ligth-box-nav .close-button {
     width: 30px;
   }
@@ -118,7 +118,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .button-padding-container {
     padding-bottom: 10px;
   }
@@ -137,7 +137,7 @@ p {
 .container-arrow .arrow-button:hover {
   cursor: pointer;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .container-arrow .arrow-button {
     width: 30px;
     height: 30px;
@@ -149,7 +149,7 @@ p {
   font-size: 1rem;
   font-family: "Raleway", sans-serif;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .not-found {
     font-size: 2rem;
   }
@@ -164,7 +164,7 @@ input {
   width: 80%;
   height: 30px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   input {
     width: 60%;
     height: 50px;
@@ -322,12 +322,12 @@ header {
 header .none {
   display: none;
 }
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   header .none {
     display: block;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   header {
     height: 60px;
   }
@@ -336,7 +336,7 @@ header.add-bckg {
   background-color: rgb(54, 69, 79);
   transition: all 200ms ease-out;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 680px) {
   header.add-bckg li {
     color: white;
   }
@@ -347,12 +347,12 @@ header.add-bckg {
 header .logo {
   width: 35px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   header .logo {
     width: 45px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   header nav {
     padding-left: 10px;
     position: fixed;
@@ -373,7 +373,7 @@ header nav ul {
   display: flex;
   gap: 15px;
 }
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   header nav ul {
     height: 100%;
     flex-direction: column;
@@ -388,7 +388,7 @@ header nav ul li {
 header nav ul li a {
   color: black;
 }
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   header nav ul li {
     color: #2F4156;
     font-size: 1.6rem;
@@ -399,7 +399,7 @@ header nav ul li a {
     color: #2F4156;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   header nav ul li {
     font-size: 1.3rem;
   }
