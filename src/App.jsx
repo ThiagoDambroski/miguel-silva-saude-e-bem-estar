@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './css/app.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './components/Header'
-import Whatsapp from './components/whatsapp';
+import Whatsapp from './components/Whatsapp';
 import Mainpage from './pages/mainPage/mainpage';
 import ServicePage from './pages/servicePage/servicePage';
 import AboutUsPage from './pages/aboutUsPage/AboutUsPage';
