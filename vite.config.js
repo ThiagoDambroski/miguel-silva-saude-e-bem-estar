@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/miguel-silva-saude-e-bem-estar/',
+  base: './',
+  build: {
+    outDir: 'dist', 
+  },
   plugins: [react()],
 })
